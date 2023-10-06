@@ -109,4 +109,5 @@ export default async function decorate(block) {
     navWrapper.append(nav);
     block.append(navWrapper);
   }
+  document.querySelector('.header-wrapper > .header.block').style.display = 'none';
 }
