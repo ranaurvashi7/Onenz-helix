@@ -12,8 +12,8 @@ var firstContent = document.querySelector('.Container-wrapper > .chatwithus.bloc
 var secondContent = document.querySelector('.Container-wrapper > .chatwithus.block > div > div  > p > picture');
 var thirdContent = document.querySelector('.Container-wrapper > .chatwithus.block > div > div  > h3').innerText;
 var fourthContent = document.querySelectorAll('.Container-wrapper > .chatwithus.block > div > div  > p')[1].innerText;
-var fifthContent = document.querySelectorAll('.Container-wrapper > .chatwithus.block > div > div')[1].innerHTML;
-
+var fifthContentLink = document.querySelector('.Container-wrapper > .chatwithus.block > div > div > a').attributes[0].value;
+var fifthContent = document.querySelector('.Container-wrapper > .chatwithus.block > div > div > a').innerText;
 //
 var firstDiv = document.createElement('div');
 firstDiv.setAttribute('class','Container');
@@ -61,10 +61,14 @@ eigthDiv.setAttribute('class','IconPromo-icon');
 eigthDiv.append(secondContent);
 seventhDiv.appendChild(eigthDiv);
 
+//`<use xlink:href="#chevron"></use>`
+var dummySVG = document.createElement('use');
+dummySVG.setAttribute('xlink:href','#chevron');
+
 //
 var dummyDivOne = document.createElement('svg');
 dummyDivOne.setAttribute('class','chevron');
-dummyDivOne.innerHTML = `<use xlink:href="#chevron"></use>`;
+dummyDivOne.append(dummySVG);
 
 //
 var ninenthDiv = document.createElement('div');
@@ -74,7 +78,15 @@ ninenthDiv.append(dummyDivOne);
 seventhDiv.appendChild(ninenthDiv);
 
 //
+var anchorDummyOne = document.createElement('a');
+anchorDummyOne.setAttribute('class','CtaLink');
+anchorDummyOne.setAttribute('href',fifthContentLink);
+anchorDummyOne.setAttribute('data-cta-priority','primary');
+anchorDummyOne.innerText = fifthContent;
+
+//
 var tenthDiv = document.createElement('div');
 tenthDiv.setAttribute('class','IconPromo-description');
-tenthDiv.innerHTML = fourthContent + `<br>` + fifthContent;
+tenthDiv.innerHTML = fourthContent + `<br>`;
+tenthDiv.append(anchorDummyOne);
 seventhDiv.appendChild(tenthDiv);
