@@ -1,23 +1,23 @@
 //getting main DIV
 
-var mainDiv = document.querySelector();
-
-//getting content from that div
-
- 
+var mainDiv = document.querySelector('.customerevents-wrapper');
+document.querySelector('.customerevents-wrapper > .customerevents.block').style.display = 'none';
 
 //changin mainDiv className
-
 mainDiv.setAttribute('class','Page-below');
 
- 
+//getting content from that div
+var firstContent = document.querySelector('.Page-below > .customerevents.block > div > div > h2').innerText ;
+var secondContentLink = document.querySelector('.Page-below > .customerevents.block > div > div > ul > li > a').attributes[0].value;
+var thirdContent = document.querySelector('.Page-below > .customerevents.block > div > div > ul > li > a').innerText;
+var fourthContent = document.querySelector('.Page-below > .customerevents.block > div > div > ul > li > a').nextSibling;
+var lastOneContentLink = document.querySelectorAll('.Page-below > .customerevents.block > div > div > ul > li > a')[1].attributes[0].value;
+var lastOneContent = document.querySelectorAll('.Page-below > .customerevents.block > div > div > ul > li > a')[1].innerText;
+var lastTwoContent = document.querySelectorAll('.Page-below > .customerevents.block > div > div > ul > li > a')[1].nextSibling;
 
 //
-
 var firstDiv = document.createElement('div');
-
 firstDiv.setAttribute('class','NetworkStatus');
-
 mainDiv.appendChild(firstDiv);
 
  
@@ -28,7 +28,7 @@ var firstHeader = document.createElement('h2');
 
 firstHeader.setAttribute('class','NetworkStatus-title');
 
-firstHeader.appendChild(document.querySelector());
+firstHeader.append(firstContent);
 
 firstDiv.appendChild(firstHeader);
 
@@ -62,9 +62,9 @@ var firstAnchor = document.createElement('a');
 
 firstAnchor.setAttribute('class','NetworkStatus-heading');
 
-firstAnchor.setAttribute('href',document.querySelector());
+firstAnchor.setAttribute('href',secondContentLink);
 
-firstAnchor.appendChild(document.querySelector());
+firstAnchor.append(thirdContent);
 
 thirdDiv.appendChild(firstAnchor);
 
@@ -80,15 +80,15 @@ thirdDiv.appendChild(fourthDiv);
 
  
 
-//Excellent
+// //Excellent
 
-var firstSpan = document.createElement('span');
+// var firstSpan = document.createElement('span');
 
-firstSpan.setAttribute('class','NetworkStatusIndicator-excellent');
+// firstSpan.setAttribute('class','NetworkStatusIndicator-excellent');
 
-firstSpan.appendChild(document.querySelector());
+// firstSpan.append(document.querySelector());
 
-fourthDiv.appendChild(firstSpan);
+// fourthDiv.appendChild(firstSpan);
 
  
 
@@ -100,57 +100,57 @@ secondSpan.setAttribute('class','NetworkStatusIndicator-veryGood');
 
 secondSpan.setAttribute('data-active','');
 
-secondSpan.appendChild(document.querySelector());
+secondSpan.append(fourthContent);
 
 fourthDiv.appendChild(secondSpan);
 
  
 
-//Good
+// //Good
 
-var thirdSpan = document.createElement('span');
+// var thirdSpan = document.createElement('span');
 
-thirdSpan.setAttribute('class','NetworkStatusIndicator-good');
+// thirdSpan.setAttribute('class','NetworkStatusIndicator-good');
 
-thirdSpan.appendChild(document.querySelector());
+// thirdSpan.appendChild(document.querySelector());
 
-fourthDiv.appendChild(thirdSpan);
-
- 
-
-//Fair
-
-var fourthSpan = document.createElement('span');
-
-fourthSpan.setAttribute('class','NetworkStatusIndicator-fair');
-
-fourthSpan.appendChild(document.querySelector());
-
-fourthDiv.appendChild(fourthSpan);
+// fourthDiv.appendChild(thirdSpan);
 
  
 
-//Low
+// //Fair
 
-var fifthSpan = document.createElement('span');
+// var fourthSpan = document.createElement('span');
 
-fifthSpan.setAttribute('class','NetworkStatusIndicator-low');
+// fourthSpan.setAttribute('class','NetworkStatusIndicator-fair');
 
-fifthSpan.appendChild(document.querySelector());
+// fourthSpan.appendChild(document.querySelector());
 
-fourthDiv.appendChild(fifthSpan);
+// fourthDiv.appendChild(fourthSpan);
 
  
 
-//No Connection
+// //Low
 
-var sixthSpan = document.createElement('span');
+// var fifthSpan = document.createElement('span');
 
-sixthSpan.setAttribute('class','NetworkStatusIndicator-noConnection');
+// fifthSpan.setAttribute('class','NetworkStatusIndicator-low');
 
-sixthSpan.appendChild(document.querySelector());
+// fifthSpan.appendChild(document.querySelector());
 
-fourthDiv.appendChild(sixthSpan);
+// fourthDiv.appendChild(fifthSpan);
+
+ 
+
+// //No Connection
+
+// var sixthSpan = document.createElement('span');
+
+// sixthSpan.setAttribute('class','NetworkStatusIndicator-noConnection');
+
+// sixthSpan.appendChild(document.querySelector());
+
+// fourthDiv.appendChild(sixthSpan);
 
  
 
@@ -188,11 +188,11 @@ var firstOneAnchor = document.createElement('a');
 
 firstOneAnchor.setAttribute('class','NetworkStatus-heading');
 
-firstOneAnchor.setAttribute('href',document.querySelector());
+firstOneAnchor.setAttribute('href',lastOneContentLink);
 
-firstOneAnchor.appendChild(document.querySelector());
+firstOneAnchor.append(lastOneContent);
 
-thirdDiv.appendChild(firstOneAnchor);
+thirdOneDiv.appendChild(firstOneAnchor);
 
  
 
@@ -206,15 +206,15 @@ thirdOneDiv.appendChild(fourthOneDiv);
 
  
 
-//Excellent
+// //Excellent
 
-var firstOneSpan = document.createElement('span');
+// var firstOneSpan = document.createElement('span');
 
-firstOneSpan.setAttribute('class','NetworkStatusIndicator-excellent');
+// firstOneSpan.setAttribute('class','NetworkStatusIndicator-excellent');
 
-firstOneSpan.appendChild(document.querySelector());
+// firstOneSpan.appendChild(document.querySelector());
 
-fourthOneDiv.appendChild(firstOneSpan);
+// fourthOneDiv.appendChild(firstOneSpan);
 
  
 
@@ -226,54 +226,54 @@ secondOneSpan.setAttribute('class','NetworkStatusIndicator-veryGood');
 
 secondOneSpan.setAttribute('data-active','');
 
-secondOneSpan.appendChild(document.querySelector());
+secondOneSpan.append(lastTwoContent);
 
 fourthOneDiv.appendChild(secondOneSpan);
 
  
 
-//Good
+// //Good
 
-var thirdOneSpan = document.createElement('span');
+// var thirdOneSpan = document.createElement('span');
 
-thirdOneSpan.setAttribute('class','NetworkStatusIndicator-good');
+// thirdOneSpan.setAttribute('class','NetworkStatusIndicator-good');
 
-thirdOneSpan.appendChild(document.querySelector());
+// thirdOneSpan.appendChild(document.querySelector());
 
-fourthOneDiv.appendChild(thirdOneSpan);
-
- 
-
-//Fair
-
-var fourthOneSpan = document.createElement('span');
-
-fourthOneSpan.setAttribute('class','NetworkStatusIndicator-fair');
-
-fourthOneSpan.appendChild(document.querySelector());
-
-fourthOneDiv.appendChild(fourthOneSpan);
+// fourthOneDiv.appendChild(thirdOneSpan);
 
  
 
-//Low
+// //Fair
 
-var fifthOneSpan = document.createElement('span');
+// var fourthOneSpan = document.createElement('span');
 
-fifthOneSpan.setAttribute('class','NetworkStatusIndicator-low');
+// fourthOneSpan.setAttribute('class','NetworkStatusIndicator-fair');
 
-fifthOneSpan.appendChild(document.querySelector());
+// fourthOneSpan.appendChild(document.querySelector());
 
-fourthOneDiv.appendChild(fifthOneSpan);
+// fourthOneDiv.appendChild(fourthOneSpan);
 
  
 
-//No Connection
+// //Low
 
-var sixthOneSpan = document.createElement('span');
+// var fifthOneSpan = document.createElement('span');
 
-sixthOneSpan.setAttribute('class','NetworkStatusIndicator-noConnection');
+// fifthOneSpan.setAttribute('class','NetworkStatusIndicator-low');
 
-sixthOneSpan.appendChild(document.querySelector());
+// fifthOneSpan.appendChild(document.querySelector());
 
-fourthOneDiv.appendChild(sixthOneSpan);
+// fourthOneDiv.appendChild(fifthOneSpan);
+
+ 
+
+// //No Connection
+
+// var sixthOneSpan = document.createElement('span');
+
+// sixthOneSpan.setAttribute('class','NetworkStatusIndicator-noConnection');
+
+// sixthOneSpan.appendChild(document.querySelector());
+
+// fourthOneDiv.appendChild(sixthOneSpan);

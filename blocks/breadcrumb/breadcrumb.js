@@ -22,11 +22,15 @@ firstAnchor.setAttribute('href',firstContentlink)
 firstAnchor.append(firstContent);
 firstDiv.appendChild(firstAnchor);
 
+//`<use xlink:href="#chevron"></use>`
+var dummySVG = document.createElement('use');
+dummySVG.setAttribute('xlink:href','#chevron');
+
 //
 var firstSVG = document.createElement('svg');
 firstSVG.setAttribute('class','chevron');
 firstSVG.setAttribute('data-inactive','');
-firstSVG.innerHTML = `<use xlink:href="#chevron"></use>`;
+firstSVG.append(dummySVG);
 firstDiv.appendChild(firstSVG);
 
 //
