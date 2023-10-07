@@ -110,4 +110,294 @@ export default async function decorate(block) {
     block.append(navWrapper);
   }
   document.querySelector('.header-wrapper > .header.block').style.display = 'none';
+
+  //hatNavigation starts--
+  //
+
+  var mainDiv = document.querySelector(".Page-signInOverlay");
+
+  document.querySelector(
+
+    ". Page-signInOverlay> .Page-signInOverlay.block"
+
+  ).style.display = "none";
+
+ 
+
+ 
+
+  var firstContent = document.querySelector(
+
+    ". Page-signInOverlay> .Page-signInOverlay.block > div > div > .Page-signInOverlay > div > div > ul > li > a"
+
+  ).innerText;
+
+  var firstAnchorContentlink = document.querySelector(
+
+    ".Page-signInOverlay > .Page-signInOverlay.block > div > div > .Page-signInOverlay > div > div > ul > li > a"
+
+  ).attributes[0].value;
+
+ 
+
+  mainDiv.style.backgroundColor = "#434343";
+
+  //
+
+  var firstDiv = document.createElement("div");
+
+  firstDiv.setAttribute("class", "Page-signInOverlay");
+
+  mainDiv.appendChild(firstDiv);
+
+  //
+
+  var secondDiv = document.createElement("div");
+
+  secondDiv.setAttribute("class", "Page-signInOverlay-container");
+
+  secondDiv.appendChild(secondDiv);
+
+ 
+
+  var a = document.createElement("a");
+
+  a.setAttribute("class", "Page-signInOverlay-close");
+
+  a.setAttribute("href", Page - signInOverlay - close);
+
+  a.innerHTML = firstContent;
+
+ 
+
+  var svg = document.createElement("svg");
+
+  svg.setAttribute("href", "close-x");
+
+  svg.appendChild(svg);
+
+  //
+
+  var secondDiv = document.createElement("div");
+
+  secondDiv.setAttribute("class", "Page-signInOverlay-container");
+
+  secondDiv.appendChild(secondDiv);
+
+  //
+
+  var secondDiv = document.createElement("div");
+
+ 
+
+  thirdDiv.setAttribute("class", "Page-signInOverlay-header");
+
+ 
+
+  thirdDiv.appendChild(thirdDiv);
+
+  //
+
+  var a = document.createElement("a");
+
+  a.setAttribute("href", "Page-signInOverlay-close");
+
+  a.appendChild(a);
+
+  //
+
+  var svg = document.createElement("svg");
+
+  svg.setAttribute("xlink", "close-x");
+
+  svg.appendChild(svg);
+
+ 
+
+  var spanclass = document.createElement("spanclass");
+
+  spanclass.setAttribute("xlink", "close-x");
+
+  spanclass.appendChild(spanclass)// Close dialog;
+
+ 
+
+  //
+
+  var fourthDiv = document.createElement("fourthDiv");
+
+  ourthDiv.setAttribute("class", "Page-signInOverlay-content");
+
+  fourthDiv.appendChild(fourthDiv);
+
+  //
+
+  var fifthDiv = document.createElement("a");
+
+  fifthDiv.setAttribute("class", "HatNavigation");
+
+  fifthDiv.appendChild(fifthDiv);
+
+ 
+
+  var ul = document.createElement("ul");
+
+  ul.setAttribute("class", "HatNavigation-items");
+
+  ul.appendChild(ul);
+
+ 
+
+  var li = document.createElement("li");
+
+  li.setAttribute("class", "HatNavigation-items-item");
+
+  li.setAttribute("class", "data-active");
+
+  li.appendChild(li);
+
+ 
+
+  var sixDiv = document.createElement("div");
+
+  sixDiv.setAttribute("class", "NavigationLink-wrapper");
+
+  sixDiv.appendChild(sixDiv);
+
+ 
+
+  var a = document.createElement("a");
+
+  a.setAttribute("href", "NavigationLink"); //Personal
+
+  a.appendChild(a);
+
+ 
+
+  var sevenDiv = document.createElement("div");
+
+  sevenDiv.setAttribute("class", "NavigationLink-more");
+
+  sevenDiv.appendChild(sevenDiv);
+
+ 
+
+  var svg = document.createElement("svg");
+
+  svg.setAttribute("href", "chevron");
+
+  svg.appendChild(svg);
+
+ 
+
+  var li = document.createElement("li");
+
+  li.setAttribute("class", "HatNavigation-items-item");
+
+  li.appendChild(li);
+
+ 
+
+  var eightDiv = document.createElement("div");
+
+  eightDiv.setAttribute("class", "NavigationLink-wrapper");
+
+  eightDiv.appendChild(eightDiv);
+
+ 
+
+  var a = document.createElement("a");
+
+  a.setAttribute("href", "NavigationLink"); //Bussiness
+
+  a.appendChild(a);
+
+ 
+
+  var nineDiv = document.createElement("div");
+
+  nineDiv.setAttribute("class", "NavigationLink-more");
+
+  nineDiv.appendChild(nineDiv);
+
+ 
+
+  var svg = document.createElement("svg");
+
+  svg.setAttribute("href", "chevron");
+
+  svg.appendChild(svg);
+
+ 
+
+  var li = document.createElement("li");
+
+  li.setAttribute("class", "HatNavigation-items-item");
+
+  li.appendChild(li);
+
+ 
+
+  var tenthDiv = document.createElement("div");
+
+  tenthDiv.setAttribute("class", "NavigationLink-wrapper");
+
+  tenthDiv.appendChild(tenthDiv);
+
+ 
+
+  var a = document.createElement("a");
+
+  a.setAttribute("href", "NavigationLink"); //Why Choose Us
+
+  a.appendChild(a);
+
+ 
+
+  var eDiv = document.createElement("div");
+
+  eDiv.setAttribute("class", "NavigationLink-more");
+
+  eDiv.appendChild(eDiv);
+
+ 
+
+  var svg = document.createElement("svg");
+
+  svg.setAttribute("href", "chevron");
+
+  svg.appendChild(svg);
+
+ 
+
+  var eeDiv = document.createElement("div");
+
+  eeDiv.setAttribute("class", "NavigationLink-wrapper");
+
+  eeDiv.appendChild(eeDiv);
+
+ 
+
+  var a = document.createElement("a");
+
+  a.setAttribute("href", "NavigationLink");// Infrastructure Partners
+
+  a.appendChild(a);
+
+ 
+
+  var nDiv = document.createElement("div");
+
+  nDiv.setAttribute("class", "NavigationLink-more");
+
+  nDiv.appendChild(nDiv);
+
+ 
+
+  var svg = document.createElement("svg");
+
+  svg.setAttribute("href", "chevron");
+
+  svg.appendChild(svg);
+  //hatNavigation ends ---
 }
