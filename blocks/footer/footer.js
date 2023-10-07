@@ -42,7 +42,7 @@ export default async function decorate(block) {
 
 (function () {
     let desc = {}
-    let targetELEMENT = document.querySelector("footer")
+    let targetELEMENT = document.querySelector(".footer-wrapper")
     targetELEMENT.setAttribute('class','Page-footer')
 
 
