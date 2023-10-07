@@ -46,7 +46,87 @@ export default async function decorate(block) {
 
   }
 
-  var mainDiv = document.querySelector('footer');
+(function () {
+    let desc = {}
+    let targetELEMENT = document.querySelector("footer")
+    targetELEMENT.setAttribute('class','Page-footer')
+
+
+    let newELEMENT = (desc) => {
+        return `
+        <div class="Page-footer-body">
+            
+        <div class="Page-footer-navigation">
+            <nav class="FooterNavigation">
+
+<ul class="FooterNavigation-items">
+    
+        <li class="FooterNavigation-items-item">
+            <ps-toggler data-toggle="footer-item" data-has-items="" class="FooterNavigationItem">
+
+<div class="FooterNavigationItem-heading" data-toggle-trigger="footer-item" data-has-items="">
+    
+        <a class="FooterNavigationItem-text" href="${desc.aboutDataLink }">${desc.aboutData}          
+        </a>
+    
+    <svg class="chevron"><use xlink:href="#chevron"></use></svg>
+</div>
+
+
+
+<ul class="FooterNavigationItem-items" data-toggle-expandable="footer-item">
+    
+        <li class="FooterNavigationItem-items-item"><div class="NavigationLink-wrapper">
+<a class="NavigationLink" hhref="${desc.corporateResponseLink}">${desc.corporateResponseData}</a>
+<div class="NavigationLink-more" data-no-children="">
+
+    <svg class="chevron"><use xlink:href="#chevron"></use>\</svg>
+
+</div>
+
+</div>
+</li>
+    
+        <li class="FooterNavigationItem-items-item"><div class="NavigationLink-wrapper">
+<a class="NavigationLink" href="${desc.executiveLink}">${desc.executiveData} </a>
+<div class="NavigationLink-more" data-no-children="">
+
+    <svg class="chevron"><use xlink:href="#chevron"></use>\</svg>
+
+</div>
+
+</div>
+</li>
+    
+        <li class="FooterNavigationItem-items-item"><div class="NavigationLink-wrapper">
+<a class="NavigationLink" href="${desc.careersLink}">${desc.careersData}</a>
+<div class="NavigationLink-more" data-no-children="">
+
+    <svg class="chevron"><use xlink:href="#chevron"></use>\</svg>
+
+</div>
+
+</div>
+</li>
+    
+        <li class="FooterNavigationItem-items-item"><div class="NavigationLink-wrapper">
+<a class="NavigationLink" href="${desc.legalDataLink}">${desc.legalData}</a>
+<div class="NavigationLink-more" data-no-children="">
+
+    <svg class="chevron"><use xlink:href="#chevron"></use>\</svg>
+
+</div>
+
+</div>
+</li>
+    
+        <li class="FooterNavigationItem-items-item"><div class="NavigationLink-wrapper">
+<a class="NavigationLink" href="${desc.foundationLink}">${desc.foundationData}</a>
+<div class="NavigationLink-more" data-no-children="">
+
+    <svg class="chevron"><use xlink:href="#chevron"></use>\</svg>
+
+</div>
 
  
 
@@ -116,176 +196,337 @@ var nav = document.createElement('nav');
 
 nav.setAttribute('class','FooterNavigation');
 
- 
 
-ffDiv.appendChild(nav);
+</div>
+</li>
+    
+        <li class="FooterNavigationItem-items-item"><div class="NavigationLink-wrapper">
+<a class="NavigationLink" href="${desc.goodDataLink}">${desc.goodData}</a>
+<div class="NavigationLink-more" data-no-children="">
 
- 
+    <svg class="chevron"><use xlink:href="#chevron"></use>\</svg>
 
- 
+</div>
 
- 
+</div>
+</li>
+    
+</ul>
+
+</ps-toggler>
+        </li>
+    
+        <li class="FooterNavigation-items-item">
+            <ps-toggler data-toggle="footer-item" data-has-items="" class="FooterNavigationItem">
 
-var ul = document.createElement('ul');
+<div class="FooterNavigationItem-heading" data-toggle-trigger="footer-item" data-has-items="">
+    
+        <a class="FooterNavigationItem-text" hhref="${desc.buyingOLLink}">${desc.buyingOLData} 
+            
+        </a>
+    
+    <svg class="chevron"><use xlink:href="#chevron"></use></svg>
+</div>
 
- 
 
-ul.setAttribute('class','FooterNavigation-items');
 
- 
+<ul class="FooterNavigationItem-items" data-toggle-expandable="footer-item">
+    
+        <li class="FooterNavigationItem-items-item"><div class="NavigationLink-wrapper">
+<a class="NavigationLink" href="${desc.mobileDataLink}">${desc.mobileData}</a>
+<div class="NavigationLink-more" data-no-children="">
 
-nav.appendChild(ul);
+    <svg class="chevron"><use xlink:href="#chevron"></use>\</svg>
 
- 
+</div>
 
- 
+</div>
+</li>
+    
+        <li class="FooterNavigationItem-items-item"><div class="NavigationLink-wrapper">
+<a class="NavigationLink" href="${desc.browseDataLink}">${desc.browseData}</a>
+<div class="NavigationLink-more" data-no-children="">
 
- 
+    <svg class="chevron"><use xlink:href="#chevron"></use>\</svg>
 
-var li = document.createElement('li');
+</div>
 
- 
+</div>
+</li>    
+</ul>
 
-li.setAttribute('class','FooterNavigation-items-item');
+</ps-toggler>
+        </li>
+    
+        <li class="FooterNavigation-items-item">
+            <ps-toggler data-toggle="footer-item" data-has-items="" class="FooterNavigationItem">
 
- 
+<div class="FooterNavigationItem-heading" data-toggle-trigger="footer-item" data-has-items="">
+    
+        <a class="FooterNavigationItem-text" href="${desc.popularDataLink}">${desc.popularData}
+            
+        </a>
+    
+    <svg class="chevron"><use xlink:href="#chevron"></use></svg>
+</div>
+
+
 
-ul.appendChild(li);
+<ul class="FooterNavigationItem-items" data-toggle-expandable="footer-item">
+    
+        <li class="FooterNavigationItem-items-item"><div class="NavigationLink-wrapper">
+<a class="NavigationLink" href="${desc.iphoneproDataLink}">${desc.iphoneproData}</a>
+<div class="NavigationLink-more" data-no-children="">
+
+    <svg class="chevron"><use xlink:href="#chevron"></use>\</svg>
 
- 
+</div>
+
+</div>
+</li>
+    
+        <li class="FooterNavigationItem-items-item"><div class="NavigationLink-wrapper">
+<a class="NavigationLink" href="${desc.iphonepromaxDataLink}">${desc.iphonepromaxData}</a>
+<div class="NavigationLink-more" data-no-children="">
+
+    <svg class="chevron"><use xlink:href="#chevron"></use>\</svg>
+
+</div>
 
-var ps = document.createElement('ps-toggler');
-
-ps.setAttribute('class','FooterNavigationItem');
-
-ps.setAttribute('data-toggle','footer-item');
-
-ps.setAttribute('data-has-items','');
-
-li.appendChild(ps);
-
- 
-
- 
-
-var lidiv = document.createElement('div');
-
- 
-
-lidiv.setAttribute('class','FooterNavigationItem-heading');
-
-lidiv.setAttribute('data-toggle-trigger','footer-item');
-
-lidiv.setAttribute('data-has-items','')
-
-ps.appendChild(lidiv);
-
- 
-
- 
-
- 
-
-var a = document.createElement('a');
-
- 
-
-a.setAttribute('class','FooterNavigationItem-text');
-
-a.setAttribute('href',firstAnchorContentlink);
-
-a.innerHTML = firstContent;
-
-lidiv.appendChild(a);
-
- 
-
- 
-
- 
-
-var lisvg = document.createElement('svg');
-
- 
-
-lisvg.setAttribute('class','chevron');
-
- 
-
-lidiv.appendChild(lisvg);
-
- 
-
- 
-
- 
-
-var fourthDiv = document.createElement('div');
-
- 
-
-fourthDiv.setAttribute('class','FooterNavigationItem-heading');
-
- 
-
-ps.appendChild(fourthDiv);
-
- 
-
- 
-
- 
-
-var a2 = document.createElement('a');
-
- 
-
-a2.setAttribute('class','FooterNavigationItem-text');
-
- 
-
-ps.appendChild(a2);
-
- 
-
- 
-
- 
-
-//
-
- 
-
- 
-
- 
-
-var LastDiv = document.createElement('div');
-
- 
-
-LastDiv.setAttribute('class','IconPromo-description');
-
- 
-
-LastDiv.innerHTML = nav + `<br>` + Content;
-
- 
-
-fourthDiv.appendChild(LastDiv);
-
-//
-
- 
-
-var fsDiv = document.createElement('div');
-
- 
-
-fsDiv.setAttribute('class','Page-footer-floor');
-
- 
-
-firstDiv.appendChild(fsDiv);
+</div>
+</li>
+    
+    
+</ul>
+
+</ps-toggler>
+        </li>
+    
+        <li class="FooterNavigation-items-item">
+            <ps-toggler data-toggle="footer-item" data-has-items="" class="FooterNavigationItem">
+
+<div class="FooterNavigationItem-heading" data-toggle-trigger="footer-item" data-has-items="">
+    
+        <a class="FooterNavigationItem-text" ${desc.contactDataLink}/">${desc.contactData}
+            
+        </a>
+    
+    <svg class="chevron"><use xlink:href="#chevron"></use></svg>
+</div>
+
+
+
+<ul class="FooterNavigationItem-items" data-toggle-expandable="footer-item">
+    
+        <li class="FooterNavigationItem-items-item"><div class="NavigationLink-wrapper">
+<a class="NavigationLink" href="${desc.chatLink}">${desc.chatData}</a>
+<div class="NavigationLink-more" data-no-children="">
+
+    <svg class="chevron"><use xlink:href="#chevron"></use>\</svg>
+
+</div>
+
+</div>
+</li>
+    
+        <li class="FooterNavigationItem-items-item"><div class="NavigationLink-wrapper">
+<a class="NavigationLink" href="${desc.feedbackLink}">${desc.feedbackData}</a>
+<div class="NavigationLink-more" data-no-children="">
+
+    <svg class="chevron"><use xlink:href="#chevron"></use>\</svg>
+
+</div>
+
+</div>
+</li>
+    
+        <li class="FooterNavigationItem-items-item"><div class="NavigationLink-wrapper">
+<a class="NavigationLink" href="${desc.storeLink}">${desc.storeData}</a>
+<div class="NavigationLink-more" data-no-children="">
+
+    <svg class="chevron"><use xlink:href="#chevron"></use>\</svg>
+
+</div>
+
+</div>
+</li>
+    
+</ul>
+
+</ps-toggler>
+        </li>
+    
+        <li class="FooterNavigation-items-item">
+            <ps-toggler class="FooterNavigationItem">
+
+<div class="FooterNavigationItem-heading">
+    
+        <a class="FooterNavigationItem-text" href="${desc.businessLink}">${desc.businessData}
+            
+                <svg class="arrow-right"><use xlink:href="#arrow-right"></use></svg>
+            
+        </a>
+    
+    <svg class="chevron"><use xlink:href="#chevron"></use></svg>
+</div>
+
+
+
+</ps-toggler>
+        </li>
+    
+        <li class="FooterNavigation-items-item">
+            <ps-toggler class="FooterNavigationItem">
+
+<div class="FooterNavigationItem-heading">
+    
+        <a class="FooterNavigationItem-text" href="${desc.chooseDataLink}">${desc.chooseData}
+            
+                <svg class="arrow-right"><use xlink:href="#arrow-right"></use></svg>
+            
+        </a>
+    
+    <svg class="chevron"><use xlink:href="#chevron"></use></svg>
+</div>
+
+
+
+</ps-toggler>
+        </li>
+    
+</ul>
+
+</nav>
+        </div>            
+
+            <div class="Page-footer-floor">
+                
+                    <div class="Page-footer-floorLinks">
+                        
+                            <div class="Page-footer-floorLinks-link">
+                                <div class="NavigationLink-wrapper">
+    <a class="NavigationLink" href="${desc.termsLink}">${desc.termsData}</a>
+    <div class="NavigationLink-more" data-no-children="">
+        
+            <svg class="chevron"><use xlink:href="#chevron"></use>\</svg>
+        
+    </div>
+    
+</div>
+
+                            </div>
+                        
+                            <div class="Page-footer-floorLinks-link">
+                                <div class="NavigationLink-wrapper">
+    <a class="NavigationLink" href="${desc.privacyLink}">${desc.privacyData}</a>
+    <div class="NavigationLink-more" data-no-children="">
+        
+            <svg class="chevron"><use xlink:href="#chevron"></use>\</svg>
+        
+    </div>
+    
+</div>
+
+                            </div>
+                        
+                            <div class="Page-footer-floorLinks-link">
+                                <div class="NavigationLink-wrapper">
+    <a class="NavigationLink" href="${desc.sitemapLink}">${desc.sitemapData}</a>
+    <div class="NavigationLink-more" data-no-children="">
+        
+            <svg class="chevron"><use xlink:href="#chevron"></use>\</svg>
+        
+    </div>
+    
+</div>
+
+                            </div>
+                        
+                    </div>
+                
+                
+                    <div class="Page-footer-disclaimer">${desc.cpyrightData}</div>
+                
+            </div>
+        </div>
+                `
+    }
+
+    //footer actual data fetching
+//document.querySelectorAll('.Page-footer > .footer.block > div > div > .footer > div > div > ul > li')
+    desc.aboutDataLink = document.querySelectorAll('.Page-footer > .footer.block > div > div > .footer > div > div > ul > li > a')[0].attributes[0].value;
+    desc.aboutData = document.querySelectorAll('.Page-footer > .footer.block > div > div > .footer > div > div > ul > li > a')[0].innerText; 
+
+    desc.corporateResponseLink = document.querySelectorAll('.Page-footer > .footer.block > div > div > .footer > div > div > ul > li > a')[1].attributes[0].value;
+    desc.corporateResponseData = document.querySelectorAll('.Page-footer > .footer.block > div > div > .footer > div > div > ul > li > a')[1].innerText; 
+
+    desc.executiveLink = document.querySelectorAll('.Page-footer > .footer.block > div > div > .footer > div > div > ul > li > a')[2].attributes[0].value;
+    desc.executiveData = document.querySelectorAll('.Page-footer > .footer.block > div > div > .footer > div > div > ul > li > a')[2].innerText; 
+
+    desc.careersLink = document.querySelectorAll('.Page-footer > .footer.block > div > div > .footer > div > div > ul > li > a')[3].attributes[0].value;
+    desc.careersData = document.querySelectorAll('.Page-footer > .footer.block > div > div > .footer > div > div > ul > li > a')[3].innerText; 
+
+    desc.legalDataLink = document.querySelectorAll('.Page-footer > .footer.block > div > div > .footer > div > div > ul > li > a')[4].attributes[0].value;
+    desc.legalData = document.querySelectorAll('.Page-footer > .footer.block > div > div > .footer > div > div > ul > li > a')[4].innerText; 
+
+    desc.foundationLink = document.querySelectorAll('.Page-footer > .footer.block > div > div > .footer > div > div > ul > li > a')[5].attributes[0].value;
+    desc.foundationData = document.querySelectorAll('.Page-footer > .footer.block > div > div > .footer > div > div > ul > li > a')[5].innerText; 
+
+    desc.goodDataLink = document.querySelectorAll('.Page-footer > .footer.block > div > div > .footer > div > div > ul > li > a')[6].attributes[0].value;
+    desc.goodData = document.querySelectorAll('.Page-footer > .footer.block > div > div > .footer > div > div > ul > li > a')[6].innerText; 
+
+    desc.buyingOLLink = document.querySelectorAll('.Page-footer > .footer.block > div > div > .footer > div > div > ul > li > a')[7].attributes[0].value;
+    desc.buyingOLData = document.querySelectorAll('.Page-footer > .footer.block > div > div > .footer > div > div > ul > li > a')[7].innerText; 
+
+    desc.mobileDataLink = document.querySelectorAll('.Page-footer > .footer.block > div > div > .footer > div > div > ul > li > a')[8].attributes[0].value;
+    desc.mobileData = document.querySelectorAll('.Page-footer > .footer.block > div > div > .footer > div > div > ul > li > a')[8].innerText; 
+
+    desc.browseDataLink = document.querySelectorAll('.Page-footer > .footer.block > div > div > .footer > div > div > ul > li > a')[9].attributes[0].value;
+    desc.browseData = document.querySelectorAll('.Page-footer > .footer.block > div > div > .footer > div > div > ul > li > a')[9].innerText; 
+
+    desc.popularDataLink = document.querySelectorAll('.Page-footer > .footer.block > div > div > .footer > div > div > ul > li > a')[10].attributes[0].value;
+    desc.popularData = document.querySelectorAll('.Page-footer > .footer.block > div > div > .footer > div > div > ul > li > a')[10].innerText; 
+
+    desc.iphoneproDataLink = document.querySelectorAll('.Page-footer > .footer.block > div > div > .footer > div > div > ul > li > a')[11].attributes[0].value;
+    desc.iphoneproData = document.querySelectorAll('.Page-footer > .footer.block > div > div > .footer > div > div > ul > li > a')[11].innerText; 
+
+    desc.iphonepromaxDataLink = document.querySelectorAll('.Page-footer > .footer.block > div > div > .footer > div > div > ul > li > a')[12].attributes[0].value;
+    desc.iphonepromaxData = document.querySelectorAll('.Page-footer > .footer.block > div > div > .footer > div > div > ul > li > a')[12].innerText; 
+
+    desc.contactDataLink = document.querySelectorAll('.Page-footer > .footer.block > div > div > .footer > div > div > ul > li > a')[13].attributes[0].value;
+    desc.contactData = document.querySelectorAll('.Page-footer > .footer.block > div > div > .footer > div > div > ul > li > a')[13].innerText; 
+
+    desc.chatLink = document.querySelectorAll('.Page-footer > .footer.block > div > div > .footer > div > div > ul > li > a')[14].attributes[0].value;
+    desc.chatData = document.querySelectorAll('.Page-footer > .footer.block > div > div > .footer > div > div > ul > li > a')[14].innerText; 
+
+    desc.feedbackLink = document.querySelectorAll('.Page-footer > .footer.block > div > div > .footer > div > div > ul > li > a')[15].attributes[0].value;
+    desc.feedbackData = document.querySelectorAll('.Page-footer > .footer.block > div > div > .footer > div > div > ul > li > a')[15].innerText; 
+
+    desc.storeLink = document.querySelectorAll('.Page-footer > .footer.block > div > div > .footer > div > div > ul > li > a')[16].attributes[0].value;
+    desc.storeData = document.querySelectorAll('.Page-footer > .footer.block > div > div > .footer > div > div > ul > li > a')[16].innerText; 
+
+    desc.businessLink = document.querySelectorAll('.Page-footer > .footer.block > div > div > .footer > div > div > ul > li > a')[17].attributes[0].value;
+    desc.businessData = document.querySelectorAll('.Page-footer > .footer.block > div > div > .footer > div > div > ul > li > a')[17].innerText; 
+    
+    desc.chooseDataLink = document.querySelectorAll('.Page-footer > .footer.block > div > div > .footer > div > div > ul > li > a')[18].attributes[0].value;
+    desc.chooseData = document.querySelectorAll('.Page-footer > .footer.block > div > div > .footer > div > div > ul > li > a')[18].innerText; 
+
+    //footer-floor data fetching
+   desc.termsLink = document.querySelectorAll('.Page-footer > .footer.block > div > div > .footer-bottom > div > div > ul > li > a')[0].attributes[0].value;
+   desc.termsData = document.querySelectorAll('.Page-footer > .footer.block > div > div > .footer-bottom > div > div > ul > li > a')[0].innerText;
+
+   desc.privacyLink = document.querySelectorAll('.Page-footer > .footer.block > div > div > .footer-bottom > div > div > ul > li > a')[1].attributes[0].value;
+   desc.privacyData = document.querySelectorAll('.Page-footer > .footer.block > div > div > .footer-bottom > div > div > ul > li > a')[1].innerText;
+
+   desc.sitemapLink = document.querySelectorAll('.Page-footer > .footer.block > div > div > .footer-bottom > div > div > ul > li > a')[2].attributes[0].value;
+   desc.sitemapData =  document.querySelectorAll('.Page-footer > .footer.block > div > div > .footer-bottom > div > div > ul > li > a')[2].innerText;
+   
+   desc.cpyrightData = document.querySelectorAll('.Page-footer > .footer.block > div > div > .footer-bottom > div > div > ul > li')[3].innerText;
+   
+   targetELEMENT.innerHTML=newELEMENT(desc)
+})();
 
 }
+
+}
+
