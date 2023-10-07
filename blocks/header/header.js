@@ -109,8 +109,9 @@ export default async function decorate(block) {
     navWrapper.append(nav);
     block.append(navWrapper);
   }
-  document.querySelector('.header-wrapper > .header.block').style.display = 'none';
-
+  //document.querySelector('.header-wrapper > .header.block').style.display = 'none';
+document.querySelector('.headernavigation').style.display = 'none';
+  document.querySelector('.signinoverlay').style.display = 'none';
   //hatNavigation starts--
   //
 
