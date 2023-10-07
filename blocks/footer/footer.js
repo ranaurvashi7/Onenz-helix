@@ -51,6 +51,7 @@ export default async function decorate(block) {
     let targetELEMENT = document.querySelector("footer")
     targetELEMENT.setAttribute('class','Page-footer')
 
+
     let newELEMENT = (desc) => {
         return `
         <div class="Page-footer-body">
@@ -126,6 +127,75 @@ export default async function decorate(block) {
     <svg class="chevron"><use xlink:href="#chevron"></use>\</svg>
 
 </div>
+
+ 
+
+  //changing mainDiv className
+
+ 
+
+mainDiv.setAttribute('class','Page-footer');
+
+document.querySelector('.Page-footer > .footer.block').style.display = 'none';
+
+var firstContent =document.querySelector('.Page-footer > .footer.block > div > div > .footer > div > div > ul > li > a').innerText;
+
+var firstAnchorContentlink = document.querySelector('.Page-footer > .footer.block > div > div > .footer > div > div > ul > li > a').attributes[0].value;
+
+ 
+
+ 
+
+mainDiv.style.backgroundColor = '#323232';
+
+ 
+
+//
+
+ 
+
+var firstDiv = document.createElement('div');
+
+ 
+
+firstDiv.setAttribute('class','Page-footer-body');
+
+ 
+
+mainDiv.appendChild(firstDiv);
+
+ 
+
+ 
+
+ 
+
+//
+
+ 
+
+var ffDiv = document.createElement('div');
+
+ 
+
+ffDiv.setAttribute('class','Page-footer-navigation');
+
+ 
+
+firstDiv.appendChild(ffDiv);
+
+ 
+
+//
+
+ 
+
+var nav = document.createElement('nav');
+
+ 
+
+nav.setAttribute('class','FooterNavigation');
+
 
 </div>
 </li>
@@ -457,3 +527,6 @@ export default async function decorate(block) {
 })();
 
 }
+
+}
+
