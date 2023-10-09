@@ -1,4 +1,4 @@
-[3:19 PM] Arja Naga Sankar Srinivas Rao
+
 
 import { readBlockConfig, decorateIcons } from '../../scripts/aem.js';
 
@@ -6,19 +6,8 @@ import { readBlockConfig, decorateIcons } from '../../scripts/aem.js';
 
 /**
 
- 
-
- 
-
- 
 
  * loads and decorates the footer
-
- 
-
- 
-
- 
 
  * @param {Element} block The footer block element
 
