@@ -61,14 +61,44 @@ eigthDiv.setAttribute('class','IconPromo-icon');
 eigthDiv.append(secondContent);
 seventhDiv.appendChild(eigthDiv);
 
-//`<use xlink:href="#chevron"></use>`
-var dummySVG = document.createElement('use');
-dummySVG.setAttribute('xlink:href','#chevron');
+// //`<use xlink:href="#chevron"></use>`
+// var dummySVG = document.createElement('use');
+// dummySVG.setAttribute('xlink:href','#chevron');
+
+// //
+// var dummyDivOne = document.createElement('svg');
+// dummyDivOne.setAttribute('class','chevron');
+// dummyDivOne.append(dummySVG);
 
 //
 var dummyDivOne = document.createElement('svg');
-dummyDivOne.setAttribute('class','chevron');
-dummyDivOne.append(dummySVG);
+
+//firstSVG.setAttribute('class','chevron');
+
+dummyDivOne.classList.add('bi' ,'bi-chevron-right');
+
+dummyDivOne.setAttribute('xmlns','http://www.w3.org/2000/svg');
+
+dummyDivOne.setAttribute('width','100');
+
+dummyDivOne.setAttribute('height','100');
+
+dummyDivOne.setAttribute('viewBox','0 0 16 16');
+
+dummyDivOne.setAttribute('data-inactive','');
+
+dummyDivOne.style.marginTop = '-2px';
+
+dummyDivOne.style.height = '22px';
+
+dummyDivOne.style.width = '24px';
+
+dummyDivOne.style.color = 'var(--headerTextColor)';
+
+dummyDivOne.style.strokeWidth = '0.1px';
+
+dummyDivOne.innerHTML = `<path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"></path>`;
+
 
 //
 var ninenthDiv = document.createElement('div');
