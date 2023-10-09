@@ -108,7 +108,7 @@ export default async function decorate(block) {
     headerHTML.innerHTML+=signInOverlay(nav)
     headerHTML.innerHTML+=hatNavigation(nav)
     headerHTML.innerHTML+=headerNav(nav)
-    
+
     const navWrapper = document.createElement('div');
     navWrapper.className = 'nav-wrapper';
     navWrapper.append(nav);
@@ -663,7 +663,7 @@ export default async function decorate(block) {
 
 
 
-function signInOverlay(){
+function signInOverlay(d){
   let html = `<div class="Page-signInOverlay">
                 <div class="Page-signInOverlay-container">
                     <div class="Page-signInOverlay-header">
@@ -681,7 +681,7 @@ return html;
 }
 
 
-function hatNavigation(){
+function hatNavigation(d){
   let html = `<div class="HatNavigation">
                 <ul class="HatNavigation-items">
                     <li class="HatNavigation-items-item" data-active="">
@@ -733,7 +733,7 @@ function hatNavigation(){
 
 
 
-function headerNav(){
+function headerNav(d){
   let html = `<ps-header class="Page-header">
                 <div class="Page-header-hamburger-menu">
                   <div class="Page-header-hamburger-menu-wrapper">
