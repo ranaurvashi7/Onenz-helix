@@ -111,2319 +111,2110 @@ export default async function decorate(block) {
   }
 
   document.querySelector('.header-wrapper > .header.block').style.display = 'none';
-  (function () {
-
-    let desc = {}
-
-     let targetELEMENT = document.querySelector('.header-wrapper');  
-  
-      let newELEMENT = (desc) => {
-  
-   
-  
-          return `
-  
-  <ps-header class ="Page-header">
-  
-          <div class="Page-header-hamburger-menu">
-  
-   
-  
-          <div class="Page-header-hamburger-menu-wrapper">
-  
-  <div class="Page-header-hamburger-menu-content">
-  
-              <nav class="Navigation">
-  
-   
-  
-  <ul class="Navigation-items">
-  
-   
-  
-          <li class="Navigation-items-item">
-  
-  <div class="NavigationItem"></div>
-  
-         <a class="NavigationItem-text-link"  href="https://one.nz/mobile/"/a> ${desc.mobile}>    
-  
-          </a>
-  
-   
-  
-  </div>
-  
-   
-  
-  <div class="NavigationLink-more">
-  
-      <button arial-label="Open Sun Navigation"
-  
-   
-  
-      <svg class="chevron"><use xlink:href="#chevron"></use>\</svg>
-  
-   
-  
-  </div>
-  
-   
-  
-  </div>
-  
-   
-  
-  </li>
-  
-   
-  
-    <ul class="NavigationItem-items">
-  
-             
-  
-                 
-  
-                      <li class="NavigationItem-items-item" ><div class="NavigationLink-wrapper">
-  
-      <a class="NavigationLink" href="https://one.nz/mobile-plans/">${desc.plans}</a>
-  
-      <div class="NavigationLink-more" >
-  
-         
-  
-              <svg class="chevron"><use xlink:href="#chevron"></use>\</svg>
-  
-         
-  
-      </div>
-  
-     
-  
-        <ul class="NavigationLink-tertiary">
-  
-         
-  
-            <li class="NavigationLink-tertiary-link"><a class="TertiaryNavLink" href="https://one.nz/pay-monthly/">${desc.PayMonthly}</a>
-  
-  </li>
-  
-         
-  
-            <li class="NavigationLink-tertiary-link"><a class="TertiaryNavLink" href="https://one.nz/prepay/">${desc.Prepay}</a>
-  
-  </li>
-  
-         
-  
-            <li class="NavigationLink-tertiary-link"><a class="TertiaryNavLink" href="https://one.nz/mobile-plans/add-ons/one-upgrade/">${desc.OneUpgrade}</a>
-  
-  </li>
-  
-         
-  
-        </ul>
-  
-     
-  
-  </div>
-  
-  </li>
-  
-                 
-  
-                      <li class="NavigationItem-items-item" ><div class="NavigationLink-wrapper">
-  
-      <a class="NavigationLink" href="https://one.nz/mobile-phones/">${desc.Phones}</a>
-  
-      <div class="NavigationLink-more" >
-  
-         
-  
-              <svg class="chevron"><use xlink:href="#chevron"></use>\</svg>
-  
-         
-  
-      </div>
-  
-     
-  
-        <ul class="NavigationLink-tertiary">
-  
-         
-  
-            <li class="NavigationLink-tertiary-link"><a class="TertiaryNavLink" href="https://one.nz/iphone/">${desc.iPhone}</a>
-  
-  </li>
-  
-         
-  
-            <li class="NavigationLink-tertiary-link"><a class="TertiaryNavLink" href="https://one.nz/samsung-galaxy/">${desc.Samsunggalaxy}</a>
-  
-  </li>
-  
-         
-  
-            <li class="NavigationLink-tertiary-link"><a class="TertiaryNavLink" href="https://one.nz/oppo/">${desc.oppo}</a>
-  
-  </li>
-  
-         
-  
-            <li class="NavigationLink-tertiary-link"><a class="TertiaryNavLink" href="https://one.nz/smart/">${desc.Smart}</a>
-  
-  </li>
-  
-         
-  
-            <li class="NavigationLink-tertiary-link"><a class="TertiaryNavLink" href="https://one.nz/online-shop/mobile/product-listing/">${desc.productlisting} </a>
-  
-  </li>
-  
-         
-  
-        </ul>
-  
-     
-  
-  </div>
-  
-  </li>
-  
-                 
-  
-                      <li class="NavigationItem-items-item" ><div class="NavigationLink-wrapper">
-  
-      <a class="NavigationLink" href="https://one.nz/specials-promos/">${desc.latestDeals}</a>
-  
-      <div class="NavigationLink-more" data-no-children>
-  
-         
-  
-              <svg class="chevron"><use xlink:href="#chevron"></use>\</svg>
-  
-         
-  
-      </div>
-  
-     
-  
-  </div>
-  
-  </li>
-  
-                 
-  
-                      <li class="NavigationItem-items-item" ><div class="NavigationLink-wrapper">
-  
-      <a class="NavigationLink" href="https://tradein.one.nz">>${desc.tradein}</a
-  
-      <div class="NavigationLink-more" data-no-children>
-  
-         
-  
-              <svg class="chevron"><use xlink:href="#chevron"></use>\</svg>
-  
-         
-  
-      </div>
-  
-     
-  
-  </div>
-  
-  </li>
-  
-                 
-  
-                      <li class="NavigationItem-items-item" ><div class="NavigationLink-wrapper">
-  
-      <a class="NavigationLink" href="https://one.nz/roaming/">${desc.roaming}</a>
-  
-      <div class="NavigationLink-more" data-no-children>
-  
-         
-  
-              <svg class="chevron"><use xlink:href="#chevron"></use>\</svg>
-  
-         
-  
-      </div>
-  
-     
-  
-  </div>
-  
-  </li>
-  
-                 
-  
-                      <li class="NavigationItem-items-item" ><div class="NavigationLink-wrapper">
-  
-      <a class="NavigationLink" href="https://one.nz/mobile-broadband/">${desc.mobileBroadband}</a>
-  
-      <div class="NavigationLink-more" >
-  
-         
-  
-              <svg class="chevron"><use xlink:href="#chevron"></use>\</svg>
-  
-         
-  
-      </div>
-  
-     
-  
-        <ul class="NavigationLink-tertiary">
-  
-         
-  
-            <li class="NavigationLink-tertiary-link"><a class="TertiaryNavLink" href="https://one.nz/ipad/">${desc.ipad}</a>
-  
-  </li>
-  
-         
-  
-            <li class="NavigationLink-tertiary-link"><a class="TertiaryNavLink" href="https://one.nz/samsung-galaxy/tablet/">${desc.samsunggalaxy}</a>
-  
-  </li>
-  
-         
-  
-        </ul>
-  
-     
-  
-  </div>
-  
-  </li>
-  
-                 
-  
-             
-  
-          </ul>
-  
-          <ul class="NavigationItem-items-placeholder">
-  
-             
-  
-                 
-  
-                      <li class="NavigationItem-items-item"><div class="NavigationLink-wrapper">
-  
-      <a class="NavigationLink" href="https://one.nz/mobile-plans/">${desc.mobilePlans}</a>
-  
-      <div class="NavigationLink-more" >
-  
-         
-  
-              <svg class="chevron"><use xlink:href="#chevron"></use>\</svg>
-  
-         
-  
-      </div>
-  
-     
-  
-        <ul class="NavigationLink-tertiary">
-  
-         
-  
-            <li class="NavigationLink-tertiary-link"><a class="TertiaryNavLink" href="https://one.nz/pay-monthly/">${desc.payMonthly}</a>
-  
-  </li>
-  
-         
-  
-            <li class="NavigationLink-tertiary-link"><a class="TertiaryNavLink" href="https://one.nz/prepay/">${desc.prepay}</a>
-  
-  </li>
-  
-         
-  
-            <li class="NavigationLink-tertiary-link"><a class="TertiaryNavLink" href="https://one.nz/mobile-plans/add-ons/one-upgrade/">${desc.oneUpgrade}</a>
-  
-  </li>
-  
-         
-  
-        </ul>
-  
-     
-  
-  </div>
-  
-  </li>
-  
-                 
-  
-                      <li class="NavigationItem-items-item"><div class="NavigationLink-wrapper">
-  
-      <a class="NavigationLink" href="https://one.nz/mobile-phones/">${phones}</a>
-  
-      <div class="NavigationLink-more" >
-  
-         
-  
-              <svg class="chevron"><use xlink:href="#chevron"></use>\</svg>
-  
-         
-  
-      </div>
-  
-     
-  
-        <ul class="NavigationLink-tertiary">
-  
-         
-  
-            <li class="NavigationLink-tertiary-link"><a class="TertiaryNavLink" href="https://one.nz/iphone/">${desc.iphone}</a>
-  
-  </li>
-  
-         
-  
-            <li class="NavigationLink-tertiary-link"><a class="TertiaryNavLink" href="https://one.nz/samsung-galaxy/">${desc.samsung}</a>
-  
-  </li>
-  
-         
-  
-            <li class="NavigationLink-tertiary-link"><a class="TertiaryNavLink" href="https://one.nz/oppo/">${desc.oppo}</a>
-  
-  </li>
-  
-         
-  
-            <li class="NavigationLink-tertiary-link"><a class="TertiaryNavLink" href="https://one.nz/smart/">${desc.smart}</a>
-  
-  </li>
-  
-         
-  
-            <li class="NavigationLink-tertiary-link"><a class="TertiaryNavLink" href="https://one.nz/online-shop/mobile/product-listing/">${desc.productListing} </a>
-  
-  </li>
-  
-         
-  
-        </ul>
-  
-     
-  
-  </div>
-  
-  </li>
-  
-                 
-  
-                      <li class="NavigationItem-items-item"><div class="NavigationLink-wrapper">
-  
-      <a class="NavigationLink" href="https://one.nz/specials-promos/">${desc.latestDeal}</a>
-  
-      <div class="NavigationLink-more" data-no-children>
-  
-         
-  
-              <svg class="chevron"><use xlink:href="#chevron"></use>\</svg>
-  
-         
-  
-      </div>
-  
-     
-  
-  </div>
-  
-  </li>
-  
-                 
-  
-                      <li class="NavigationItem-items-item"><div class="NavigationLink-wrapper">
-  
-      <a class="NavigationLink" href="https://tradein.one.nz">${desc.tradein}</a>
-  
-      <div class="NavigationLink-more" data-no-children>
-  
-         
-  
-              <svg class="chevron"><use xlink:href="#chevron"></use>\</svg>
-  
-         
-  
-      </div>
-  
-     
-  
-  </div>
-  
-  </li>
-  
-                 
-  
-                      <li class="NavigationItem-items-item"><div class="NavigationLink-wrapper">
-  
-      <a class="NavigationLink" href="https://one.nz/roaming/">${desc.roaming}</a>
-  
-      <div class="NavigationLink-more" data-no-children>
-  
-         
-  
-              <svg class="chevron"><use xlink:href="#chevron"></use>\</svg>
-  
-         
-  
-      </div>
-  
-     
-  
-  </div>
-  
-  </li>
-  
-                 
-  
-                      <li class="NavigationItem-items-item"><div class="NavigationLink-wrapper">
-  
-      <a class="NavigationLink" href="https://one.nz/mobile-broadband/">${desc.mobilebroadband}</a>
-  
-      <div class="NavigationLink-more" >
-  
-         
-  
-              <svg class="chevron"><use xlink:href="#chevron"></use>\</svg>
-  
-         
-  
-      </div>
-  
-     
-  
-        <ul class="NavigationLink-tertiary">
-  
-         
-  
-            <li class="NavigationLink-tertiary-link"><a class="TertiaryNavLink" href="https://one.nz/ipad/">${desc.ipad}</a>
-  
-  </li>
-  
-         
-  
-            <li class="NavigationLink-tertiary-link"><a class="TertiaryNavLink" href="https://one.nz/samsung-galaxy/tablet/">${desc.galaxytab}</a>
-  
-  </li>
-  
-         
-  
-        </ul>
-  
-     
-  
-  </div>
-  
-  </li>
-  
-                 
-  
-             
-  
-          </ul>
-  
-     
-  
-  </div></li>
-  
-             
-  
-                  <li class="Navigation-items-item" ><div class="NavigationItem"  >
-  
-      <div class="NavigationItem-text">
-  
-         
-  
-              <a class="NavigationItem-text-link" href="https://one.nz/broadband/">${desc.broadband}</a>
-  
-         
-  
-          <div class="NavigationItem-more" >
-  
-              <button aria-label="Open Sub Navigation">
-  
-                  <svg class="chevron"><use xlink:href="#chevron"></use></svg>
-  
-              </button>
-  
-          </div>
-  
-      </div>
-  
-   
-  
-     
-  
-          <ul class="NavigationItem-items">
-  
-             
-  
-                 
-  
-                      <li class="NavigationItem-items-item" ><div class="NavigationLink-wrapper">
-  
-      <a class="NavigationLink" href="https://one.nz/broadband/internet-plans/">${desc.broadbandplans}
-  
-      <div class="NavigationLink-more" data-no-children></a>
-  
-         
-  
-              <svg class="chevron"><use xlink:href="#chevron"></use>\</svg>
-  
-         
-  
-      </div>
-  
-     
-  
-  </div>
-  
-  </li>
-  
-  <li class="NavigationItem-items-item" ><div class="NavigationLink-wrapper">
-  
-      <a class="NavigationLink" href="https://one.nz/broadband/superwifi/">${desc.superwifi}</a>
-  
-      <div class="NavigationLink-more" data-no-children>
-  
-         
-  
-              <svg class="chevron"><use xlink:href="#chevron"></use>\</svg>
-  
-         
-  
-      </div>
-  
-     
-  
-  </div>
-  
-  </li>
-  
-                 
-  
-                      <li class="NavigationItem-items-item" ><div class="NavigationLink-wrapper">
-  
-      <a class="NavigationLink" href="https://one.nz/broadband/wireless-broadband/">${desc.wirelessbroadband}</a>
-  
-      <div class="NavigationLink-more" data-no-children>
-  
-         
-  
-              <svg class="chevron"><use xlink:href="#chevron"></use>\</svg>
-  
-         
-  
-      </div>
-  
-     
-  
-  </div>
-  
-  </li>
-  
-                 
-  
-                      <li class="NavigationItem-items-item" ><div class="NavigationLink-wrapper">
-  
-      <a class="NavigationLink" href="https://one.nz/broadband/ultra-fast-fibre/">${desc.fibreBroadband}</a>
-  
-      <div class="NavigationLink-more" data-no-children>
-  
-         
-  
-              <svg class="chevron"><use xlink:href="#chevron"></use>\</svg>
-  
-         
-  
-      </div>
-  
-     
-  
-  </div>
-  
-  </li>
-  
-                 
-  
-                      <li class="NavigationItem-items-item" ><div class="NavigationLink-wrapper">
-  
-      <a class="NavigationLink" href="#">About Broadband</a>${desc.aboutBroadband}
-  
-      <div class="NavigationLink-more" >
-  
-         
-  
-              <svg class="chevron"><use xlink:href="#chevron"></use>\</svg>
-  
-         
-  
-      </div>
-  
-     
-  
-        <ul class="NavigationLink-tertiary">
-  
-         
-  
-            <li class="NavigationLink-tertiary-link"><a class="TertiaryNavLink" href="https://one.nz/broadband/what-can-i-get/">${desc.broadbandTypes}</a>
-  
-  </li>
-  
-         
-  
-            <li class="NavigationLink-tertiary-link"><a class="TertiaryNavLink" href="https://one.nz/broadband/understand-your-speed/">${desc.howItWorks}</a>
-  
-  </li>
-  
-         
-  
-            <li class="NavigationLink-tertiary-link"><a class="TertiaryNavLink" href="https://one.nz/broadband/rural/">${desc.ruralBroadband}</a>
-  
-  </li>
-  
-         
-  
-            <li class="NavigationLink-tertiary-link"><a class="TertiaryNavLink" href="https://one.nz/broadband/about-your-charges/">${desc.aboutYourCharges}</a>
-  
-  </li>
-  
-         
-  
-            <li class="NavigationLink-tertiary-link"><a class="TertiaryNavLink" href="https://one.nz/home-phone/calling-features/">${desc.homePhone}</a>
-  
-  </li>
-  
-         
-  
-        </ul>
-  
-     
-  
-  </div>
-  
-  </li>
-  
-                 
-  
-             
-  
-          </ul>
-  
-          <ul class="NavigationItem-items-placeholder">
-  
-             
-  
-                 
-  
-                      <li class="NavigationItem-items-item"><div class="NavigationLink-wrapper">
-  
-      <a class="NavigationLink" href="https://one.nz/broadband/internet-plans/">${desc.BroadbandPlans}</a>
-  
-      <div class="NavigationLink-more" data-no-children>
-  
-         
-  
-              <svg class="chevron"><use xlink:href="#chevron"></use>\</svg>
-  
-         
-  
-      </div>
-  
-     
-  
-  </div>
-  
-  </li>
-  
-                 
-  
-                      <li class="NavigationItem-items-item"><div class="NavigationLink-wrapper">
-  
-      <a class="NavigationLink" href="https://one.nz/broadband/superwifi/">${desc.superwifi}</a>
-  
-      <div class="NavigationLink-more" data-no-children>
-  
-         
-  
-              <svg class="chevron"><use xlink:href="#chevron"></use>\</svg>
-  
-         
-  
-      </div>
-  
-     
-  
-  </div>
-  
-  </li>
-  
-                 
-  
-                      <li class="NavigationItem-items-item"><div class="NavigationLink-wrapper">
-  
-      <a class="NavigationLink" href="https://one.nz/broadband/wireless-broadband/">${desc.wirelessBroadband}</a>
-  
-      <div class="NavigationLink-more" data-no-children>
-  
-         
-  
-              <svg class="chevron"><use xlink:href="#chevron"></use>\</svg>
-  
-         
-  
-      </div>
-  
-     
-  
-  </div>
-  
-  </li>
-  
-                 
-  
-                      <li class="NavigationItem-items-item"><div class="NavigationLink-wrapper">
-  
-      <a class="NavigationLink" href="https://one.nz/broadband/ultra-fast-fibre/">${desc.fibreBroadband}</a>
-  
-      <div class="NavigationLink-more" data-no-children>
-  
-         
-  
-              <svg class="chevron"><use xlink:href="#chevron"></use>\</svg>
-  
-         
-  
-      </div>
-  
-     
-  
-  </div>
-  
-  </li>
-  
-                 
-  
-                      <li class="NavigationItem-items-item"><div class="NavigationLink-wrapper">
-  
-      <a class="NavigationLink" href="#">${desc.aboutBroadband}</a>
-  
-      <div class="NavigationLink-more" >
-  
-         
-  
-              <svg class="chevron"><use xlink:href="#chevron"></use>\</svg>
-  
-         
-  
-      </div>
-  
-     
-  
-        <ul class="NavigationLink-tertiary">
-  
-         
-  
-            <li class="NavigationLink-tertiary-link"><a class="TertiaryNavLink" href="https://one.nz/broadband/what-can-i-get/">${desc.Broadbandtypes}</a>
-  
-  </li></a>
-  
-         
-  
-            <li class="NavigationLink-tertiary-link"><a class="TertiaryNavLink" href="https://one.nz/broadband/understand-your-speed/">${desc.HowItWorks}</a>
-  
-  </li>
-  
-         
-  
-            <li class="NavigationLink-tertiary-link"><a class="TertiaryNavLink" href="https://one.nz/broadband/rural/">${desc.ruralBroadband}</a>
-  
-  </li>
-  
-         
-  
-            <li class="NavigationLink-tertiary-link"><a class="TertiaryNavLink" href="https://one.nz/broadband/about-your-charges/">${desc.aboutYourCharges}</a>
-  
-  </li>
-  
-         
-  
-            <li class="NavigationLink-tertiary-link"><a class="TertiaryNavLink" href="https://one.nz/home-phone/calling-features/">${desc.HomePhone}</a>
-  
-  </li>
-  
-         
-  
-        </ul>
-  
-     
-  
-  </div>
-  
-  </li>
-  
-                 
-  
-             
-  
-          </ul>
-  
-     
-  
-  </div></li>
-  
-             
-  
-                  <li class="Navigation-items-item" ><div class="NavigationItem"  >
-  
-      <div class="NavigationItem-text">
-  
-         
-  
-              <a class="NavigationItem-text-link" href="https://one.nz/online-shop/accessories/">${desc.accessories}</a>
-  
-         
-  
-          <div class="NavigationItem-more" >
-  
-              <button aria-label="Open Sub Navigation">
-  
-                  <svg class="chevron"><use xlink:href="#chevron"></use></svg>
-  
-              </button>
-  
-          </div>
-  
-      </div>
-  
-   
-  
-     
-  
-          <ul class="NavigationItem-items">
-  
-             
-  
-                 
-  
-                      <li class="NavigationItem-items-item" ><div class="NavigationLink-wrapper">
-  
-      <a class="NavigationLink" href="https://one.nz/online-shop/accessory/product-listing/?_bc_fsnf=1&amp;sort=featured&amp;Type=Wearables">Wearables</a>${desc.wearables}
-  
-      <div class="NavigationLink-more" >
-  
-         
-  
-              <svg class="chevron"><use xlink:href="#chevron"></use>\</svg>
-  
-         
-  
-      </div>
-  
-     
-  
-        <ul class="NavigationLink-tertiary">
-  
-         
-  
-            <li class="NavigationLink-tertiary-link"><a class="TertiaryNavLink" href="https://one.nz/samsung-galaxy/galaxy-watch/">${desc.galaxywatch}</a>
-  
-  </li>
-  
-         
-  
-        </ul>
-  
-     
-  
-  </div>
-  
-  </li>
-  
-                 
-  
-                      <li class="NavigationItem-items-item" ><div class="NavigationLink-wrapper">
-  
-      <a class="NavigationLink" href="https://one.nz/online-shop/accessory/product-listing/?_bc_fsnf=1&amp;sort=featured&amp;Type=Headphones/Speakers">Headphones &amp; Audio</a>${desc.speakers}
-  
-      <div class="NavigationLink-more" data-no-children>
-  
-         
-  
-              <svg class="chevron"><use xlink:href="#chevron"></use>\</svg>
-  
-         
-  
-      </div>
-  
-     
-  
-  </div>
-  
-  </li>
-  
-                 
-  
-                      <li class="NavigationItem-items-item" ><div class="NavigationLink-wrapper">
-  
-      <a class="NavigationLink" href="https://one.nz/online-shop/accessory/product-listing/?_bc_fsnf=1&amp;sort=featured&amp;Type=Case">${desc.phonecases}</a>
-  
-      <div class="NavigationLink-more" data-no-children>
-  
-         
-  
-              <svg class="chevron"><use xlink:href="#chevron"></use>\</svg>
-  
-         
-  
-      </div>
-  
-     
-  
-  </div>
-  
-  </li>
-  
-                 
-  
-                      <li class="NavigationItem-items-item" ><div class="NavigationLink-wrapper">
-  
-      <a class="NavigationLink" href="https://one.nz/online-shop/accessory/product-listing/?_bc_fsnf=1&amp;sort=featured&amp;Type=Chargers">Chargers &amp; cables</a>${desc.chargersAndcables}
-  
-      <div class="NavigationLink-more" data-no-children>
-  
-         
-  
-              <svg class="chevron"><use xlink:href="#chevron"></use>\</svg>
-  
-         
-  
-      </div>
-  
-     
-  
-  </div>
-  
-  </li>
-  
-                 
-  
-             
-  
-          </ul>
-  
-          <ul class="NavigationItem-items-placeholder">
-  
-             
-  
-                 
-  
-                      <li class="NavigationItem-items-item"><div class="NavigationLink-wrapper">
-  
-      <a class="NavigationLink" href="https://one.nz/online-shop/accessory/product-listing/?_bc_fsnf=1&amp;sort=featured&amp;Type=Wearables">${desc.wearables}</a>
-  
-      <div class="NavigationLink-more" >
-  
-         
-  
-              <svg class="chevron"><use xlink:href="#chevron"></use>\</svg>
-  
-         
-  
-      </div>
-  
-     
-  
-        <ul class="NavigationLink-tertiary">
-  
-         
-  
-            <li class="NavigationLink-tertiary-link"><a class="TertiaryNavLink" href="https://one.nz/samsung-galaxy/galaxy-watch/">${desc.galaxyWatch}</a>
-  
-  </li>
-  
-         
-  
-        </ul>
-  
-     
-  
-  </div>
-  
-  </li>
-  
-                 
-  
-                      <li class="NavigationItem-items-item"><div class="NavigationLink-wrapper">
-  
-      <a class="NavigationLink" href="https://one.nz/online-shop/accessory/product-listing/?_bc_fsnf=1&amp;sort=featured&amp;Type=Headphones/Speakers">Headphones &amp; Audio</a>${desc.speakers}
-  
-      <div class="NavigationLink-more" data-no-children>
-  
-         
-  
-              <svg class="chevron"><use xlink:href="#chevron"></use>\</svg>
-  
-         
-  
-      </div>
-  
-     
-  
-  </div>
-  
-  </li>
-  
-                 
-  
-                      <li class="NavigationItem-items-item"><div class="NavigationLink-wrapper">
-  
-      <a class="NavigationLink" href="https://one.nz/online-shop/accessory/product-listing/?_bc_fsnf=1&amp;sort=featured&amp;Type=Case">${desc.phonecases}</a>
-  
-      <div class="NavigationLink-more" data-no-children>
-  
-         
-  
-              <svg class="chevron"><use xlink:href="#chevron"></use>\</svg>
-  
-         
-  
-      </div>
-  
-     
-  
-  </div>
-  
-  </li>
-  
-                 
-  
-                      <li class="NavigationItem-items-item"><div class="NavigationLink-wrapper">
-  
-      <a class="NavigationLink" href="https://one.nz/online-shop/accessory/product-listing/?_bc_fsnf=1&amp;sort=featured&amp;Type=Chargers">Chargers &amp; cables</a>${desc.chargersAndcables}
-  
-      <div class="NavigationLink-more" data-no-children>
-  
-         
-  
-              <svg class="chevron"><use xlink:href="#chevron"></use>\</svg>
-  
-         
-  
-      </div>
-  
-     
-  
-  </div>
-  
-  </li>
-  
-                 
-  
-             
-  
-          </ul>
-  
-     
-  
-  </div></li>
-  
-             
-  
-                  <li class="Navigation-items-item" ><div class="NavigationItem"  >
-  
-      <div class="NavigationItem-text">
-  
-         
-  
-              <a class="NavigationItem-text-link" href="https://one.nz/5g/">${desc.5g}</a>
-  
-         
-  
-          <div class="NavigationItem-more" data-no-children>
-  
-             
-  
-                  <svg class="chevron"><use xlink:href="#chevron"></use></svg>
-  
-             
-  
-          </div>
-  
-      </div>
-  
-   
-  
-     
-  
-  </div></li>
-  
-             
-  
-                  <><li class="Navigation-items-item"><div class="NavigationItem">
-
-      <div class="NavigationItem-text">
-
-
-
-        <a class="NavigationItem-text-link" href="https://rewards.one.nz" target="_blank">${desc.rewards}
-
-        </a>
-
-        <div class="NavigationItem-more" data-no-children>
-
-
-
-          <svg class="chevron"><use xlink: href="#chevron"></use></svg>
-
-
-
-        </div>
-
-      </div>
-
-
-
-
-
-    </div></li><li class="Navigation-items-item"><div class="NavigationItem">
-
-      <div class="NavigationItem-text">
-
-
-
-        <a class="NavigationItem-text-link" href="https://one.nz/help/">${desc.help}</a>
-
-
-
-        <div class="NavigationItem-more">
-
-          <button aria-label="Open Sub Navigation">
-
-            <svg class="chevron"><use xlink: href="#chevron"></use></svg>
-
-          </button>
-
-        </div>
-
-      </div>
-
-
-
-
-
-      <ul class="NavigationItem-items">
-
-
-
-
-
-        <li class="NavigationItem-items-item"><div class="NavigationLink-wrapper">
-
-          <a class="NavigationLink" href="https://one.nz/faq/">${desc.helpFaq}</a>
-
-          <div class="NavigationLink-more" data-no-children>
-
-
-
-            <svg class="chevron"><use xlink: href="#chevron"></use>\</svg>
-
-
-
-          </div>
-
-
-
-        </div>
-
-        </li>
-
-
-
-        <li class="NavigationItem-items-item"><div class="NavigationLink-wrapper">
-
-          <a class="NavigationLink" href="https://one.nz/help/bill-payment/">${desc.billsandpayment}</a>
-
-          <div class="NavigationLink-more">
-
-
-
-            <svg class="chevron"><use xlink: href="#chevron"></use>\</svg>
-
-
-
-          </div>
-
-
-
-          <ul class="NavigationLink-tertiary">
-
-
-
-            <li class="NavigationLink-tertiary-link"><a class="TertiaryNavLink" href="https://one.nz/help/bill-payment/about-fixed-broadband-bill/">>${desc.BroadbandBills}</a>
-
-            </li>
-
-
-
-            <li class="NavigationLink-tertiary-link"><a class="TertiaryNavLink" href="https://one.nz/help/bill-payment/about-mobile-bill/">${desc.mobileBill}</a>
-
-            </li>
-
-
-
-            <li class="NavigationLink-tertiary-link"><a class="TertiaryNavLink" href="https://one.nz/help/bill-payment/prepay-topup/">${desc.topUp}</a>
-
-            </li>
-
-
-
-            <li class="NavigationLink-tertiary-link"><a class="TertiaryNavLink" href="https://one.nz/help/bill-payment/ways-to-pay/">${desc.HowToPay} </a>
-
-            </li>
-
-
-
-          </ul>
-
-
-
-        </div>
-
-        </li>
-
-
-
-        <li class="NavigationItem-items-item"><div class="NavigationLink-wrapper">
-
-          <a class="NavigationLink" href="https://one.nz/help/mobile-phones/">${desc.helpForMobile}</a>
-
-          <div class="NavigationLink-more">
-
-
-
-            <svg class="chevron"><use xlink: href="#chevron"></use>\</svg>
-
-
-
-          </div>
-
-
-
-          <ul class="NavigationLink-tertiary">
-
-
-
-            <li class="NavigationLink-tertiary-link"><a class="TertiaryNavLink" href="https://one.nz/help/mobile-device-settings/">${desc.Set} up your phone}</a>
-
-            </li>
-
-
-
-            <li class="NavigationLink-tertiary-link"><a class="TertiaryNavLink" href="https://one.nz/help/mobile/travel-overseas/">${.Help} with roaming}</a>
-
-            </li>
-
-
-
-          </ul>
-
-
-
-        </div>
-
-        </li>
-
-
-
-        <li class="NavigationItem-items-item"><div class="NavigationLink-wrapper">
-
-          <a class="NavigationLink" href="https://one.nz/help/broadband/">${desc.broadbandHelp}</a>
-
-          <div class="NavigationLink-more">
-
-
-
-            <svg class="chevron"><use xlink: href="#chevron"></use>\</svg>
-
-
-
-          </div>
-
-
-
-          <ul class="NavigationLink-tertiary">
-
-
-
-            <li class="NavigationLink-tertiary-link"><a class="TertiaryNavLink" href="https://one.nz/help/broadband/modem-support/">>${desc.setYourModem}</a>
-
-            </li>
-
-
-
-            <li class="NavigationLink-tertiary-link"><a class="TertiaryNavLink" href="https://one.nz/help/broadband/wifi-connections/">${desc.WI - FIhelp}</a>
-
-            </li>
-
-
-
-            <li class="NavigationLink-tertiary-link"><a class="TertiaryNavLink" href="https://one.nz/help/fibre-broadband/">${desc.FibreHelp}
-
-            </></li></a>
-
-
-
-          <li class="NavigationLink-tertiary-link"><a class="TertiaryNavLink" href=""></a>
-
-          </li>
-
-
-
-        </ul>
-
-
-
-        </div>
-
-      </li>
-
-
-
-      <li class="NavigationItem-items-item"><div class="NavigationLink-wrapper">
-
-        <a class="NavigationLink" href="https://one.nz/mobile/apps-services/">${desc.AppsAndServices}</a>
-
-        <div class="NavigationLink-more">
-
-
-
-          <svg class="chevron"><use xlink: href="#chevron"></use>\</svg>
-
-
-
-        </div>
-
-
-
-        <ul class="NavigationLink-tertiary">
-
-
-
-          <li class="NavigationLink-tertiary-link"><a class="TertiaryNavLink" href="https://one.nz/help/my-one-nz/">${desc.OneNZhep}</a>
-
-          </li>
-
-
-
-          <li class="NavigationLink-tertiary-link"><a class="TertiaryNavLink" href="https://one.nz/help/store-locations/">${desc.findStore}</a>
-
-          </li>
-
-
-
-          <li class="NavigationLink-tertiary-link"><a class="TertiaryNavLink" href="https://one.nz/our-networks/">${desc.networkStatus} </a>
-
-          </li>
-
-
-
-        </ul>
-
-
-
-      </div>
-
-      </li>
-
-
-
-
-
-    </ul>
-
-        <ul class="NavigationItem-items-placeholder">
-
-
-
-
-
-          <li class="NavigationItem-items-item"><div class="NavigationLink-wrapper">
-
-            <a class="NavigationLink" href="https://one.nz/faq/">${desc.HelpFAQ}</a>
-
-            <div class="NavigationLink-more" data-no-children>
-
-
-
-              <svg class="chevron"><use xlink: href="#chevron"></use>\</svg>
-
-
-
-            </div>
-
-
-
-          </div>
-
-          </li>
-
-
-
-          <li class="NavigationItem-items-item"><div class="NavigationLink-wrapper">
-
-            <a class="NavigationLink" href="https://one.nz/help/bill-payment/">${desc.BillPayment}</a>
-
-            <div class="NavigationLink-more">
-
-
-
-              <svg class="chevron"><use xlink: href="#chevron"></use>\</svg>
-
-
-
-            </div>
-
-
-
-            <ul class="NavigationLink-tertiary">
-
-
-
-              <li class="NavigationLink-tertiary-link"><a class="TertiaryNavLink" href="https://one.nz/help/bill-payment/about-fixed-broadband-bill/">Your broadband bill</a>
-
-              </li>
-
-
-
-              <li class="NavigationLink-tertiary-link"><a class="TertiaryNavLink" href="https://one.nz/help/bill-payment/about-mobile-bill/">Your mobile bill</a>
-
-              </li>
-
-
-
-              <li class="NavigationLink-tertiary-link"><a class="TertiaryNavLink" href="https://one.nz/help/bill-payment/prepay-topup/">How to Top Up</a>
-
-              </li>
-
-
-
-              <li class="NavigationLink-tertiary-link"><a class="TertiaryNavLink" href="https://one.nz/help/bill-payment/ways-to-pay/">How to pay </a>
-
-              </li>
-
-
-
-            </ul>
-
-
-
-          </div>
-
-          </li>
-
-
-
-          <li class="NavigationItem-items-item"><div class="NavigationLink-wrapper">
-
-            <a class="NavigationLink" href="https://one.nz/help/mobile-phones/">${desc.mobileHelp}</a>
-
-            <div class="NavigationLink-more">
-
-
-
-              <svg class="chevron"><use xlink: href="#chevron"></use>\</svg>
-
-
-
-            </div>
-
-
-
-            <ul class="NavigationLink-tertiary">
-
-
-
-              <li class="NavigationLink-tertiary-link"><a class="TertiaryNavLink" href="https://one.nz/help/mobile-device-settings/">${desc.Set} up your phone}</a>
-
-              </li>
-
-
-
-              <li class="NavigationLink-tertiary-link"><a class="TertiaryNavLink" href="https://one.nz/help/mobile/travel-overseas/">${desc.Help} with roaming}</a>
-
-              </li>
-
-
-
-            </ul>
-
-
-
-          </div>
-
-          </li>
-
-
-
-          <li class="NavigationItem-items-item"><div class="NavigationLink-wrapper">
-
-            <a class="NavigationLink" href="https://one.nz/help/broadband/">${desc.HelpforBroadband}</a>
-
-            <div class="NavigationLink-more">
-
-
-
-              <svg class="chevron"><use xlink: href="#chevron"></use>\</svg>
-
-
-
-            </div>
-
-
-
-            <ul class="NavigationLink-tertiary">
-
-
-
-              <li class="NavigationLink-tertiary-link"><a class="TertiaryNavLink" href="https://one.nz/help/broadband/modem-support/">${desc.Setupyourmodem}</a>
-
-              </li>
-
-
-
-              <li class="NavigationLink-tertiary-link"><a class="TertiaryNavLink" href="https://one.nz/help/broadband/wifi-connections/">${desc.HelpwithWi - Fi}</a>
-
-              </li>
-
-
-
-              <li class="NavigationLink-tertiary-link"><a class="TertiaryNavLink" href="https://one.nz/help/fibre-broadband/">${desc.HelpwithFibre}</a>
-
-              </li>
-
-
-
-              <li class="NavigationLink-tertiary-link"><a class="TertiaryNavLink" href=""></a>
-
-              </li>
-
-
-
-            </ul>
-
-
-
-          </div>
-
-          </li>
-
-
-
-          <li class="NavigationItem-items-item"><div class="NavigationLink-wrapper">
-
-            <a class="NavigationLink" href="https://one.nz/mobile/apps-services/">${desc.appandservices}</a>
-
-            <div class="NavigationLink-more">
-
-
-
-              <svg class="chevron"><use xlink: href="#chevron"></use>\</svg>
-
-
-
-            </div>
-
-
-
-            <ul class="NavigationLink-tertiary">
-
-
-
-              <li class="NavigationLink-tertiary-link"><a class="TertiaryNavLink" href="https://one.nz/help/my-one-nz/">${desc.OneNZhelp}</a>
-
-
-
-              </li>
-
-              <li class="NavigationLink-tertiary-link"><a class="TertiaryNavLink" href="https://one.nz/help/store-locations/">${desc.FindStore}</a>
-
-              </li>
-
-
-
-              <li class="NavigationLink-tertiary-link"><a class="TertiaryNavLink" href="https://one.nz/our-networks/">${desc.NetworkStatus} </a>
-
-              </li>
-
-
-
-            </ul>
-
-
-
-          </div>
-
-          </li>
-
-
-
-
-
-        </ul>
-
-
-
-      </div></></li>
-  
-             
-  
-          </ul>
-  
-     
-  
-  </nav>  
-  
-   
-  
-           
-  
-              </div>
-  
-   
-  
-              <><div class="Page-header-end">
-
-                  <div class="Page-header-cartIcon">
-
-                    <a href="/shop/cart/confirm-product/">
-
-                      <span class="sr-only">Mini Basket</span>
-
-                      <span class="Page-header-cartIcon-indicator"></span>
-
-                      <span class="Page-header-cartIcon-icon">
-
-                        <svg aria-hidden="true">
-
-                          <use xlink: href="#icon-shopping-trolley"></use>
-
-                        </svg>
-
-                      </span>
-
-                    </a>
-
-                  </div>
-
-
-
-                  <a class="Page-header-search-button"><svg class="icon-magnify"><use xlink: href="#icon-magnify"></use></svg><span class="sr-only">Show Search</span><svg class="close-x"><use xlink: href="#close-x"></use></svg></a>
-
-                  <ps-typeahead class="Page-header-search-overlay">
-
-                    <h2 class="Page-header-search-title">Search</h2>
-
-                    <form data-typeahead-form class="Page-header-search-form" action="https://one.nz/search#nt=navsearch" novalidate="" autocomplete="off">
-
-                      <label><input data-typeahead-input placeholder="How can we help you?" type="text" class="Page-header-search-input" name="q" required="true"><span class="sr-only">Search Query</span></></label>
-
-                      <button data-typeahead-clear class="Page-header-search-clear"><svg><use xlink: href="#close-x"></use></svg><span class="sr-only">Submit Search</span></button>
-
-                      <button data-typeahead-submit type="submit" class="Page-header-search-submit"><svg><use xlink: href="#icon-magnify"></use></svg><span class="sr-only">Clear Search</span></button>
-
-                    </form>
-
-                    <div data-typeahead-results class="Page-header-search-results"></div>
-
-                    <div class="Page-header-search-link"><a data-searchpage-link href="https://one.nz/search">view all results for &quot;{queryText}&quot; <svg class="chevron"><use xlink: href="#chevron"></use></svg></a></div>
-
-                  </ps-typeahead>
-
-
-
-
-
-
-
-
-
-                  <div class="Page-header-userIcon">
-
-                    <a href="/ps-sign-in-overlay/" class="Page-header-userIcon-trigger">
-
-                      <span class="sr-only">My One NZ</span>
-
-                      <span class="Page-header-userIcon-loggedInIcon">
-
-                        <svg aria-hidden="true">
-
-                          <use xlink: href="#icon-tick"></use>
-
-                        </svg>
-
-                      </span>
-
-                      <span class="Page-header-userIcon-icon">
-
-                        <svg aria-hidden="true">
-
-                          <use xlink: href="#icon-my-vodafone"></use>
-
-                        </svg>
-
-                      </span>
-
-                      <span class="Page-header-menu-close">
-
-                        <svg aria-hidden="true">
-
-                          <use xlink: href="#close-x"></use>
-
-                        </svg>
-
-                      </span>
-
-                    </a>
-
-                  </div>
-
-
-
-                  < />!-- Secondary dropdown for logged in My One NZ Users -->
-
-                  <nav class="SecondaryDropdownNavigation">
-
-                    <ul class="SecondaryDropdownNavigation-items">
-
-                      <li class="SecondaryDropdownNavigation-items-item">
-
-                        <div class="SecondaryDropdownNavigationItem">
-
-                          <ul class="SecondaryDropdownNavigationItem-items">
-
-                            <li class="SecondaryDropdownNavigationItem-items-item">
-
-                              <div class="SecondaryNavigationLink-wrapper">
-
-                                <a class="SecondaryNavigationLink" href="/myvodafone/ng/landing" target="_self">Account Summary</a>
 
+
+}
+
+
+
+function signInOverlay(){
+  let html = `<div class="Page-signInOverlay">
+                <div class="Page-signInOverlay-container">
+                    <div class="Page-signInOverlay-header">
+                        <a href="#" class="Page-signInOverlay-close">
+                            <svg aria-hidden="true">
+                                <use xlink:href="#close-x"></use>
+                            </svg>
+                            <span class="sr-only">Close dialog </span>
+                        </a>
+                    </div>
+                    <div class="Page-signInOverlay-content"></div>
+                </div>
+              </div>`
+return html;
+}
+
+
+function hatNavigation(){
+  let html = `<div class="HatNavigation">
+                <ul class="HatNavigation-items">
+                    <li class="HatNavigation-items-item" data-active="">
+                        <div class="NavigationLink-wrapper">
+                            <a class="NavigationLink" href="https://one.nz/">Personal</a>
+                            <div class="NavigationLink-more" data-no-children="">
+                                <svg class="chevron">
+                                    <use xlink:href="#chevron"></use>\
+                                </svg>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="HatNavigation-items-item">
+                        <div class="NavigationLink-wrapper">
+                            <a class="NavigationLink" href="https://one.nz/business/">Business</a>
+                            <div class="NavigationLink-more" data-no-children="">
+                                <svg class="chevron">
+                                    <use xlink:href="#chevron"></use>\
+                                </svg>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="HatNavigation-items-item">
+                        <div class="NavigationLink-wrapper">
+                            <a class="NavigationLink" href="https://one.nz/why-choose-us/">Why Choose Us</a>
+                            <div class="NavigationLink-more" data-no-children="">
+                                <svg class="chevron">
+                                    <use xlink:href="#chevron"></use>\
+                                </svg>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="HatNavigation-items-item">
+                        <div class="NavigationLink-wrapper">
+                            <a class="NavigationLink" href="https://one.nz/our-networks/infrastructure-partners/">Infrastructure
+                                Partners</a>
+                            <div class="NavigationLink-more" data-no-children="">
+                                <svg class="chevron">
+                                    <use xlink:href="#chevron"></use>\
+                                </svg>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+              </div>`
+
+  return html;
+}
+
+
+
+function headerNav(){
+  let html = `<ps-header class="Page-header">
+                <div class="Page-header-hamburger-menu">
+                  <div class="Page-header-hamburger-menu-wrapper">
+                    <div class="Page-header-hamburger-menu-content">
+                      <nav class="Navigation">
+                        <ul class="Navigation-items">
+                          <li class="Navigation-items-item">
+                            <div class="NavigationItem">
+                              <div class="NavigationItem-text">
+                                <a class="NavigationItem-text-link" href="https://one.nz/mobile/">Mobile</a>
+                                <div class="NavigationItem-more">
+                                  <button aria-label="Open Sub Navigation">
+                                    <svg class="chevron">
+                                      <use xlink:href="#chevron">
+                                      </use>
+                                    </svg>
+                                  </button>
+                                </div>
+                              </div>
+                              <ul class="NavigationItem-items">
+                                <li class="NavigationItem-items-item">
+                                  <div class="NavigationLink-wrapper">
+                                    <a class="NavigationLink" href="https://one.nz/mobile-plans/">Plans</a>
+                                    <div class="NavigationLink-more">
+                                      <svg class="chevron">
+                                        <use xlink:href="#chevron">
+                                        </use>\
+                                      </svg>
+                                    </div>
+                                    <ul class="NavigationLink-tertiary">
+
+                                      <li class="NavigationLink-tertiary-link">
+                                        <a class="TertiaryNavLink" href="https://one.nz/pay-monthly/">Pay
+                                          Monthly</a>
+                                      </li>
+
+                                      <li class="NavigationLink-tertiary-link">
+                                        <a class="TertiaryNavLink" href="https://one.nz/prepay/">Prepay</a>
+                                      </li>
+
+                                      <li class="NavigationLink-tertiary-link">
+                                        <a class="TertiaryNavLink"
+                                          href="https://one.nz/mobile-plans/add-ons/one-upgrade/">One
+                                          Upgrade</a>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </li>
+
+                                <li class="NavigationItem-items-item">
+                                  <div class="NavigationLink-wrapper">
+                                    <a class="NavigationLink" href="https://one.nz/mobile-phones/">Phones</a>
+                                    <div class="NavigationLink-more">
+                                      <svg class="chevron">
+                                        <use xlink:href="#chevron">
+                                        </use>\
+                                      </svg>
+                                    </div>
+                                    <ul class="NavigationLink-tertiary">
+                                      <li class="NavigationLink-tertiary-link">
+                                        <a class="TertiaryNavLink" href="https://one.nz/iphone/">iPhone</a>
+                                      </li>
+
+                                      <li class="NavigationLink-tertiary-link">
+                                        <a class="TertiaryNavLink"
+                                          href="https://one.nz/samsung-galaxy/">Samsung</a>
+                                      </li>
+
+                                      <li class="NavigationLink-tertiary-link">
+                                        <a class="TertiaryNavLink" href="https://one.nz/oppo/">OPPO</a>
+                                      </li>
+
+                                      <li class="NavigationLink-tertiary-link">
+                                        <a class="TertiaryNavLink" href="https://one.nz/smart/">Smart</a>
+                                      </li>
+
+                                      <li class="NavigationLink-tertiary-link">
+                                        <a class="TertiaryNavLink"
+                                          href="https://one.nz/online-shop/mobile/product-listing/">Browse
+                                          all
+                                          phones
+                                        </a>
+                                      </li>
+
+                                    </ul>
+
+                                  </div>
+                                </li>
+
+                                <li class="NavigationItem-items-item">
+                                  <div class="NavigationLink-wrapper">
+                                    <a class="NavigationLink" href="https://one.nz/specials-promos/">Latest
+                                      deals</a>
+                                    <div class="NavigationLink-more" data-no-children="">
+
+                                      <svg class="chevron">
+                                        <use xlink:href="#chevron">
+                                        </use>\
+                                      </svg>
+
+                                    </div>
+
+                                  </div>
+                                </li>
+
+                                <li class="NavigationItem-items-item">
+                                  <div class="NavigationLink-wrapper">
+                                    <a class="NavigationLink" href="https://tradein.one.nz">Trade-in</a>
+                                    <div class="NavigationLink-more" data-no-children="">
+
+                                      <svg class="chevron">
+                                        <use xlink:href="#chevron">
+                                        </use>\
+                                      </svg>
+
+                                    </div>
+
+                                  </div>
+                                </li>
+
+                                <li class="NavigationItem-items-item">
+                                  <div class="NavigationLink-wrapper">
+                                    <a class="NavigationLink" href="https://one.nz/roaming/">Roaming</a>
+                                    <div class="NavigationLink-more" data-no-children="">
+
+                                      <svg class="chevron">
+                                        <use xlink:href="#chevron">
+                                        </use>\
+                                      </svg>
+
+                                    </div>
+
+                                  </div>
+                                </li>
+
+                                <li class="NavigationItem-items-item">
+                                  <div class="NavigationLink-wrapper">
+                                    <a class="NavigationLink" href="https://one.nz/mobile-broadband/">Mobile
+                                      broadband</a>
+                                    <div class="NavigationLink-more">
+
+                                      <svg class="chevron">
+                                        <use xlink:href="#chevron">
+                                        </use>\
+                                      </svg>
+
+                                    </div>
+
+                                    <ul class="NavigationLink-tertiary">
+
+                                      <li class="NavigationLink-tertiary-link">
+                                        <a class="TertiaryNavLink" href="https://one.nz/ipad/">iPad</a>
+                                      </li>
+
+                                      <li class="NavigationLink-tertiary-link">
+                                        <a class="TertiaryNavLink"
+                                          href="https://one.nz/samsung-galaxy/tablet/">Galaxy
+                                          Tab</a>
+                                      </li>
+
+                                    </ul>
+
+                                  </div>
+                                </li>
+
+
+                              </ul>
+                              <ul class="NavigationItem-items-placeholder">
+
+
+                                <li class="NavigationItem-items-item">
+                                  <div class="NavigationLink-wrapper">
+                                    <a class="NavigationLink" href="https://one.nz/mobile-plans/">Plans</a>
+                                    <div class="NavigationLink-more">
+                                      <svg class="chevron">
+                                        <use xlink:href="#chevron">
+                                        </use>\
+                                      </svg>
+                                    </div>
+
+                                    <ul class="NavigationLink-tertiary">
+
+                                      <li class="NavigationLink-tertiary-link">
+                                        <a class="TertiaryNavLink" href="https://one.nz/pay-monthly/">Pay
+                                          Monthly</a>
+                                      </li>
+
+                                      <li class="NavigationLink-tertiary-link">
+                                        <a class="TertiaryNavLink" href="https://one.nz/prepay/">Prepay</a>
+                                      </li>
+
+                                      <li class="NavigationLink-tertiary-link">
+                                        <a class="TertiaryNavLink"
+                                          href="https://one.nz/mobile-plans/add-ons/one-upgrade/">One
+                                          Upgrade</a>
+                                      </li>
+
+                                    </ul>
+
+                                  </div>
+                                </li>
+
+                                <li class="NavigationItem-items-item">
+                                  <div class="NavigationLink-wrapper">
+                                    <a class="NavigationLink" href="https://one.nz/mobile-phones/">Phones</a>
+                                    <div class="NavigationLink-more">
+
+                                      <svg class="chevron">
+                                        <use xlink:href="#chevron">
+                                        </use>\
+                                      </svg>
+
+                                    </div>
+
+                                    <ul class="NavigationLink-tertiary">
+
+                                      <li class="NavigationLink-tertiary-link">
+                                        <a class="TertiaryNavLink" href="https://one.nz/iphone/">iPhone</a>
+                                      </li>
+
+                                      <li class="NavigationLink-tertiary-link">
+                                        <a class="TertiaryNavLink"
+                                          href="https://one.nz/samsung-galaxy/">Samsung</a>
+                                      </li>
+
+                                      <li class="NavigationLink-tertiary-link">
+                                        <a class="TertiaryNavLink" href="https://one.nz/oppo/">OPPO</a>
+                                      </li>
+
+                                      <li class="NavigationLink-tertiary-link">
+                                        <a class="TertiaryNavLink" href="https://one.nz/smart/">Smart</a>
+                                      </li>
+
+                                      <li class="NavigationLink-tertiary-link">
+                                        <a class="TertiaryNavLink"
+                                          href="https://one.nz/online-shop/mobile/product-listing/">Browse
+                                          all
+                                          phones
+                                        </a>
+                                      </li>
+
+                                    </ul>
+
+                                  </div>
+                                </li>
+
+                                <li class="NavigationItem-items-item">
+                                  <div class="NavigationLink-wrapper">
+                                    <a class="NavigationLink" href="https://one.nz/specials-promos/">Latest
+                                      deals</a>
+                                    <div class="NavigationLink-more" data-no-children="">
+
+                                      <svg class="chevron">
+                                        <use xlink:href="#chevron">
+                                        </use>\
+                                      </svg>
+
+                                    </div>
+
+                                  </div>
+                                </li>
+
+                                <li class="NavigationItem-items-item">
+                                  <div class="NavigationLink-wrapper">
+                                    <a class="NavigationLink" href="https://tradein.one.nz">Trade-in</a>
+                                    <div class="NavigationLink-more" data-no-children="">
+
+                                      <svg class="chevron">
+                                        <use xlink:href="#chevron">
+                                        </use>\
+                                      </svg>
+
+                                    </div>
+
+                                  </div>
+                                </li>
+
+                                <li class="NavigationItem-items-item">
+                                  <div class="NavigationLink-wrapper">
+                                    <a class="NavigationLink" href="https://one.nz/roaming/">Roaming</a>
+                                    <div class="NavigationLink-more" data-no-children="">
+
+                                      <svg class="chevron">
+                                        <use xlink:href="#chevron">
+                                        </use>\
+                                      </svg>
+
+                                    </div>
+
+                                  </div>
+                                </li>
+
+                                <li class="NavigationItem-items-item">
+                                  <div class="NavigationLink-wrapper">
+                                    <a class="NavigationLink" href="https://one.nz/mobile-broadband/">Mobile
+                                      broadband</a>
+                                    <div class="NavigationLink-more">
+
+                                      <svg class="chevron">
+                                        <use xlink:href="#chevron">
+                                        </use>\
+                                      </svg>
+
+                                    </div>
+
+                                    <ul class="NavigationLink-tertiary">
+
+                                      <li class="NavigationLink-tertiary-link">
+                                        <a class="TertiaryNavLink" href="https://one.nz/ipad/">iPad</a>
+                                      </li>
+
+                                      <li class="NavigationLink-tertiary-link">
+                                        <a class="TertiaryNavLink"
+                                          href="https://one.nz/samsung-galaxy/tablet/">Galaxy
+                                          Tab</a>
+                                      </li>
+
+                                    </ul>
+
+                                  </div>
+                                </li>
+
+
+                              </ul>
+
+                            </div>
+                          </li>
+
+                          <li class="Navigation-items-item">
+                            <div class="NavigationItem">
+                              <div class="NavigationItem-text">
+
+                                <a class="NavigationItem-text-link" href="https://one.nz/broadband/">Broadband</a>
+
+                                <div class="NavigationItem-more">
+                                  <button aria-label="Open Sub Navigation">
+                                    <svg class="chevron">
+                                      <use xlink:href="#chevron">
+                                      </use>
+                                    </svg>
+                                  </button>
+                                </div>
                               </div>
 
-                            </li>
 
-                            <li class="SecondaryDropdownNavigationItem-items-item">
+                              <ul class="NavigationItem-items">
 
-                              <div class="SecondaryNavigationLink-wrapper">
 
-                                <a class="SecondaryNavigationLink userSignout" href="#">Logout</a>
+                                <li class="NavigationItem-items-item">
+                                  <div class="NavigationLink-wrapper">
+                                    <a class="NavigationLink"
+                                      href="https://one.nz/broadband/internet-plans/">Broadband
+                                      Plans</a>
+                                    <div class="NavigationLink-more" data-no-children="">
 
+                                      <svg class="chevron">
+                                        <use xlink:href="#chevron">
+                                        </use>\
+                                      </svg>
+
+                                    </div>
+
+                                  </div>
+                                </li>
+
+                                <li class="NavigationItem-items-item">
+                                  <div class="NavigationLink-wrapper">
+                                    <a class="NavigationLink"
+                                      href="https://one.nz/broadband/superwifi/">SuperWifi</a>
+                                    <div class="NavigationLink-more" data-no-children="">
+
+                                      <svg class="chevron">
+                                        <use xlink:href="#chevron">
+                                        </use>\
+                                      </svg>
+
+                                    </div>
+
+                                  </div>
+                                </li>
+
+                                <li class="NavigationItem-items-item">
+                                  <div class="NavigationLink-wrapper">
+                                    <a class="NavigationLink"
+                                      href="https://one.nz/broadband/wireless-broadband/">Wireless
+                                      Broadband</a>
+                                    <div class="NavigationLink-more" data-no-children="">
+
+                                      <svg class="chevron">
+                                        <use xlink:href="#chevron">
+                                        </use>\
+                                      </svg>
+
+                                    </div>
+
+                                  </div>
+                                </li>
+
+                                <li class="NavigationItem-items-item">
+                                  <div class="NavigationLink-wrapper">
+                                    <a class="NavigationLink"
+                                      href="https://one.nz/broadband/ultra-fast-fibre/">Fibre
+                                      Broadband</a>
+                                    <div class="NavigationLink-more" data-no-children="">
+
+                                      <svg class="chevron">
+                                        <use xlink:href="#chevron">
+                                        </use>\
+                                      </svg>
+
+                                    </div>
+
+                                  </div>
+                                </li>
+
+                                <li class="NavigationItem-items-item">
+                                  <div class="NavigationLink-wrapper">
+                                    <a class="NavigationLink" href="#">About
+                                      Broadband</a>
+                                    <div class="NavigationLink-more">
+
+                                      <svg class="chevron">
+                                        <use xlink:href="#chevron">
+                                        </use>\
+                                      </svg>
+
+                                    </div>
+
+                                    <ul class="NavigationLink-tertiary">
+
+                                      <li class="NavigationLink-tertiary-link">
+                                        <a class="TertiaryNavLink"
+                                          href="https://one.nz/broadband/what-can-i-get/">Types
+                                          of
+                                          Broadband</a>
+                                      </li>
+
+                                      <li class="NavigationLink-tertiary-link">
+                                        <a class="TertiaryNavLink"
+                                          href="https://one.nz/broadband/understand-your-speed/">How
+                                          It
+                                          Works</a>
+                                      </li>
+
+                                      <li class="NavigationLink-tertiary-link">
+                                        <a class="TertiaryNavLink"
+                                          href="https://one.nz/broadband/rural/">Rural
+                                          Broadband</a>
+                                      </li>
+
+                                      <li class="NavigationLink-tertiary-link">
+                                        <a class="TertiaryNavLink"
+                                          href="https://one.nz/broadband/about-your-charges/">About
+                                          Your
+                                          Charges</a>
+                                      </li>
+
+                                      <li class="NavigationLink-tertiary-link">
+                                        <a class="TertiaryNavLink"
+                                          href="https://one.nz/home-phone/calling-features/">Home
+                                          Phone</a>
+                                      </li>
+
+                                    </ul>
+
+                                  </div>
+                                </li>
+
+
+                              </ul>
+                              <ul class="NavigationItem-items-placeholder">
+
+
+                                <li class="NavigationItem-items-item">
+                                  <div class="NavigationLink-wrapper">
+                                    <a class="NavigationLink"
+                                      href="https://one.nz/broadband/internet-plans/">Broadband
+                                      Plans</a>
+                                    <div class="NavigationLink-more" data-no-children="">
+
+                                      <svg class="chevron">
+                                        <use xlink:href="#chevron">
+                                        </use>\
+                                      </svg>
+
+                                    </div>
+
+                                  </div>
+                                </li>
+
+                                <li class="NavigationItem-items-item">
+                                  <div class="NavigationLink-wrapper">
+                                    <a class="NavigationLink"
+                                      href="https://one.nz/broadband/superwifi/">SuperWifi</a>
+                                    <div class="NavigationLink-more" data-no-children="">
+
+                                      <svg class="chevron">
+                                        <use xlink:href="#chevron">
+                                        </use>\
+                                      </svg>
+
+                                    </div>
+
+                                  </div>
+                                </li>
+
+                                <li class="NavigationItem-items-item">
+                                  <div class="NavigationLink-wrapper">
+                                    <a class="NavigationLink"
+                                      href="https://one.nz/broadband/wireless-broadband/">Wireless
+                                      Broadband</a>
+                                    <div class="NavigationLink-more" data-no-children="">
+
+                                      <svg class="chevron">
+                                        <use xlink:href="#chevron">
+                                        </use>\
+                                      </svg>
+
+                                    </div>
+
+                                  </div>
+                                </li>
+
+                                <li class="NavigationItem-items-item">
+                                  <div class="NavigationLink-wrapper">
+                                    <a class="NavigationLink"
+                                      href="https://one.nz/broadband/ultra-fast-fibre/">Fibre
+                                      Broadband</a>
+                                    <div class="NavigationLink-more" data-no-children="">
+
+                                      <svg class="chevron">
+                                        <use xlink:href="#chevron">
+                                        </use>\
+                                      </svg>
+
+                                    </div>
+
+                                  </div>
+                                </li>
+
+                                <li class="NavigationItem-items-item">
+                                  <div class="NavigationLink-wrapper">
+                                    <a class="NavigationLink" href="#">About
+                                      Broadband</a>
+                                    <div class="NavigationLink-more">
+
+                                      <svg class="chevron">
+                                        <use xlink:href="#chevron">
+                                        </use>\
+                                      </svg>
+
+                                    </div>
+
+                                    <ul class="NavigationLink-tertiary">
+
+                                      <li class="NavigationLink-tertiary-link">
+                                        <a class="TertiaryNavLink"
+                                          href="https://one.nz/broadband/what-can-i-get/">Types
+                                          of
+                                          Broadband</a>
+                                      </li>
+
+                                      <li class="NavigationLink-tertiary-link">
+                                        <a class="TertiaryNavLink"
+                                          href="https://one.nz/broadband/understand-your-speed/">How
+                                          It
+                                          Works</a>
+                                      </li>
+
+                                      <li class="NavigationLink-tertiary-link">
+                                        <a class="TertiaryNavLink"
+                                          href="https://one.nz/broadband/rural/">Rural
+                                          Broadband</a>
+                                      </li>
+
+                                      <li class="NavigationLink-tertiary-link">
+                                        <a class="TertiaryNavLink"
+                                          href="https://one.nz/broadband/about-your-charges/">About
+                                          Your
+                                          Charges</a>
+                                      </li>
+
+                                      <li class="NavigationLink-tertiary-link">
+                                        <a class="TertiaryNavLink"
+                                          href="https://one.nz/home-phone/calling-features/">Home
+                                          Phone</a>
+                                      </li>
+
+                                    </ul>
+
+                                  </div>
+                                </li>
+
+
+                              </ul>
+
+                            </div>
+                          </li>
+
+                          <li class="Navigation-items-item">
+                            <div class="NavigationItem">
+                              <div class="NavigationItem-text">
+
+                                <a class="NavigationItem-text-link"
+                                  href="https://one.nz/online-shop/accessories/">Accessories</a>
+
+                                <div class="NavigationItem-more">
+                                  <button aria-label="Open Sub Navigation">
+                                    <svg class="chevron">
+                                      <use xlink:href="#chevron">
+                                      </use>
+                                    </svg>
+                                  </button>
+                                </div>
                               </div>
 
-                            </li>
 
-                          </ul>
+                              <ul class="NavigationItem-items">
 
+
+                                <li class="NavigationItem-items-item">
+                                  <div class="NavigationLink-wrapper">
+                                    <a class="NavigationLink"
+                                      href="https://one.nz/online-shop/accessory/product-listing/?_bc_fsnf=1&amp;sort=featured&amp;Type=Wearables">Wearables</a>
+                                    <div class="NavigationLink-more">
+
+                                      <svg class="chevron">
+                                        <use xlink:href="#chevron">
+                                        </use>\
+                                      </svg>
+
+                                    </div>
+
+                                    <ul class="NavigationLink-tertiary">
+
+                                      <li class="NavigationLink-tertiary-link">
+                                        <a class="TertiaryNavLink"
+                                          href="https://one.nz/samsung-galaxy/galaxy-watch/">Galaxy
+                                          Watch</a>
+                                      </li>
+
+                                    </ul>
+
+                                  </div>
+                                </li>
+
+                                <li class="NavigationItem-items-item">
+                                  <div class="NavigationLink-wrapper">
+                                    <a class="NavigationLink"
+                                      href="https://one.nz/online-shop/accessory/product-listing/?_bc_fsnf=1&amp;sort=featured&amp;Type=Headphones/Speakers">Headphones
+                                      &amp; Audio</a>
+                                    <div class="NavigationLink-more" data-no-children="">
+
+                                      <svg class="chevron">
+                                        <use xlink:href="#chevron">
+                                        </use>\
+                                      </svg>
+
+                                    </div>
+
+                                  </div>
+                                </li>
+
+                                <li class="NavigationItem-items-item">
+                                  <div class="NavigationLink-wrapper">
+                                    <a class="NavigationLink"
+                                      href="https://one.nz/online-shop/accessory/product-listing/?_bc_fsnf=1&amp;sort=featured&amp;Type=Case">Phone
+                                      cases</a>
+                                    <div class="NavigationLink-more" data-no-children="">
+
+                                      <svg class="chevron">
+                                        <use xlink:href="#chevron">
+                                        </use>\
+                                      </svg>
+
+                                    </div>
+
+                                  </div>
+                                </li>
+
+                                <li class="NavigationItem-items-item">
+                                  <div class="NavigationLink-wrapper">
+                                    <a class="NavigationLink"
+                                      href="https://one.nz/online-shop/accessory/product-listing/?_bc_fsnf=1&amp;sort=featured&amp;Type=Chargers">Chargers
+                                      &amp; cables</a>
+                                    <div class="NavigationLink-more" data-no-children="">
+
+                                      <svg class="chevron">
+                                        <use xlink:href="#chevron">
+                                        </use>\
+                                      </svg>
+
+                                    </div>
+
+                                  </div>
+                                </li>
+
+
+                              </ul>
+                              <ul class="NavigationItem-items-placeholder">
+
+
+                                <li class="NavigationItem-items-item">
+                                  <div class="NavigationLink-wrapper">
+                                    <a class="NavigationLink"
+                                      href="https://one.nz/online-shop/accessory/product-listing/?_bc_fsnf=1&amp;sort=featured&amp;Type=Wearables">Wearables</a>
+                                    <div class="NavigationLink-more">
+
+                                      <svg class="chevron">
+                                        <use xlink:href="#chevron">
+                                        </use>\
+                                      </svg>
+
+                                    </div>
+
+                                    <ul class="NavigationLink-tertiary">
+
+                                      <li class="NavigationLink-tertiary-link">
+                                        <a class="TertiaryNavLink"
+                                          href="https://one.nz/samsung-galaxy/galaxy-watch/">Galaxy
+                                          Watch</a>
+                                      </li>
+
+                                    </ul>
+
+                                  </div>
+                                </li>
+
+                                <li class="NavigationItem-items-item">
+                                  <div class="NavigationLink-wrapper">
+                                    <a class="NavigationLink"
+                                      href="https://one.nz/online-shop/accessory/product-listing/?_bc_fsnf=1&amp;sort=featured&amp;Type=Headphones/Speakers">Headphones
+                                      &amp; Audio</a>
+                                    <div class="NavigationLink-more" data-no-children="">
+
+                                      <svg class="chevron">
+                                        <use xlink:href="#chevron">
+                                        </use>\
+                                      </svg>
+
+                                    </div>
+
+                                  </div>
+                                </li>
+
+                                <li class="NavigationItem-items-item">
+                                  <div class="NavigationLink-wrapper">
+                                    <a class="NavigationLink"
+                                      href="https://one.nz/online-shop/accessory/product-listing/?_bc_fsnf=1&amp;sort=featured&amp;Type=Case">Phone
+                                      cases</a>
+                                    <div class="NavigationLink-more" data-no-children="">
+
+                                      <svg class="chevron">
+                                        <use xlink:href="#chevron">
+                                        </use>\
+                                      </svg>
+
+                                    </div>
+
+                                  </div>
+                                </li>
+
+                                <li class="NavigationItem-items-item">
+                                  <div class="NavigationLink-wrapper">
+                                    <a class="NavigationLink"
+                                      href="https://one.nz/online-shop/accessory/product-listing/?_bc_fsnf=1&amp;sort=featured&amp;Type=Chargers">Chargers
+                                      &amp; cables</a>
+                                    <div class="NavigationLink-more" data-no-children="">
+
+                                      <svg class="chevron">
+                                        <use xlink:href="#chevron">
+                                        </use>\
+                                      </svg>
+
+                                    </div>
+
+                                  </div>
+                                </li>
+
+
+                              </ul>
+
+                            </div>
+                          </li>
+
+                          <li class="Navigation-items-item">
+                            <div class="NavigationItem">
+                              <div class="NavigationItem-text">
+
+                                <a class="NavigationItem-text-link" href="https://one.nz/5g/">5G</a>
+
+                                <div class="NavigationItem-more" data-no-children="">
+
+                                  <svg class="chevron">
+                                    <use xlink:href="#chevron">
+                                    </use>
+                                  </svg>
+
+                                </div>
+                              </div>
+
+
+                            </div>
+                          </li>
+
+                          <li class="Navigation-items-item">
+                            <div class="NavigationItem">
+                              <div class="NavigationItem-text">
+
+                                <a class="NavigationItem-text-link" href="https://rewards.one.nz"
+                                  target="_blank">Rewards</a>
+
+                                <div class="NavigationItem-more" data-no-children="">
+
+                                  <svg class="chevron">
+                                    <use xlink:href="#chevron">
+                                    </use>
+                                  </svg>
+
+                                </div>
+                              </div>
+
+
+                            </div>
+                          </li>
+
+                          <li class="Navigation-items-item">
+                            <div class="NavigationItem">
+                              <div class="NavigationItem-text">
+
+                                <a class="NavigationItem-text-link" href="https://one.nz/help/">Help</a>
+
+                                <div class="NavigationItem-more">
+                                  <button aria-label="Open Sub Navigation">
+                                    <svg class="chevron">
+                                      <use xlink:href="#chevron">
+                                      </use>
+                                    </svg>
+                                  </button>
+                                </div>
+                              </div>
+
+
+                              <ul class="NavigationItem-items">
+
+
+                                <li class="NavigationItem-items-item">
+                                  <div class="NavigationLink-wrapper">
+                                    <a class="NavigationLink" href="https://one.nz/faq/">Help
+                                      FAQs</a>
+                                    <div class="NavigationLink-more" data-no-children="">
+
+                                      <svg class="chevron">
+                                        <use xlink:href="#chevron">
+                                        </use>\
+                                      </svg>
+
+                                    </div>
+
+                                  </div>
+                                </li>
+
+                                <li class="NavigationItem-items-item">
+                                  <div class="NavigationLink-wrapper">
+                                    <a class="NavigationLink" href="https://one.nz/help/bill-payment/">Bills
+                                      and payments</a>
+                                    <div class="NavigationLink-more">
+
+                                      <svg class="chevron">
+                                        <use xlink:href="#chevron">
+                                        </use>\
+                                      </svg>
+
+                                    </div>
+
+                                    <ul class="NavigationLink-tertiary">
+
+                                      <li class="NavigationLink-tertiary-link">
+                                        <a class="TertiaryNavLink"
+                                          href="https://one.nz/help/bill-payment/about-fixed-broadband-bill/">Your
+                                          broadband
+                                          bill</a>
+                                      </li>
+
+                                      <li class="NavigationLink-tertiary-link">
+                                        <a class="TertiaryNavLink"
+                                          href="https://one.nz/help/bill-payment/about-mobile-bill/">Your
+                                          mobile
+                                          bill</a>
+                                      </li>
+
+                                      <li class="NavigationLink-tertiary-link">
+                                        <a class="TertiaryNavLink"
+                                          href="https://one.nz/help/bill-payment/prepay-topup/">How
+                                          to Top
+                                          Up</a>
+                                      </li>
+
+                                      <li class="NavigationLink-tertiary-link">
+                                        <a class="TertiaryNavLink"
+                                          href="https://one.nz/help/bill-payment/ways-to-pay/">How
+                                          to pay
+                                        </a>
+                                      </li>
+
+                                    </ul>
+
+                                  </div>
+                                </li>
+
+                                <li class="NavigationItem-items-item">
+                                  <div class="NavigationLink-wrapper">
+                                    <a class="NavigationLink" href="https://one.nz/help/mobile-phones/">Help
+                                      for Mobile</a>
+                                    <div class="NavigationLink-more">
+
+                                      <svg class="chevron">
+                                        <use xlink:href="#chevron">
+                                        </use>\
+                                      </svg>
+
+                                    </div>
+
+                                    <ul class="NavigationLink-tertiary">
+
+                                      <li class="NavigationLink-tertiary-link">
+                                        <a class="TertiaryNavLink"
+                                          href="https://one.nz/help/mobile-device-settings/">Set
+                                          up your
+                                          phone</a>
+                                      </li>
+
+                                      <li class="NavigationLink-tertiary-link">
+                                        <a class="TertiaryNavLink"
+                                          href="https://one.nz/help/mobile/travel-overseas/">Help
+                                          with
+                                          roaming</a>
+                                      </li>
+
+                                    </ul>
+
+                                  </div>
+                                </li>
+
+                                <li class="NavigationItem-items-item">
+                                  <div class="NavigationLink-wrapper">
+                                    <a class="NavigationLink" href="https://one.nz/help/broadband/">Help
+                                      for Broadband</a>
+                                    <div class="NavigationLink-more">
+
+                                      <svg class="chevron">
+                                        <use xlink:href="#chevron">
+                                        </use>\
+                                      </svg>
+
+                                    </div>
+
+                                    <ul class="NavigationLink-tertiary">
+
+                                      <li class="NavigationLink-tertiary-link">
+                                        <a class="TertiaryNavLink"
+                                          href="https://one.nz/help/broadband/modem-support/">Set
+                                          up your
+                                          modem</a>
+                                      </li>
+
+                                      <li class="NavigationLink-tertiary-link">
+                                        <a class="TertiaryNavLink"
+                                          href="https://one.nz/help/broadband/wifi-connections/">Help
+                                          with
+                                          Wi-Fi</a>
+                                      </li>
+
+                                      <li class="NavigationLink-tertiary-link">
+                                        <a class="TertiaryNavLink"
+                                          href="https://one.nz/help/fibre-broadband/">Help
+                                          with
+                                          Fibre</a>
+                                      </li>
+
+                                      <li class="NavigationLink-tertiary-link">
+                                        <a class="TertiaryNavLink" href=""></a>
+                                      </li>
+
+                                    </ul>
+
+                                  </div>
+                                </li>
+
+                                <li class="NavigationItem-items-item">
+                                  <div class="NavigationLink-wrapper">
+                                    <a class="NavigationLink" href="https://one.nz/mobile/apps-services/">Apps
+                                      and services</a>
+                                    <div class="NavigationLink-more">
+
+                                      <svg class="chevron">
+                                        <use xlink:href="#chevron">
+                                        </use>\
+                                      </svg>
+
+                                    </div>
+
+                                    <ul class="NavigationLink-tertiary">
+
+                                      <li class="NavigationLink-tertiary-link">
+                                        <a class="TertiaryNavLink"
+                                          href="https://one.nz/help/my-one-nz/">Help
+                                          with My
+                                          One
+                                          NZ</a>
+                                      </li>
+
+                                      <li class="NavigationLink-tertiary-link">
+                                        <a class="TertiaryNavLink"
+                                          href="https://one.nz/help/store-locations/">Find
+                                          a
+                                          store</a>
+                                      </li>
+
+                                      <li class="NavigationLink-tertiary-link">
+                                        <a class="TertiaryNavLink"
+                                          href="https://one.nz/our-networks/">Network
+                                          status
+                                        </a>
+                                      </li>
+
+                                    </ul>
+
+                                  </div>
+                                </li>
+
+
+                              </ul>
+                              <ul class="NavigationItem-items-placeholder">
+
+
+                                <li class="NavigationItem-items-item">
+                                  <div class="NavigationLink-wrapper">
+                                    <a class="NavigationLink" href="https://one.nz/faq/">Help
+                                      FAQs</a>
+                                    <div class="NavigationLink-more" data-no-children="">
+
+                                      <svg class="chevron">
+                                        <use xlink:href="#chevron">
+                                        </use>\
+                                      </svg>
+
+                                    </div>
+
+                                  </div>
+                                </li>
+
+                                <li class="NavigationItem-items-item">
+                                  <div class="NavigationLink-wrapper">
+                                    <a class="NavigationLink" href="https://one.nz/help/bill-payment/">Bills
+                                      and payments</a>
+                                    <div class="NavigationLink-more">
+
+                                      <svg class="chevron">
+                                        <use xlink:href="#chevron">
+                                        </use>\
+                                      </svg>
+
+                                    </div>
+
+                                    <ul class="NavigationLink-tertiary">
+
+                                      <li class="NavigationLink-tertiary-link">
+                                        <a class="TertiaryNavLink"
+                                          href="https://one.nz/help/bill-payment/about-fixed-broadband-bill/">Your
+                                          broadband
+                                          bill</a>
+                                      </li>
+
+                                      <li class="NavigationLink-tertiary-link">
+                                        <a class="TertiaryNavLink"
+                                          href="https://one.nz/help/bill-payment/about-mobile-bill/">Your
+                                          mobile
+                                          bill</a>
+                                      </li>
+
+                                      <li class="NavigationLink-tertiary-link">
+                                        <a class="TertiaryNavLink"
+                                          href="https://one.nz/help/bill-payment/prepay-topup/">How
+                                          to Top
+                                          Up</a>
+                                      </li>
+
+                                      <li class="NavigationLink-tertiary-link">
+                                        <a class="TertiaryNavLink"
+                                          href="https://one.nz/help/bill-payment/ways-to-pay/">How
+                                          to pay
+                                        </a>
+                                      </li>
+
+                                    </ul>
+
+                                  </div>
+                                </li>
+
+                                <li class="NavigationItem-items-item">
+                                  <div class="NavigationLink-wrapper">
+                                    <a class="NavigationLink" href="https://one.nz/help/mobile-phones/">Help
+                                      for Mobile</a>
+                                    <div class="NavigationLink-more">
+
+                                      <svg class="chevron">
+                                        <use xlink:href="#chevron">
+                                        </use>\
+                                      </svg>
+
+                                    </div>
+
+                                    <ul class="NavigationLink-tertiary">
+
+                                      <li class="NavigationLink-tertiary-link">
+                                        <a class="TertiaryNavLink"
+                                          href="https://one.nz/help/mobile-device-settings/">Set
+                                          up your
+                                          phone</a>
+                                      </li>
+
+                                      <li class="NavigationLink-tertiary-link">
+                                        <a class="TertiaryNavLink"
+                                          href="https://one.nz/help/mobile/travel-overseas/">Help
+                                          with
+                                          roaming</a>
+                                      </li>
+
+                                    </ul>
+
+                                  </div>
+                                </li>
+
+                                <li class="NavigationItem-items-item">
+                                  <div class="NavigationLink-wrapper">
+                                    <a class="NavigationLink" href="https://one.nz/help/broadband/">Help
+                                      for Broadband</a>
+                                    <div class="NavigationLink-more">
+
+                                      <svg class="chevron">
+                                        <use xlink:href="#chevron">
+                                        </use>\
+                                      </svg>
+
+                                    </div>
+
+                                    <ul class="NavigationLink-tertiary">
+
+                                      <li class="NavigationLink-tertiary-link">
+                                        <a class="TertiaryNavLink"
+                                          href="https://one.nz/help/broadband/modem-support/">Set
+                                          up your
+                                          modem</a>
+                                      </li>
+
+                                      <li class="NavigationLink-tertiary-link">
+                                        <a class="TertiaryNavLink"
+                                          href="https://one.nz/help/broadband/wifi-connections/">Help
+                                          with
+                                          Wi-Fi</a>
+                                      </li>
+
+                                      <li class="NavigationLink-tertiary-link">
+                                        <a class="TertiaryNavLink"
+                                          href="https://one.nz/help/fibre-broadband/">Help
+                                          with
+                                          Fibre</a>
+                                      </li>
+
+                                      <li class="NavigationLink-tertiary-link">
+                                        <a class="TertiaryNavLink" href=""></a>
+                                      </li>
+
+                                    </ul>
+
+                                  </div>
+                                </li>
+
+                                <li class="NavigationItem-items-item">
+                                  <div class="NavigationLink-wrapper">
+                                    <a class="NavigationLink" href="https://one.nz/mobile/apps-services/">Apps
+                                      and services</a>
+                                    <div class="NavigationLink-more">
+
+                                      <svg class="chevron">
+                                        <use xlink:href="#chevron">
+                                        </use>\
+                                      </svg>
+
+                                    </div>
+
+                                    <ul class="NavigationLink-tertiary">
+
+                                      <li class="NavigationLink-tertiary-link">
+                                        <a class="TertiaryNavLink"
+                                          href="https://one.nz/help/my-one-nz/">Help
+                                          with My
+                                          One
+                                          NZ</a>
+                                      </li>
+
+                                      <li class="NavigationLink-tertiary-link">
+                                        <a class="TertiaryNavLink"
+                                          href="https://one.nz/help/store-locations/">Find
+                                          a
+                                          store</a>
+                                      </li>
+
+                                      <li class="NavigationLink-tertiary-link">
+                                        <a class="TertiaryNavLink"
+                                          href="https://one.nz/our-networks/">Network
+                                          status
+                                        </a>
+                                      </li>
+
+                                    </ul>
+
+                                  </div>
+                                </li>
+
+
+                              </ul>
+
+                            </div>
+                          </li>
+
+                        </ul>
+
+                      </nav>
+
+
+
+
+
+
+
+
+                      <div class="NavigationItem" data-style-dark="">
+                        <div class="NavigationItem-text">
+
+                          <a class="NavigationItem-text-link" href="https://one.nz/business/">Business</a>
+
+                          <div class="NavigationItem-more" data-no-children="">
+
+                            <svg class="chevron">
+                              <use xlink:href="#chevron"></use>
+                            </svg>
+
+                          </div>
                         </div>
 
-                      </li>
-
-                    </ul>
-
-                  </nav>
-
-
-
-                </div><button class="Page-header-menu-trigger" aria-expanded="false" tabindex="1"><svg class="burger-menu"><use xlink: href="#burger-menu"></use></svg><svg class="close-x"><use xlink: href="#close-x"></use></svg><span class="label">Menu</span></button></>
-  
-          </div>
-  
-      </ps-header>
-  
-   
-  `
-      }
-   
-  
-   
-  
-         
-  
-      //nav actual data fetching
-  
-   
-  
-  //document.querySelectorAll('.header-wrapper >  .header.block > .nav-wrapper > #nav > div > .headernavigation > div > div > ul > li > a')[0].attributes[0].value
-  
-  document.querySelectorAll('.header-wrapper >  .header.block > .nav-wrapper > #nav > div > .headernavigation > div > div > ul > li > a')[0].innerText
-  
-   
-  
-     
-  
-  desc.Mobile = document.querySelectorAll('.Page-header > .header.block > nav > div > button > svg > ul > li > div> a')[0].attributes[0].value .innertext;
-  
-   
-  
-      desc.plans = document.querySelectorAll('.Page-header> .header.block > ul > li > a > div > svg')[1].innerText;
-  
-   
-  
-   desc.paymonthly = document.querySelectorAll('.Page-header> .header.block > ul > li > a > div > li > a >li>a')[3].innerText;
-  
-   
-  
-   
-  
-      desc.Phones = document.querySelectorAll('.Page-header > .headerr.block >li > div > a > div > svg ')[0].attributes[0].value .innerText[1];
-  
-   
-  
-      desc.latestDeals = document.querySelectorAll('.Page-header> .header.block > div > a > div > div > svg')[1].innerText;
-  
-   
-  
-   
-  
-   
-  
-      desc.tadeIn = document.querySelectorAll('.Page-header > .header.block > li > div > a  > li > div > svg')[0].attributes[0].value;
-  
-   
-  
-      desc.roaming = document.querySelectorAll('.Page-header > .header.block > li > div > a > div > svg')[2].innerText;
-  
-   
-  
-   
-  
-   
-  
-      desc.mobileBroadband = document.querySelectorAll('.Page-header > .header.block >  li > div > a > div > svg)[3].attributes[0].value;
-  
-   
-  
-      desc.broadband = document.querySelectorAll('.Page-header > .header.block > li > div > div > a > div > ul > li > a')[5].innerText;
-  
-   
-  
-   
-  
-   
-  
-      desc.broadbandPlans = document.querySelectorAll('.Page-header > .header.block > div > div >  div > div > ul > li > a')[4].attributes[0].value;
-  
-   
-  
-      desc.superWi-FI = document.querySelectorAll('.Page-header > .header.block > div > div >  div > div > ul > li > a')[4].innerText;
-  
-   
-  
-   
-  
-   
-  
-      desc.wirelessBroadband = document.querySelectorAll('.Page-header > .header.block > div > div > > div > div > ul > li > a')[5].attributes[0].value;
-  
-   
-  
-      desc.fibreBroadband = document.querySelectorAll('.Page-header > .header.block > div > div >> div > div > ul > li > a')[5].innerText;
-  
-   
-  
-   
-  
-   
-  
-      desc.aboutBroadband = document.querySelectorAll('.Page-header > .header.block > div > div >  > div > div > ul > li > a')[5].attributes[0].value;
-  
-   
-  
-      desc.accessories = document.querySelectorAll('.Page-header > .header.block > div > div >  div > div > ul > li > a')[6].innerText;
-  
-   
-  
-   
-  
-   
-  
-      desc.wearables = document.querySelectorAll('.Page-header> .header.block > div > div > div > div > ul > li > a')[7].attributes[0].value;
-  
-   
-  
-      desc.HeadphonesAndAudio = document.querySelectorAll('.Page-header > .header.block > div > div >  div > div > ul > li > a')[7].innerText;
-  
-   
-  
-   
-  
-   
-  
-      desc.phoneCases = document.querySelectorAll('.Page-header> .header.block > div > div >  div > div > ul > li > a')[8].attributes[0].value;
-  
-   
-  
-      desc.chargersAncables = document.querySelectorAll('.Page-header > .headerblock > div > div >div > div > ul > li > a')[8].innerText;
-  
-   
-  
-   
-  
-   
-  
-      desc.5g = document.querySelectorAll('.Page-footer > .Page-header > div > div >  div > div > ul > li > a')[9].attributes[0].value;
-  
-   
-  
-      desc.rewards = document.querySelectorAll('.Page-header > .header.block > div > div >  div > div > ul > li > a')[9].innerText;
-  
-   
-  
-   
-  
-   
-  
-      desc.help = document.querySelectorAll('.Page-header > .header.block > div > div >  div > div > ul > li > a')[10].attributes[0].value;
-  
-   
-  
-      desc.helpFAQ = document.querySelectorAll('.Page-header > .header.block > div > div > div > div > ul > li > a')[10].innerText;
-  
-   
-  
-   
-  
-   
-  
-      desc.billPayment = document.querySelectorAll('.Page-header > .header.block > div > div > div > div > ul > li > a')[11].attributes[0].value;
-  
-   
-  
-     desc.mobileHelp = document.querySelectorAll('.Page-header> .header.block > div > div >  div > div > ul > li > a')[11].innerText;
-  
-   
-  
-   
-  
-   
-  
-      desc.broadbandHelp = document.querySelectorAll('.Page-header > .header.block > div > div >  div > div > ul > li > a')[10].attributes[0].value;
-  
-   
-  
-      desc.appAndServices = document.querySelectorAll('.Page-header > .header.block > div > div > div > div > ul > li > a')[10].innerText;
 
-   targetELEMENT.innerHTML=newELEMENT(desc)
-  })()
+                      </div>
 
 
 
+                      <div class="NavigationItem" data-style-dark="">
+                        <div class="NavigationItem-text">
 
-//document.querySelector('.headernavigation').style.display = 'none';
-  //document.querySelector('.signinoverlay').style.display = 'none';
-//
-  
+                          <a class="NavigationItem-text-link" href="https://one.nz/why-choose-us/">Why Choose Us</a>
 
-  //hatNavigation starts--
-  //
+                          <div class="NavigationItem-more" data-no-children="">
 
-  var mainDiv = document.querySelector(".Page-signInOverlay");
+                            <svg class="chevron">
+                              <use xlink:href="#chevron"></use>
+                            </svg>
 
-  document.querySelector(
+                          </div>
+                        </div>
 
-    ". Page-signInOverlay> .Page-signInOverlay.block"
 
-  ).style.display = "none";
+                      </div>
 
- 
 
- 
 
-  var firstContent = document.querySelector(
+                      <div class="NavigationItem" data-style-dark="">
+                        <div class="NavigationItem-text">
 
-    ". Page-signInOverlay> .Page-signInOverlay.block > div > div > .Page-signInOverlay > div > div > ul > li > a"
+                          <a class="NavigationItem-text-link"
+                            href="https://one.nz/our-networks/infrastructure-partners/">Infrastructure
+                            Partners</a>
 
-  ).innerText;
+                          <div class="NavigationItem-more" data-no-children="">
 
-  var firstAnchorContentlink = document.querySelector(
+                            <svg class="chevron">
+                              <use xlink:href="#chevron"></use>
+                            </svg>
 
-    ".Page-signInOverlay > .Page-signInOverlay.block > div > div > .Page-signInOverlay > div > div > ul > li > a"
+                          </div>
+                        </div>
 
-  ).attributes[0].value;
 
- 
+                      </div>
 
-  mainDiv.style.backgroundColor = "#434343";
 
-  //
 
-  var firstDiv = document.createElement("div");
 
-  firstDiv.setAttribute("class", "Page-signInOverlay");
+                    </div>
+                  </div>
+                </div>
 
-  mainDiv.appendChild(firstDiv);
 
-  //
 
-  var secondDiv = document.createElement("div");
 
-  secondDiv.setAttribute("class", "Page-signInOverlay-container");
+                <div class="Page-header-logo"><a aria-label="home page" href="https://one.nz/">
 
-  secondDiv.appendChild(secondDiv);
+                    <img class="PageLogo-image"
+                      src="https://content.vodafone.co.nz/dims4/default/1dd5dda/2147483647/strip/true/crop/1081x1081+0+0/resize/120x120!/quality/90/?url=http%3A%2F%2Fvodafonenz-brightspot.s3.amazonaws.com%2Fbf%2F1e%2Fb85edbf5411a9bb730a270902c94%2F2ds-one-nz-secondary-symbol-rgb.png"
+                      alt="The One NZ logo" width="120" height="120">
 
- 
+                  </a>
+                </div>
 
-  var a = document.createElement("a");
 
-  a.setAttribute("class", "Page-signInOverlay-close");
 
-  a.setAttribute("href", Page - signInOverlay - close);
 
-  a.innerHTML = firstContent;
+                <div class="Page-header-bar">
+                  <div class="Page-header-bar-navigation">
 
- 
 
-  var svg = document.createElement("svg");
+                    <nav class="DropdownNavigation">
 
-  svg.setAttribute("href", "close-x");
 
-  svg.appendChild(svg);
+                      <ul class="DropdownNavigation-items">
 
-  //
+                        <li class="DropdownNavigation-items-item">
+                          <div class="DropdownNavigationItem">
+                            <div class="DropdownNavigationItem-text">
 
-  var secondDiv = document.createElement("div");
+                              <a class="DropdownNavigationItem-text-link" href="https://one.nz/mobile/">Mobile</a>
 
-  secondDiv.setAttribute("class", "Page-signInOverlay-container");
 
-  secondDiv.appendChild(secondDiv);
+                              <div class="DropdownNavigationItem-more">
+                                <button aria-label="Open Sub Navigation"></button>
+                              </div>
 
-  //
+                            </div>
 
-  var secondDiv = document.createElement("div");
 
- 
+                            <ul class="DropdownNavigationItem-items">
 
-  thirdDiv.setAttribute("class", "Page-signInOverlay-header");
 
- 
+                              <li class="DropdownNavigationItem-items-item">
+                                <div class="NavigationLink-wrapper">
+                                  <a class="NavigationLink" href="https://one.nz/mobile-plans/">Plans</a>
+                                  <div class="NavigationLink-more">
 
-  thirdDiv.appendChild(thirdDiv);
+                                    <svg class="chevron">
+                                      <use xlink:href="#chevron">
+                                      </use>\
+                                    </svg>
 
-  //
+                                  </div>
 
-  var a = document.createElement("a");
+                                  <ul class="NavigationLink-tertiary">
 
-  a.setAttribute("href", "Page-signInOverlay-close");
+                                    <li class="NavigationLink-tertiary-link">
+                                      <a class="TertiaryNavLink" href="https://one.nz/pay-monthly/">Pay
+                                        Monthly</a>
+                                    </li>
 
-  a.appendChild(a);
+                                    <li class="NavigationLink-tertiary-link">
+                                      <a class="TertiaryNavLink" href="https://one.nz/prepay/">Prepay</a>
+                                    </li>
 
-  //
+                                    <li class="NavigationLink-tertiary-link">
+                                      <a class="TertiaryNavLink"
+                                        href="https://one.nz/mobile-plans/add-ons/one-upgrade/">One
+                                        Upgrade</a>
+                                    </li>
 
-  var svg = document.createElement("svg");
+                                  </ul>
 
-  svg.setAttribute("xlink", "close-x");
+                                </div>
+                              </li>
 
-  svg.appendChild(svg);
+                              <li class="DropdownNavigationItem-items-item">
+                                <div class="NavigationLink-wrapper">
+                                  <a class="NavigationLink" href="https://one.nz/mobile-phones/">Phones</a>
+                                  <div class="NavigationLink-more">
 
- 
+                                    <svg class="chevron">
+                                      <use xlink:href="#chevron">
+                                      </use>\
+                                    </svg>
 
-  var spanclass = document.createElement("spanclass");
+                                  </div>
 
-  spanclass.setAttribute("xlink", "close-x");
+                                  <ul class="NavigationLink-tertiary">
 
-  spanclass.appendChild(spanclass)// Close dialog;
+                                    <li class="NavigationLink-tertiary-link">
+                                      <a class="TertiaryNavLink" href="https://one.nz/iphone/">iPhone</a>
+                                    </li>
 
- 
+                                    <li class="NavigationLink-tertiary-link">
+                                      <a class="TertiaryNavLink"
+                                        href="https://one.nz/samsung-galaxy/">Samsung</a>
+                                    </li>
 
-  //
+                                    <li class="NavigationLink-tertiary-link">
+                                      <a class="TertiaryNavLink" href="https://one.nz/oppo/">OPPO</a>
+                                    </li>
 
-  var fourthDiv = document.createElement("fourthDiv");
+                                    <li class="NavigationLink-tertiary-link">
+                                      <a class="TertiaryNavLink" href="https://one.nz/smart/">Smart</a>
+                                    </li>
 
-  ourthDiv.setAttribute("class", "Page-signInOverlay-content");
+                                    <li class="NavigationLink-tertiary-link">
+                                      <a class="TertiaryNavLink"
+                                        href="https://one.nz/online-shop/mobile/product-listing/">Browse
+                                        all phones </a>
+                                    </li>
 
-  fourthDiv.appendChild(fourthDiv);
+                                  </ul>
 
-  //
+                                </div>
+                              </li>
 
-  var fifthDiv = document.createElement("a");
+                              <li class="DropdownNavigationItem-items-item">
+                                <div class="NavigationLink-wrapper">
+                                  <a class="NavigationLink" href="https://one.nz/specials-promos/">Latest
+                                    deals</a>
+                                  <div class="NavigationLink-more" data-no-children="">
 
-  fifthDiv.setAttribute("class", "HatNavigation");
+                                    <svg class="chevron">
+                                      <use xlink:href="#chevron">
+                                      </use>\
+                                    </svg>
 
-  fifthDiv.appendChild(fifthDiv);
+                                  </div>
 
- 
+                                </div>
+                              </li>
 
-  var ul = document.createElement("ul");
+                              <li class="DropdownNavigationItem-items-item">
+                                <div class="NavigationLink-wrapper">
+                                  <a class="NavigationLink" href="https://tradein.one.nz">Trade-in</a>
+                                  <div class="NavigationLink-more" data-no-children="">
 
-  ul.setAttribute("class", "HatNavigation-items");
+                                    <svg class="chevron">
+                                      <use xlink:href="#chevron">
+                                      </use>\
+                                    </svg>
 
-  ul.appendChild(ul);
+                                  </div>
 
- 
+                                </div>
+                              </li>
 
-  var li = document.createElement("li");
+                              <li class="DropdownNavigationItem-items-item">
+                                <div class="NavigationLink-wrapper">
+                                  <a class="NavigationLink" href="https://one.nz/roaming/">Roaming</a>
+                                  <div class="NavigationLink-more" data-no-children="">
 
-  li.setAttribute("class", "HatNavigation-items-item");
+                                    <svg class="chevron">
+                                      <use xlink:href="#chevron">
+                                      </use>\
+                                    </svg>
 
-  li.setAttribute("class", "data-active");
+                                  </div>
 
-  li.appendChild(li);
+                                </div>
+                              </li>
 
- 
+                              <li class="DropdownNavigationItem-items-item">
+                                <div class="NavigationLink-wrapper">
+                                  <a class="NavigationLink" href="https://one.nz/mobile-broadband/">Mobile
+                                    broadband</a>
+                                  <div class="NavigationLink-more">
 
-  var sixDiv = document.createElement("div");
+                                    <svg class="chevron">
+                                      <use xlink:href="#chevron">
+                                      </use>\
+                                    </svg>
 
-  sixDiv.setAttribute("class", "NavigationLink-wrapper");
+                                  </div>
 
-  sixDiv.appendChild(sixDiv);
+                                  <ul class="NavigationLink-tertiary">
 
- 
+                                    <li class="NavigationLink-tertiary-link">
+                                      <a class="TertiaryNavLink" href="https://one.nz/ipad/">iPad</a>
+                                    </li>
 
-  var a = document.createElement("a");
+                                    <li class="NavigationLink-tertiary-link">
+                                      <a class="TertiaryNavLink"
+                                        href="https://one.nz/samsung-galaxy/tablet/">Galaxy
+                                        Tab</a>
+                                    </li>
 
-  a.setAttribute("href", "NavigationLink"); //Personal
+                                  </ul>
 
-  a.appendChild(a);
+                                </div>
+                              </li>
 
- 
 
-  var sevenDiv = document.createElement("div");
+                            </ul>
 
-  sevenDiv.setAttribute("class", "NavigationLink-more");
+                          </div>
+                        </li>
 
-  sevenDiv.appendChild(sevenDiv);
+                        <li class="DropdownNavigation-items-item">
+                          <div class="DropdownNavigationItem">
+                            <div class="DropdownNavigationItem-text">
 
- 
+                              <a class="DropdownNavigationItem-text-link"
+                                href="https://one.nz/broadband/">Broadband</a>
 
-  var svg = document.createElement("svg");
 
-  svg.setAttribute("href", "chevron");
+                              <div class="DropdownNavigationItem-more">
+                                <button aria-label="Open Sub Navigation"></button>
+                              </div>
 
-  svg.appendChild(svg);
+                            </div>
 
- 
 
-  var li = document.createElement("li");
+                            <ul class="DropdownNavigationItem-items">
 
-  li.setAttribute("class", "HatNavigation-items-item");
 
-  li.appendChild(li);
+                              <li class="DropdownNavigationItem-items-item">
+                                <div class="NavigationLink-wrapper">
+                                  <a class="NavigationLink"
+                                    href="https://one.nz/broadband/internet-plans/">Broadband
+                                    Plans</a>
+                                  <div class="NavigationLink-more" data-no-children="">
 
- 
+                                    <svg class="chevron">
+                                      <use xlink:href="#chevron">
+                                      </use>\
+                                    </svg>
 
-  var eightDiv = document.createElement("div");
+                                  </div>
 
-  eightDiv.setAttribute("class", "NavigationLink-wrapper");
+                                </div>
+                              </li>
 
-  eightDiv.appendChild(eightDiv);
+                              <li class="DropdownNavigationItem-items-item">
+                                <div class="NavigationLink-wrapper">
+                                  <a class="NavigationLink"
+                                    href="https://one.nz/broadband/superwifi/">SuperWifi</a>
+                                  <div class="NavigationLink-more" data-no-children="">
 
- 
+                                    <svg class="chevron">
+                                      <use xlink:href="#chevron">
+                                      </use>\
+                                    </svg>
 
-  var a = document.createElement("a");
+                                  </div>
 
-  a.setAttribute("href", "NavigationLink"); //Bussiness
+                                </div>
+                              </li>
 
-  a.appendChild(a);
+                              <li class="DropdownNavigationItem-items-item">
+                                <div class="NavigationLink-wrapper">
+                                  <a class="NavigationLink"
+                                    href="https://one.nz/broadband/wireless-broadband/">Wireless
+                                    Broadband</a>
+                                  <div class="NavigationLink-more" data-no-children="">
 
- 
+                                    <svg class="chevron">
+                                      <use xlink:href="#chevron">
+                                      </use>\
+                                    </svg>
 
-  var nineDiv = document.createElement("div");
+                                  </div>
 
-  nineDiv.setAttribute("class", "NavigationLink-more");
+                                </div>
+                              </li>
 
-  nineDiv.appendChild(nineDiv);
+                              <li class="DropdownNavigationItem-items-item">
+                                <div class="NavigationLink-wrapper">
+                                  <a class="NavigationLink"
+                                    href="https://one.nz/broadband/ultra-fast-fibre/">Fibre
+                                    Broadband</a>
+                                  <div class="NavigationLink-more" data-no-children="">
 
- 
+                                    <svg class="chevron">
+                                      <use xlink:href="#chevron">
+                                      </use>\
+                                    </svg>
 
-  var svg = document.createElement("svg");
+                                  </div>
 
-  svg.setAttribute("href", "chevron");
+                                </div>
+                              </li>
 
-  svg.appendChild(svg);
+                              <li class="DropdownNavigationItem-items-item">
+                                <div class="NavigationLink-wrapper">
+                                  <a class="NavigationLink" href="#">About
+                                    Broadband</a>
+                                  <div class="NavigationLink-more">
 
- 
+                                    <svg class="chevron">
+                                      <use xlink:href="#chevron">
+                                      </use>\
+                                    </svg>
 
-  var li = document.createElement("li");
+                                  </div>
 
-  li.setAttribute("class", "HatNavigation-items-item");
+                                  <ul class="NavigationLink-tertiary">
 
-  li.appendChild(li);
+                                    <li class="NavigationLink-tertiary-link">
+                                      <a class="TertiaryNavLink"
+                                        href="https://one.nz/broadband/what-can-i-get/">Types
+                                        of Broadband</a>
+                                    </li>
 
- 
+                                    <li class="NavigationLink-tertiary-link">
+                                      <a class="TertiaryNavLink"
+                                        href="https://one.nz/broadband/understand-your-speed/">How
+                                        It Works</a>
+                                    </li>
 
-  var tenthDiv = document.createElement("div");
+                                    <li class="NavigationLink-tertiary-link">
+                                      <a class="TertiaryNavLink" href="https://one.nz/broadband/rural/">Rural
+                                        Broadband</a>
+                                    </li>
 
-  tenthDiv.setAttribute("class", "NavigationLink-wrapper");
+                                    <li class="NavigationLink-tertiary-link">
+                                      <a class="TertiaryNavLink"
+                                        href="https://one.nz/broadband/about-your-charges/">About
+                                        Your Charges</a>
+                                    </li>
 
-  tenthDiv.appendChild(tenthDiv);
+                                    <li class="NavigationLink-tertiary-link">
+                                      <a class="TertiaryNavLink"
+                                        href="https://one.nz/home-phone/calling-features/">Home
+                                        Phone</a>
+                                    </li>
 
- 
+                                  </ul>
 
-  var a = document.createElement("a");
+                                </div>
+                              </li>
 
-  a.setAttribute("href", "NavigationLink"); //Why Choose Us
 
-  a.appendChild(a);
+                            </ul>
 
- 
+                          </div>
+                        </li>
 
-  var eDiv = document.createElement("div");
+                        <li class="DropdownNavigation-items-item">
+                          <div class="DropdownNavigationItem">
+                            <div class="DropdownNavigationItem-text">
 
-  eDiv.setAttribute("class", "NavigationLink-more");
+                              <a class="DropdownNavigationItem-text-link"
+                                href="https://one.nz/online-shop/accessories/">Accessories</a>
 
-  eDiv.appendChild(eDiv);
 
- 
+                              <div class="DropdownNavigationItem-more">
+                                <button aria-label="Open Sub Navigation"></button>
+                              </div>
 
-  var svg = document.createElement("svg");
+                            </div>
 
-  svg.setAttribute("href", "chevron");
 
-  svg.appendChild(svg);
+                            <ul class="DropdownNavigationItem-items">
 
- 
 
-  var eeDiv = document.createElement("div");
+                              <li class="DropdownNavigationItem-items-item">
+                                <div class="NavigationLink-wrapper">
+                                  <a class="NavigationLink"
+                                    href="https://one.nz/online-shop/accessory/product-listing/?_bc_fsnf=1&amp;sort=featured&amp;Type=Wearables">Wearables</a>
+                                  <div class="NavigationLink-more">
 
-  eeDiv.setAttribute("class", "NavigationLink-wrapper");
+                                    <svg class="chevron">
+                                      <use xlink:href="#chevron">
+                                      </use>\
+                                    </svg>
 
-  eeDiv.appendChild(eeDiv);
+                                  </div>
 
- 
+                                  <ul class="NavigationLink-tertiary">
 
-  var a = document.createElement("a");
+                                    <li class="NavigationLink-tertiary-link">
+                                      <a class="TertiaryNavLink"
+                                        href="https://one.nz/samsung-galaxy/galaxy-watch/">Galaxy
+                                        Watch</a>
+                                    </li>
 
-  a.setAttribute("href", "NavigationLink");// Infrastructure Partners
+                                  </ul>
 
-  a.appendChild(a);
+                                </div>
+                              </li>
 
- 
+                              <li class="DropdownNavigationItem-items-item">
+                                <div class="NavigationLink-wrapper">
+                                  <a class="NavigationLink"
+                                    href="https://one.nz/online-shop/accessory/product-listing/?_bc_fsnf=1&amp;sort=featured&amp;Type=Headphones/Speakers">Headphones
+                                    &amp; Audio</a>
+                                  <div class="NavigationLink-more" data-no-children="">
 
-  var nDiv = document.createElement("div");
+                                    <svg class="chevron">
+                                      <use xlink:href="#chevron">
+                                      </use>\
+                                    </svg>
 
-  nDiv.setAttribute("class", "NavigationLink-more");
+                                  </div>
 
-  nDiv.appendChild(nDiv);
+                                </div>
+                              </li>
 
- 
+                              <li class="DropdownNavigationItem-items-item">
+                                <div class="NavigationLink-wrapper">
+                                  <a class="NavigationLink"
+                                    href="https://one.nz/online-shop/accessory/product-listing/?_bc_fsnf=1&amp;sort=featured&amp;Type=Case">Phone
+                                    cases</a>
+                                  <div class="NavigationLink-more" data-no-children="">
 
-  var svg = document.createElement("svg");
+                                    <svg class="chevron">
+                                      <use xlink:href="#chevron">
+                                      </use>\
+                                    </svg>
 
-  svg.setAttribute("href", "chevron");
+                                  </div>
 
-  svg.appendChild(svg);
-  //hatNavigation ends ---
+                                </div>
+                              </li>
 
+                              <li class="DropdownNavigationItem-items-item">
+                                <div class="NavigationLink-wrapper">
+                                  <a class="NavigationLink"
+                                    href="https://one.nz/online-shop/accessory/product-listing/?_bc_fsnf=1&amp;sort=featured&amp;Type=Chargers">Chargers
+                                    &amp; cables</a>
+                                  <div class="NavigationLink-more" data-no-children="">
 
+                                    <svg class="chevron">
+                                      <use xlink:href="#chevron">
+                                      </use>\
+                                    </svg>
 
-    }
+                                  </div>
 
+                                </div>
+                              </li>
+
+
+                            </ul>
+
+                          </div>
+                        </li>
+
+                        <li class="DropdownNavigation-items-item">
+                          <div class="DropdownNavigationItem">
+                            <div class="DropdownNavigationItem-text">
+
+                              <a class="DropdownNavigationItem-text-link" href="https://one.nz/5g/">5G</a>
+                            </div>
+                          </div>
+                        </li>
+
+                        <li class="DropdownNavigation-items-item">
+                          <div class="DropdownNavigationItem">
+                            <div class="DropdownNavigationItem-text">
+
+                              <a class="DropdownNavigationItem-text-link" href="https://rewards.one.nz"
+                                target="_blank">Rewards</a>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="DropdownNavigation-items-item">
+                          <div class="DropdownNavigationItem">
+                            <div class="DropdownNavigationItem-text">
+                              <a class="DropdownNavigationItem-text-link" href="https://one.nz/help/">Help</a>
+                              <div class="DropdownNavigationItem-more">
+                                <button aria-label="Open Sub Navigation"></button>
+                              </div>
+
+                            </div>
+                            <ul class="DropdownNavigationItem-items">
+                              <li class="DropdownNavigationItem-items-item">
+                                <div class="NavigationLink-wrapper">
+                                  <a class="NavigationLink" href="https://one.nz/faq/">Help
+                                    FAQs</a>
+                                  <div class="NavigationLink-more" data-no-children="">
+
+                                    <svg class="chevron">
+                                      <use xlink:href="#chevron">
+                                      </use>\
+                                    </svg>
+
+                                  </div>
+
+                                </div>
+                              </li>
+
+                              <li class="DropdownNavigationItem-items-item">
+                                <div class="NavigationLink-wrapper">
+                                  <a class="NavigationLink" href="https://one.nz/help/bill-payment/">Bills
+                                    and payments</a>
+                                  <div class="NavigationLink-more">
+
+                                    <svg class="chevron">
+                                      <use xlink:href="#chevron">
+                                      </use>\
+                                    </svg>
+
+                                  </div>
+
+                                  <ul class="NavigationLink-tertiary">
+
+                                    <li class="NavigationLink-tertiary-link">
+                                      <a class="TertiaryNavLink"
+                                        href="https://one.nz/help/bill-payment/about-fixed-broadband-bill/">Your
+                                        broadband
+                                        bill</a>
+                                    </li>
+
+                                    <li class="NavigationLink-tertiary-link">
+                                      <a class="TertiaryNavLink"
+                                        href="https://one.nz/help/bill-payment/about-mobile-bill/">Your
+                                        mobile bill</a>
+                                    </li>
+
+                                    <li class="NavigationLink-tertiary-link">
+                                      <a class="TertiaryNavLink"
+                                        href="https://one.nz/help/bill-payment/prepay-topup/">How
+                                        to Top Up</a>
+                                    </li>
+
+                                    <li class="NavigationLink-tertiary-link">
+                                      <a class="TertiaryNavLink"
+                                        href="https://one.nz/help/bill-payment/ways-to-pay/">How
+                                        to pay </a>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </li>
+
+                              <li class="DropdownNavigationItem-items-item">
+                                <div class="NavigationLink-wrapper">
+                                  <a class="NavigationLink" href="https://one.nz/help/mobile-phones/">Help
+                                    for Mobile</a>
+                                  <div class="NavigationLink-more">
+                                    <svg class="chevron">
+                                      <use xlink:href="#chevron">
+                                      </use>\
+                                    </svg>
+
+                                  </div>
+
+                                  <ul class="NavigationLink-tertiary">
+
+                                    <li class="NavigationLink-tertiary-link">
+                                      <a class="TertiaryNavLink"
+                                        href="https://one.nz/help/mobile-device-settings/">Set
+                                        up your
+                                        phone</a>
+                                    </li>
+
+                                    <li class="NavigationLink-tertiary-link">
+                                      <a class="TertiaryNavLink"
+                                        href="https://one.nz/help/mobile/travel-overseas/">Help
+                                        with roaming</a>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </li>
+                              <li class="DropdownNavigationItem-items-item">
+                                <div class="NavigationLink-wrapper">
+                                  <a class="NavigationLink" href="https://one.nz/help/broadband/">Help
+                                    for Broadband</a>
+                                  <div class="NavigationLink-more">
+
+                                    <svg class="chevron">
+                                      <use xlink:href="#chevron">
+                                      </use>\
+                                    </svg>
+
+                                  </div>
+                                  <ul class="NavigationLink-tertiary">
+
+                                    <li class="NavigationLink-tertiary-link">
+                                      <a class="TertiaryNavLink"
+                                        href="https://one.nz/help/broadband/modem-support/">Set
+                                        up your
+                                        modem</a>
+                                    </li>
+
+                                    <li class="NavigationLink-tertiary-link">
+                                      <a class="TertiaryNavLink"
+                                        href="https://one.nz/help/broadband/wifi-connections/">Help
+                                        with Wi-Fi</a>
+                                    </li>
+
+                                    <li class="NavigationLink-tertiary-link">
+                                      <a class="TertiaryNavLink"
+                                        href="https://one.nz/help/fibre-broadband/">Help
+                                        with Fibre</a>
+                                    </li>
+
+                                    <li class="NavigationLink-tertiary-link">
+                                      <a class="TertiaryNavLink" href=""></a>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </li>
+
+                              <li class="DropdownNavigationItem-items-item">
+                                <div class="NavigationLink-wrapper">
+                                  <a class="NavigationLink" href="https://one.nz/mobile/apps-services/">Apps
+                                    and services</a>
+                                  <div class="NavigationLink-more">
+                                    <svg class="chevron">
+                                      <use xlink:href="#chevron">
+                                      </use>\
+                                    </svg>
+
+                                  </div>
+                                  <ul class="NavigationLink-tertiary">
+
+                                    <li class="NavigationLink-tertiary-link">
+                                      <a class="TertiaryNavLink" href="https://one.nz/help/my-one-nz/">Help
+                                        with My One
+                                        NZ</a>
+                                    </li>
+
+                                    <li class="NavigationLink-tertiary-link">
+                                      <a class="TertiaryNavLink"
+                                        href="https://one.nz/help/store-locations/">Find
+                                        a store</a>
+                                    </li>
+
+                                    <li class="NavigationLink-tertiary-link">
+                                      <a class="TertiaryNavLink" href="https://one.nz/our-networks/">Network
+                                        status </a>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                        </li>
+                      </ul>
+                    </nav>
+                  </div>
+                  <div class="Page-header-end">
+                    <div class="Page-header-cartIcon">
+                      <a href="/shop/cart/confirm-product/">
+                        <span class="sr-only">Mini Basket</span>
+                        <span class="Page-header-cartIcon-indicator"></span>
+                        <span class="Page-header-cartIcon-icon">
+                          <svg aria-hidden="true">
+                            <use xlink:href="#icon-shopping-trolley"></use>
+                          </svg>
+                        </span>
+                      </a>
+                    </div>
+                    <a class="Page-header-search-button"><svg class="icon-magnify">
+                        <use xlink:href="#icon-magnify"></use>
+                      </svg><span class="sr-only">Show Search</span><svg class="close-x">
+                        <use xlink:href="#close-x"></use>
+                      </svg></a>
+                    <ps-typeahead class="Page-header-search-overlay">
+                      <h2 class="Page-header-search-title">Search</h2>
+                      <form data-typeahead-form="" class="Page-header-search-form" action="https://one.nz/search#nt=navsearch"
+                        novalidate="" autocomplete="off">
+                        <label><input data-typeahead-input="" placeholder="How can we help you?" type="text"
+                            class="Page-header-search-input" name="q" required="true"><span class="sr-only">Search
+                            Query</span></label>
+                        <button data-typeahead-clear="" class="Page-header-search-clear"><svg>
+                            <use xlink:href="#close-x"></use>
+                          </svg><span class="sr-only">Submit Search</span></button>
+                        <button data-typeahead-submit="" type="submit" class="Page-header-search-submit"><svg>
+                            <use xlink:href="#icon-magnify"></use>
+                          </svg><span class="sr-only">Clear Search</span></button>
+                      </form>
+                      <div data-typeahead-results="" class="Page-header-search-results"></div>
+                      <div class="Page-header-search-link"><a data-searchpage-link="" href="https://one.nz/search">view all
+                          results for "{queryText}" <svg class="chevron">
+                            <use xlink:href="#chevron"></use>
+                          </svg></a></div>
+                    </ps-typeahead>
+                    <div class="Page-header-userIcon">
+                      <a href="/ps-sign-in-overlay/" class="Page-header-userIcon-trigger">
+                        <span class="sr-only">My One NZ</span>
+                        <span class="Page-header-userIcon-loggedInIcon">
+                          <svg aria-hidden="true">
+                            <use xlink:href="#icon-tick"></use>
+                          </svg>
+                        </span>
+                        <span class="Page-header-userIcon-icon">
+                          <svg aria-hidden="true">
+                            <use xlink:href="#icon-my-vodafone"></use>
+                          </svg>
+                        </span>
+                        <span class="Page-header-menu-close">
+                          <svg aria-hidden="true">
+                            <use xlink:href="#close-x"></use>
+                          </svg>
+                        </span>
+                      </a>
+                    </div>
+                    <!-- Secondary dropdown for logged in My One NZ Users -->
+                    <nav class="SecondaryDropdownNavigation">
+                      <ul class="SecondaryDropdownNavigation-items">
+                        <li class="SecondaryDropdownNavigation-items-item">
+                          <div class="SecondaryDropdownNavigationItem">
+                            <ul class="SecondaryDropdownNavigationItem-items">
+                              <li class="SecondaryDropdownNavigationItem-items-item">
+                                <div class="SecondaryNavigationLink-wrapper">
+                                  <a class="SecondaryNavigationLink" href="/myvodafone/ng/landing"
+                                    target="_self">Account
+                                    Summary</a>
+                                </div>
+                              </li>
+                              <li class="SecondaryDropdownNavigationItem-items-item">
+                                <div class="SecondaryNavigationLink-wrapper">
+                                  <a class="SecondaryNavigationLink userSignout" href="#">Logout</a>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                        </li>
+                      </ul>
+                    </nav>
+
+                  </div>
+
+                  <button class="Page-header-menu-trigger" aria-expanded="false" tabindex="1"><svg class="burger-menu">
+                      <use xlink:href="#burger-menu"></use>
+                    </svg><svg class="close-x">
+                      <use xlink:href="#close-x"></use>
+                    </svg><span class="label">Menu</span></button>
+                </div>
+              </ps-header>`
+              
+  return html;
 }
 
