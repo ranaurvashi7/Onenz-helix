@@ -1800,19 +1800,12 @@ import { readBlockConfig, decorateIcons } from '../../scripts/aem.js';
 
  
 
-   
-
- 
 
    targetELEMENT.innerHTML=newELEMENT(desc)
 
  
 
 })();
-
- 
-
- 
 
  
 
