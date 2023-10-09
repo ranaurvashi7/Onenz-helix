@@ -83,35 +83,35 @@ seventhDiv.appendChild(ninethDiv);
 // ninethDiv.appendChild(firstSVG);
 
 //
-var firstSVG = document.createElement('svg');
+// var firstSVG = document.createElement('svg');
 
-//firstSVG.setAttribute('class','chevron');
+// //firstSVG.setAttribute('class','chevron');
 
-firstSVG.classList.add('bi' ,'bi-chevron-right');
+// firstSVG.classList.add('bi' ,'bi-chevron-right');
 
-firstSVG.setAttribute('xmlns','http://www.w3.org/2000/svg');
+// firstSVG.setAttribute('xmlns','http://www.w3.org/2000/svg');
 
-firstSVG.setAttribute('width','100');
+// firstSVG.setAttribute('width','100');
 
-firstSVG.setAttribute('height','100');
+// firstSVG.setAttribute('height','100');
 
-firstSVG.setAttribute('viewBox','0 0 16 16');
+// firstSVG.setAttribute('viewBox','0 0 16 16');
 
-firstSVG.setAttribute('data-inactive','');
+// firstSVG.setAttribute('data-inactive','');
 
-firstSVG.style.marginTop = '-2px';
+// firstSVG.style.marginTop = '-2px';
 
-firstSVG.style.height = '22px';
+// firstSVG.style.height = '22px';
 
-firstSVG.style.width = '24px';
+// firstSVG.style.width = '24px';
 
-firstSVG.style.color = 'var(--headerTextColor)';
+// firstSVG.style.color = 'var(--headerTextColor)';
 
-firstSVG.style.strokeWidth = '0.1px';
+// firstSVG.style.strokeWidth = '0.1px';
 
-firstSVG.innerHTML = `<path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"></path>`;
+// firstSVG.innerHTML = `<path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"></path>`;
 
-ninethDiv.appendChild(firstSVG);
+// ninethDiv.appendChild(firstSVG);
 
 
 //
@@ -165,36 +165,36 @@ seventhOneDiv.appendChild(ninethOneDiv);
 // firstSVGOne.append(dummySVGOne);
 // ninethOneDiv.appendChild(firstSVGOne);
 
-//
-var firstSVGOne = document.createElement('svg');
+// //
+// var firstSVGOne = document.createElement('svg');
 
-//firstSVG.setAttribute('class','chevron');
+// //firstSVG.setAttribute('class','chevron');
 
-firstSVGOne.classList.add('bi' ,'bi-chevron-right');
+// firstSVGOne.classList.add('bi' ,'bi-chevron-right');
 
-firstSVGOne.setAttribute('xmlns','http://www.w3.org/2000/svg');
+// firstSVGOne.setAttribute('xmlns','http://www.w3.org/2000/svg');
 
-firstSVGOne.setAttribute('width','100');
+// firstSVGOne.setAttribute('width','100');
 
-firstSVGOne.setAttribute('height','100');
+// firstSVGOne.setAttribute('height','100');
 
-firstSVGOne.setAttribute('viewBox','0 0 16 16');
+// firstSVGOne.setAttribute('viewBox','0 0 16 16');
 
-firstSVGOne.setAttribute('data-inactive','');
+// firstSVGOne.setAttribute('data-inactive','');
 
-firstSVGOne.style.marginTop = '-2px';
+// firstSVGOne.style.marginTop = '-2px';
 
-firstSVGOne.style.height = '22px';
+// firstSVGOne.style.height = '22px';
 
-firstSVGOne.style.width = '24px';
+// firstSVGOne.style.width = '24px';
 
-firstSVGOne.style.color = 'var(--headerTextColor)';
+// firstSVGOne.style.color = 'var(--headerTextColor)';
 
-firstSVGOne.style.strokeWidth = '0.1px';
+// firstSVGOne.style.strokeWidth = '0.1px';
 
-firstSVGOne.innerHTML = `<path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"></path>`;
+// firstSVGOne.innerHTML = `<path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"></path>`;
 
-ninethOneDiv.appendChild(firstSVGOne);
+// ninethOneDiv.appendChild(firstSVGOne);
 
 //
 var tenthOneDiv = document.createElement('div');
@@ -247,36 +247,36 @@ seventhTwoDiv.appendChild(ninethTwoDiv);
 // firstSVGTwo.append(dummySVGTwo);
 // ninethTwoDiv.appendChild(firstSVGTwo);
 
-//
-var firstSVGTwo = document.createElement('svg');
+// //
+// var firstSVGTwo = document.createElement('svg');
 
-//firstSVG.setAttribute('class','chevron');
+// //firstSVG.setAttribute('class','chevron');
 
-firstSVGTwo.classList.add('bi' ,'bi-chevron-right');
+// firstSVGTwo.classList.add('bi' ,'bi-chevron-right');
 
-firstSVGTwo.setAttribute('xmlns','http://www.w3.org/2000/svg');
+// firstSVGTwo.setAttribute('xmlns','http://www.w3.org/2000/svg');
 
-firstSVGTwo.setAttribute('width','100');
+// firstSVGTwo.setAttribute('width','100');
 
-firstSVGTwo.setAttribute('height','100');
+// firstSVGTwo.setAttribute('height','100');
 
-firstSVGTwo.setAttribute('viewBox','0 0 16 16');
+// firstSVGTwo.setAttribute('viewBox','0 0 16 16');
 
-firstSVGTwo.setAttribute('data-inactive','');
+// firstSVGTwo.setAttribute('data-inactive','');
 
-firstSVGTwo.style.marginTop = '-2px';
+// firstSVGTwo.style.marginTop = '-2px';
 
-firstSVGTwo.style.height = '22px';
+// firstSVGTwo.style.height = '22px';
 
-firstSVGTwo.style.width = '24px';
+// firstSVGTwo.style.width = '24px';
 
-firstSVGTwo.style.color = 'var(--headerTextColor)';
+// firstSVGTwo.style.color = 'var(--headerTextColor)';
 
-firstSVGTwo.style.strokeWidth = '0.1px';
+// firstSVGTwo.style.strokeWidth = '0.1px';
 
-firstSVGTwo.innerHTML = `<path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"></path>`;
+// firstSVGTwo.innerHTML = `<path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"></path>`;
 
-ninethTwoDiv.appendChild(firstSVGTwo);
+// ninethTwoDiv.appendChild(firstSVGTwo);
 
 //
 var tenthTwoDiv = document.createElement('div');
