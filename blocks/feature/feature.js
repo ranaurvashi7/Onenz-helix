@@ -71,16 +71,48 @@ ninethDiv.setAttribute('class','IconPromo-title');
 ninethDiv.append(thirdContent);
 seventhDiv.appendChild(ninethDiv);
 
-//`<use xlink:href="#chevron"></use>`
-var dummySVG = document.createElement('use');
-dummySVG.setAttribute('xlink:href','#chevron');
+// //`<use xlink:href="#chevron"></use>`
+// var dummySVG = document.createElement('use');
+// dummySVG.setAttribute('xlink:href','#chevron');
+
+// //
+// var firstSVG = document.createElement('svg');
+// firstSVG.setAttribute('class','chevron');
+// firstSVG.setAttribute('data-inactive','');
+// firstSVG.append(dummySVG);
+// ninethDiv.appendChild(firstSVG);
 
 //
 var firstSVG = document.createElement('svg');
-firstSVG.setAttribute('class','chevron');
+
+//firstSVG.setAttribute('class','chevron');
+
+firstSVG.classList.add('bi' ,'bi-chevron-right');
+
+firstSVG.setAttribute('xmlns','http://www.w3.org/2000/svg');
+
+firstSVG.setAttribute('width','100');
+
+firstSVG.setAttribute('height','100');
+
+firstSVG.setAttribute('viewBox','0 0 16 16');
+
 firstSVG.setAttribute('data-inactive','');
-firstSVG.append(dummySVG);
+
+firstSVG.style.marginTop = '-2px';
+
+firstSVG.style.height = '22px';
+
+firstSVG.style.width = '24px';
+
+firstSVG.style.color = 'var(--headerTextColor)';
+
+firstSVG.style.strokeWidth = '0.1px';
+
+firstSVG.innerHTML = `<path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"></path>`;
+
 ninethDiv.appendChild(firstSVG);
+
 
 //
 var tenthDiv = document.createElement('div');
@@ -122,15 +154,46 @@ ninethOneDiv.setAttribute('class','IconPromo-title');
 ninethOneDiv.append(thirdOneContent);
 seventhOneDiv.appendChild(ninethOneDiv);
 
-//`<use xlink:href="#chevron"></use>`
-var dummySVGOne = document.createElement('use');
-dummySVGOne.setAttribute('xlink:href','#chevron');
+// //`<use xlink:href="#chevron"></use>`
+// var dummySVGOne = document.createElement('use');
+// dummySVGOne.setAttribute('xlink:href','#chevron');
+
+// //
+// var firstSVGOne = document.createElement('svg');
+// firstSVGOne.setAttribute('class','chevron');
+// firstSVGOne.setAttribute('data-inactive','');
+// firstSVGOne.append(dummySVGOne);
+// ninethOneDiv.appendChild(firstSVGOne);
 
 //
 var firstSVGOne = document.createElement('svg');
-firstSVGOne.setAttribute('class','chevron');
+
+//firstSVG.setAttribute('class','chevron');
+
+firstSVGOne.classList.add('bi' ,'bi-chevron-right');
+
+firstSVGOne.setAttribute('xmlns','http://www.w3.org/2000/svg');
+
+firstSVGOne.setAttribute('width','100');
+
+firstSVGOne.setAttribute('height','100');
+
+firstSVGOne.setAttribute('viewBox','0 0 16 16');
+
 firstSVGOne.setAttribute('data-inactive','');
-firstSVGOne.append(dummySVGOne);
+
+firstSVGOne.style.marginTop = '-2px';
+
+firstSVGOne.style.height = '22px';
+
+firstSVGOne.style.width = '24px';
+
+firstSVGOne.style.color = 'var(--headerTextColor)';
+
+firstSVGOne.style.strokeWidth = '0.1px';
+
+firstSVGOne.innerHTML = `<path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"></path>`;
+
 ninethOneDiv.appendChild(firstSVGOne);
 
 //
@@ -173,15 +236,46 @@ ninethTwoDiv.setAttribute('class','IconPromo-title');
 ninethTwoDiv.append(thirdTwoContent);
 seventhTwoDiv.appendChild(ninethTwoDiv);
 
-//`<use xlink:href="#chevron"></use>`
-var dummySVGTwo = document.createElement('use');
-dummySVGTwo.setAttribute('xlink:href','#chevron');
+// //`<use xlink:href="#chevron"></use>`
+// var dummySVGTwo = document.createElement('use');
+// dummySVGTwo.setAttribute('xlink:href','#chevron');
+
+// //
+// var firstSVGTwo = document.createElement('svg');
+// firstSVGTwo.setAttribute('class','chevron');
+// firstSVGTwo.setAttribute('data-inactive','');
+// firstSVGTwo.append(dummySVGTwo);
+// ninethTwoDiv.appendChild(firstSVGTwo);
 
 //
 var firstSVGTwo = document.createElement('svg');
-firstSVGTwo.setAttribute('class','chevron');
+
+//firstSVG.setAttribute('class','chevron');
+
+firstSVGTwo.classList.add('bi' ,'bi-chevron-right');
+
+firstSVGTwo.setAttribute('xmlns','http://www.w3.org/2000/svg');
+
+firstSVGTwo.setAttribute('width','100');
+
+firstSVGTwo.setAttribute('height','100');
+
+firstSVGTwo.setAttribute('viewBox','0 0 16 16');
+
 firstSVGTwo.setAttribute('data-inactive','');
-firstSVGTwo.append(dummySVGTwo);
+
+firstSVGTwo.style.marginTop = '-2px';
+
+firstSVGTwo.style.height = '22px';
+
+firstSVGTwo.style.width = '24px';
+
+firstSVGTwo.style.color = 'var(--headerTextColor)';
+
+firstSVGTwo.style.strokeWidth = '0.1px';
+
+firstSVGTwo.innerHTML = `<path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"></path>`;
+
 ninethTwoDiv.appendChild(firstSVGTwo);
 
 //
