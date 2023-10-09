@@ -109,6 +109,7 @@ export default async function decorate(block) {
     navWrapper.append(nav);
     block.append(navWrapper);
   }
+
   document.querySelector('.header-wrapper > .header.block').style.display = 'none';
   (function () {
 
@@ -2127,6 +2128,9 @@ export default async function decorate(block) {
 
 //document.querySelector('.headernavigation').style.display = 'none';
   //document.querySelector('.signinoverlay').style.display = 'none';
+//
+  
+
   //hatNavigation starts--
   //
 
@@ -2418,4 +2422,8 @@ export default async function decorate(block) {
   //hatNavigation ends ---
 
 
+
     }
+
+}
+
