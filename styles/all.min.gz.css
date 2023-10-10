@@ -1804,6 +1804,7 @@ body[data-signin-overlay] {
 .Page-header {
     background: var(--headerBgColor);
     border-bottom: 1px solid var(--grayscale1Color);
+    position:fixed;
     position: -webkit-sticky;
     position: sticky;
     top: 0;
