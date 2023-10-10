@@ -43,3 +43,14 @@ closeIcon.addEventListener("click",function(event){
     body.removeAttribute("data-toggle-header","search-overlay")
 })
 
+let userIcon = document.querySelector("a.Page-header-userIcon-trigger")
+userIcon.addEventListener("click",function(event){
+    let signInOverlay = document.querySelector(".Page-signInOverlay")
+    signInOverlay.style.maxHeight="100vh"
+})
+let usercloseIcon = document.querySelector("a.Page-signInOverlay-close")
+usercloseIcon.addEventListener("click",function(event){
+    let signInOverlay = document.querySelector(".Page-signInOverlay")
+    signInOverlay.style.maxHeight="0"
+})
+

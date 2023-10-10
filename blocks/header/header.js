@@ -3497,7 +3497,7 @@ function headerNav(d){
                           </svg></a></div>
                     </ps-typeahead>
                     <div class="Page-header-userIcon">
-                      <a href="/ps-sign-in-overlay/" class="Page-header-userIcon-trigger">
+                      <a class="Page-header-userIcon-trigger">
                         <span class="sr-only">My One NZ</span>
                         <span class="Page-header-userIcon-loggedInIcon">
                           <svg aria-hidden="true">
