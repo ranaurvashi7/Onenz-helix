@@ -2,8 +2,6 @@
 
 import { readBlockConfig, decorateIcons } from '../../scripts/aem.js';
 
- 
-
 /**
 
 
@@ -22,169 +20,22 @@ import { readBlockConfig, decorateIcons } from '../../scripts/aem.js';
  
 
  export default async function decorate(block) {
-
- 
-
- 
-
- 
-
   const cfg = readBlockConfig(block);
-
- 
-
- 
-
- 
-
   block.textContent = '';
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
   // fetch footer content
-
- 
-
- 
-
- 
-
   const footerPath = cfg.footer || '/footer';
-
- 
-
- 
-
- 
-
   const resp = await fetch(`${footerPath}.plain.html`, window.location.pathname.endsWith('/footer') ? { cache: 'reload' } : {});
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
   if (resp.ok) {
-
- 
-
- 
-
- 
-
     const html = await resp.text();
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
     // decorate footer DOM
-
- 
-
- 
-
- 
-
     const footer = document.createElement('div');
-
- 
-
- 
-
- 
-
     footer.innerHTML = html;
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
     decorateIcons(footer);
-
- 
-
- 
-
- 
-
     block.append(footer);
-
- 
-
- 
-
- 
-
   }
-
- 
-
- 
-
- 
-
-(function () {
-
- 
-
     let desc = {}
-
- 
-
     let targetELEMENT = document.querySelector(".footer-wrapper")
-
- 
-
     targetELEMENT.setAttribute('class','Page-footer')
-
- 
-
- 
-
- 
-
     let newELEMENT = (desc) => {
 
  
@@ -1778,26 +1629,8 @@ import { readBlockConfig, decorateIcons } from '../../scripts/aem.js';
  
 
    desc.sitemapData =  document.querySelectorAll('.Page-footer > .footer.block > div > div > .footer-bottom > div > div > ul > li > a')[2].innerText;
-
- 
-
-   
-
- 
-
    desc.cpyrightData = document.querySelectorAll('.Page-footer > .footer.block > div > div > .footer-bottom > div > div > ul > li')[3].innerText;
-
- 
-
-
    targetELEMENT.innerHTML=newELEMENT(desc)
 
  
-
-})();
-
- 
-
 }
-
- 
