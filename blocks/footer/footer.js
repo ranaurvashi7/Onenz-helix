@@ -126,19 +126,25 @@ export default async function decorate(block) {
 			continue;
 		}else{
 			let verList = []
-			let liTags = navList[i].querySelectorAll("li")
-			for(let j=0;j<navList.length;j++){
+			let liTags = navList[i].querySelectorAll("ul>li")
+			for(let j=0;j<liTags.length;j++){
 				if(liTags[j]==undefined || liTags[j]==null){
 					continue;
 				}else{
+					let dObj = {}
 					let aTag = liTags[j].querySelector("a")
-					let dObj = {href:aTag.getAttribute("href"),text:aTag.innerText}
+					if(aTag == undefined){
+						dObj = {href:null,text:liTags[j].innerText}
+					}else{
+						dObj = {href:aTag.getAttribute("href"),text:aTag.innerText}
+					}
 					verList.push(dObj)
 				}
 			}
 			navListData.push(verList)
 		}
 	}
+	// console.log(navListData)
 
 	let navFloorData = []
 	let navFloorList = footer.querySelectorAll(".footer-bottom > div")
