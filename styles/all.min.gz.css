@@ -1815,8 +1815,7 @@ body[data-signin-overlay] {
 .Page-header,.Page-header-bar {
     display: -ms-flexbox;
     display: flex;
-    position:fixed;
-    
+      
 }
 
 .Page-header-bar {
