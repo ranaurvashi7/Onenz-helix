@@ -24,10 +24,10 @@ export default async function decorate(block) {
     headerHTML.innerHTML+=hatNavigation(nav)
     headerHTML.innerHTML+=headerNav(nav)
 
-    const navWrapper = document.createElement('div');
-    navWrapper.className = 'nav-wrapper';
-    navWrapper.append(nav);
-    block.append(navWrapper);
+    // const navWrapper = document.createElement('div');
+    // navWrapper.className = 'nav-wrapper';
+    // navWrapper.append(nav);
+    // block.append(navWrapper);
   }
 
   document.querySelector('.header-wrapper > .header.block').style.display = 'none';
