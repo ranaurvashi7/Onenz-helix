@@ -30,6 +30,16 @@ for (let i = 0; i < dropdownNavigationItemItems.length; i++) {
     });
 }
 
+window.addEventListener("scroll", function(e){
+    e.preventDefault()
+    if(this.window.scrollY>29){
+        this.document.body.setAttribute("data-header-sticky","")
+    }else{
+        this.document.body.removeAttribute("data-header-sticky","")
+    }
+    console.log(window.scrollY)
+})
+
 
 
 let searchIcon = document.querySelector("a.Page-header-search-button .icon-magnify")
