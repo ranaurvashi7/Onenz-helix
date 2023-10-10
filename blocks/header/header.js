@@ -589,7 +589,881 @@ function signInOverlay(d){
                             <span class="sr-only">Close dialog </span>
                         </a>
                     </div>
-                    <div class="Page-signInOverlay-content"></div>
+                    <div class="Page-signInOverlay-content">
+                      <div class="SignInOverlay">
+                          <div class="SignInOverlay-container">
+                              <div class="SignInOverlay-wrapper">
+
+
+                                  <h1 class="SignInOverlay-title">Sign In</h1>
+
+                                  <div class="SignInOverlay-loadingContent">
+                                      <h2>Loading Content</h2>
+                                  </div>
+                                  <ps-tabs class="LoginTabs">
+                                      <div class="LoginTabs-tabs-wrapper Tabs-tabs-wrapper">
+                                          <ul class="LoginTabs-tabs">
+
+                                              <li data-active="true">
+                                                  <a class="LoginTabs-tab" href="#sign-in" data-tab="" data-active="true"
+                                                      data-expanded="true">
+                                                      My One NZ
+                                                  </a>
+                                              </li>
+
+
+                                              <li data-active="false">
+                                                  <a class="LoginTabs-tab" href="#sign-in-internet" data-tab="" data-active="false">
+                                                      Internet &amp; Landline
+                                                  </a>
+                                              </li>
+
+
+                                              <li data-active="false">
+                                                  <a class="LoginTabs-tab" href="#sign-in-customerzone" data-tab="" data-active="false">
+                                                      Customer Zone
+                                                  </a>
+                                              </li>
+
+                                          </ul>
+                                      </div>
+                                      <div class="LoginTabs-content Tabs-content">
+
+
+                                          <div class="LoginTabs-panel" id="sign-in" data-tab-panel="" data-visible="true"
+                                              data-expanded="true">
+                                              <div class="LoginTabItem">
+                                                  <div class="LoginTabItem-content">
+                                                      <ps-form class="LoginForm" data-form-number="1">
+                                                          <div class="LoginForm-submissionFailure">
+                                                              Wrong userid or password
+                                                          </div>
+                                                          <form action="/myvodafone/login" class="LoginForm-form" method="post"
+                                                              autocomplete="off" novalidate="novalidate">
+
+                                                              <div class="LoginForm-errorMessage alert alert--warning">
+                                                                  <div class="LoginForm-errorMessage-caption">
+                                                                      <div class="LoginForm-errorMessage-iconWrapper">
+                                                                          <svg class="LoginForm-errorMessage-icon">
+                                                                              <use xlink:href="#icon-block"></use>
+                                                                          </svg>
+                                                                      </div>
+                                                                      <div class="LoginForm-errorMessage-content">
+                                                                          <p><strong
+                                                                                  class="LoginForm-errorMessageTitleBinder ">Oops!!</strong>
+                                                                          </p>
+                                                                          <p class="LoginForm-errorMessageDescriptionBinder"
+                                                                              data-vft="error-popup-text">Error!</p>
+                                                                      </div>
+                                                                  </div>
+                                                              </div>
+                                                              <div class="LoginForm-successMessage alert alert--success">
+                                                                  <div class="LoginForm-successMessage-caption">
+                                                                      <div class="LoginForm-successMessage-iconWrapper">
+                                                                          <svg class="LoginForm-successMessage-icon">
+                                                                              <use xlink:href="#icon-tick"></use>
+                                                                          </svg>
+                                                                      </div>
+                                                                      <div class="LoginForm-successMessage-content">
+                                                                          <p><strong
+                                                                                  class="LoginForm-successMessageTitleBinder ">Great</strong>
+                                                                          </p>
+                                                                          <p class="LoginForm-successMessageDescriptionBinder"
+                                                                              data-vft="error-popup-text">Your password has been set.</p>
+                                                                      </div>
+                                                                  </div>
+                                                              </div>
+                                                              <div class="LoginForm-items">
+                                                                  <div class="LoginForm-items-item">
+                                                                      <div class="EmailInput"><label class="EmailInput-label"><span
+                                                                                  data-required="">Email</span>
+                                                                              <input class="EmailInput-input form-input username"
+                                                                                  type="email" name="username" autocomplete="off"
+                                                                                  data-lpignore="true" placeholder="E.g. name@example.com"
+                                                                                  required="" aria-required="true">
+                                                                          </label>
+                                                                      </div>
+
+                                                                  </div>
+                                                                  <div class="LoginForm-items-item">
+                                                                      <div class="PasswordInput password-hidden"><label
+                                                                              class="PasswordInput-label"><span
+                                                                                  data-required="">Password</span>
+
+                                                                              <input class="PasswordInput-input form-input password"
+                                                                                  type="password" autocomplete="off" name="password"
+                                                                                  data-lpignore="true" required="">
+                                                                              <div class="PasswordInput-passwordVisibility">
+                                                                                  <svg class="PasswordInput-eye">
+                                                                                      <use xlink:href="#icon-viewed-show"></use>
+                                                                                  </svg>
+                                                                                  <svg class="PasswordInput-closedEye">
+                                                                                      <use xlink:href="#icon-viewed-hide"></use>
+                                                                                  </svg>
+                                                                              </div>
+                                                                          </label>
+
+                                                                          <div class="PasswordInput-passwordVisibility">
+                                                                              <div class="PasswordInput-eyeOpen">
+                                                                                  <svg class="PasswordInput-eye">
+                                                                                      <use xlink:href="#icon-viewed-show"></use>
+                                                                                  </svg>
+                                                                              </div>
+                                                                              <div class="PasswordInput-eyeClosed">
+                                                                                  <svg class="PasswordInput-closedEye">
+                                                                                      <use xlink:href="#icon-viewed-hide"></use>
+                                                                                  </svg>
+                                                                              </div>
+                                                                          </div>
+                                                                      </div>
+
+                                                                  </div>
+                                                              </div>
+
+                                                              <div class="LoginForm-buttons">
+                                                                  <button class="Button" button--disabled="" disabled=""
+                                                                      type="submit">Sign in
+                                                                  </button>
+
+                                                              </div>
+
+                                                              <div class="LoginForm-links">
+                                                                  <div class="LoginForm-forgotPassword">
+                                                                      <a class="forgotLink" href="#">Forgot password?</a>
+                                                                  </div>
+                                                                  <div class="LoginForm-register">
+                                                                      <a class="registerLink" href="#">Register</a>
+                                                                  </div>
+                                                              </div>
+                                                              <div class="LoginForm-recaptcha">
+                                                                  This site is protected by reCAPTCHA and the Google <a
+                                                                      href="https://policies.google.com/privacy">Privacy Policy</a> and <a
+                                                                      href="https://policies.google.com/terms">Terms of Service</a> apply.
+                                                              </div>
+                                                          </form>
+                                                      </ps-form>
+                                                  </div>
+                                              </div>
+                                          </div>
+
+
+
+                                          <div class="LoginTabs-panel" id="sign-in-internet" data-tab-panel="" data-visible="false">
+                                              <div class="LoginTabItem">
+                                                  <div class="LoginTabItem-content">
+                                                      <ps-form class="LoginForm" data-form-number="2">
+                                                          <form action="https://the.one.nz/acnts/myaccounts.pl/login"
+                                                              class="LoginForm-form" method="post">
+
+                                                              <input type="hidden" class="login-param" name="goto"
+                                                                  value="https://www.telstraclear.co.nz/selfservice-customerzone/secure/myprofile.jsf">
+                                                              <input type="hidden" class="login-param" name="failUrl"
+                                                                  value="https://www.telstraclear.co.nz/selfservice-customerzone/login.jsf?goto=https://www.telstraclear.co.nz/selfservice-customerzone/secure/myprofile.jsf">
+                                                              <input type="hidden" class="login-param" name="IDToken0" value="">
+                                                              <input type="hidden" class="login-param" name="realm" value="tclcustomers">
+                                                              <input type="hidden" class="login-param" name="service" value="customer">
+                                                              <input type="hidden" class="login-param" name="encoded" value="false">
+                                                              <input type="hidden" class="login-param" name="gx_charset" value="UTF-8">
+                                                              <input type="hidden" class="landing-redirection" name="landing-redirection"
+                                                                  value="true" disabled="disabled">
+
+                                                              <div class="LoginForm-errorMessage alert alert--warning">
+                                                                  <div class="LoginForm-errorMessage-caption">
+                                                                      <div class="LoginForm-errorMessage-iconWrapper">
+                                                                          <svg class="LoginForm-errorMessage-icon">
+                                                                              <use xlink:href="#icon-block"></use>
+                                                                          </svg>
+                                                                      </div>
+                                                                      <div class="LoginForm-errorMessage-content">
+                                                                          <p><strong
+                                                                                  class="LoginForm-errorMessageTitleBinder">Oops!</strong>
+                                                                          </p>
+                                                                          <p class="LoginForm-errorMessageDescriptionBinder"
+                                                                              data-vft="error-popup-text">Seems like you've
+                                                                              entered the wrong details. Please try again or <span
+                                                                                  class="link link--body link--body--dark login-resetpassword-link">reset
+                                                                                  your
+                                                                                  password</span>.</p>
+                                                                      </div>
+                                                                  </div>
+                                                              </div>
+                                                              <div class="LoginForm-items">
+                                                                  <div class="LoginForm-items-item">
+                                                                      <div class="TextInput"><label class="TextInput-label">
+
+                                                                              <span data-required="">Username or Phone</span>
+
+
+                                                                              <input class="TextInput-input form-input username"
+                                                                                  type="text" name="login" autocomplete="off"
+                                                                                  placeholder="E.g. FlyingKiwi or 09 625 4827"
+                                                                                  data-lpignore="true" required=""></label>
+
+                                                                      </div>
+
+                                                                  </div>
+                                                                  <div class="LoginForm-items-item">
+                                                                      <div class="PasswordInput password-hidden"><label
+                                                                              class="PasswordInput-label"><span data-required="">Password
+                                                                                  or PIN</span>
+
+                                                                              <input class="PasswordInput-input form-input password"
+                                                                                  type="password" autocomplete="off" name="password"
+                                                                                  data-lpignore="true" required="">
+                                                                              <div class="PasswordInput-passwordVisibility">
+                                                                                  <svg class="PasswordInput-eye">
+                                                                                      <use xlink:href="#icon-viewed-show"></use>
+                                                                                  </svg>
+                                                                                  <svg class="PasswordInput-closedEye">
+                                                                                      <use xlink:href="#icon-viewed-hide"></use>
+                                                                                  </svg>
+                                                                              </div>
+                                                                          </label>
+
+                                                                          <div class="PasswordInput-passwordVisibility">
+                                                                              <div class="PasswordInput-eyeOpen">
+                                                                                  <svg class="PasswordInput-eye">
+                                                                                      <use xlink:href="#icon-viewed-show"></use>
+                                                                                  </svg>
+                                                                              </div>
+                                                                              <div class="PasswordInput-eyeClosed">
+                                                                                  <svg class="PasswordInput-closedEye">
+                                                                                      <use xlink:href="#icon-viewed-hide"></use>
+                                                                                  </svg>
+                                                                              </div>
+                                                                          </div>
+                                                                      </div>
+
+                                                                  </div>
+                                                              </div>
+                                                              <div class="LoginForm-buttons">
+                                                                  <button class="Button" button--disabled="" disabled=""
+                                                                      type="submit">Sign in
+                                                                  </button>
+
+                                                              </div>
+                                                              <div class="LoginForm-links">
+                                                                  <div class="LoginForm-forgotPassword">
+                                                                      <a class="Link"
+                                                                          href="https://the.vodafone.co.nz/acnts/getpwd.pl">Forgot
+                                                                          password?</a>
+                                                                  </div>
+                                                              </div>
+                                                          </form>
+                                                      </ps-form>
+                                                  </div>
+                                              </div>
+                                          </div>
+
+
+
+                                          <div class="LoginTabs-panel" id="sign-in-customerzone" data-tab-panel="" data-visible="false">
+                                              <div class="LoginTabItem">
+                                                  <div class="LoginTabItem-content">
+                                                      <ps-form class="LoginForm" data-form-number="3">
+                                                          <form action="https://customerzone.one.nz/amserver/UI/Login"
+                                                              class="LoginForm-form" method="post" autocomplete="off">
+
+                                                              <input type="hidden" class="login-param" name="goto"
+                                                                  value="https://customerzone.vodafone.co.nz/selfservice-customerzone/secure/myprofile.jsf">
+                                                              <input type="hidden" class="login-param" name="failUrl"
+                                                                  value="https://customerzone.vodafone.co.nz/selfservice-customerzone/login.jsf?goto=https://customerzone.vodafone.co.nz/selfservice-customerzone/secure/myprofile.jsf">
+                                                              <input type="hidden" class="login-param" name="IDToken0" value="">
+                                                              <input type="hidden" class="login-param" name="realm" value="tclcustomers">
+                                                              <input type="hidden" class="login-param" name="service" value="customer">
+                                                              <input type="hidden" class="login-param" name="encoded" value="false">
+                                                              <input type="hidden" class="login-param" name="gx_charset" value="UTF-8">
+                                                              <input type="hidden" class="landing-redirection" name="landing-redirection"
+                                                                  value="true" disabled="disabled">
+
+                                                              <div class="LoginForm-errorMessage alert alert--warning">
+                                                                  <div class="LoginForm-errorMessage-caption">
+                                                                      <div class="LoginForm-errorMessage-iconWrapper">
+                                                                          <svg class="LoginForm-errorMessage-icon">
+                                                                              <use xlink:href="#icon-block"></use>
+                                                                          </svg>
+                                                                      </div>
+                                                                      <div class="LoginForm-errorMessage-content">
+                                                                          <p><strong
+                                                                                  class="LoginForm-errorMessageTitleBinder">Oops!</strong>
+                                                                          </p>
+                                                                          <p class="LoginForm-errorMessageDescriptionBinder"
+                                                                              data-vft="error-popup-text">Seems like you've
+                                                                              entered the wrong details. Please try again or <span
+                                                                                  class="link link--body link--body--dark login-resetpassword-link">reset
+                                                                                  your
+                                                                                  password</span>.</p>
+                                                                      </div>
+                                                                  </div>
+                                                              </div>
+                                                              <div class="LoginForm-items">
+                                                                  <div class="LoginForm-items-item">
+                                                                      <div class="TextInput"><label class="TextInput-label">
+
+                                                                              <span data-required="">Username or Customer number</span>
+
+
+                                                                              <input class="TextInput-input form-input username"
+                                                                                  type="text" name="IDToken1" autocomplete="off"
+                                                                                  placeholder="E.g. FlyingKiwi or 17072171"
+                                                                                  data-lpignore="true" required=""></label>
+
+                                                                      </div>
+
+                                                                  </div>
+                                                                  <div class="LoginForm-items-item">
+                                                                      <div class="PasswordInput password-hidden"><label
+                                                                              class="PasswordInput-label"><span
+                                                                                  data-required="">Password</span>
+
+                                                                              <input class="PasswordInput-input form-input password"
+                                                                                  type="password" autocomplete="off" name="IDToken2"
+                                                                                  data-lpignore="true" required="">
+                                                                              <div class="PasswordInput-passwordVisibility">
+                                                                                  <svg class="PasswordInput-eye">
+                                                                                      <use xlink:href="#icon-viewed-show"></use>
+                                                                                  </svg>
+                                                                                  <svg class="PasswordInput-closedEye">
+                                                                                      <use xlink:href="#icon-viewed-hide"></use>
+                                                                                  </svg>
+                                                                              </div>
+                                                                          </label>
+
+                                                                          <div class="PasswordInput-passwordVisibility">
+                                                                              <div class="PasswordInput-eyeOpen">
+                                                                                  <svg class="PasswordInput-eye">
+                                                                                      <use xlink:href="#icon-viewed-show"></use>
+                                                                                  </svg>
+                                                                              </div>
+                                                                              <div class="PasswordInput-eyeClosed">
+                                                                                  <svg class="PasswordInput-closedEye">
+                                                                                      <use xlink:href="#icon-viewed-hide"></use>
+                                                                                  </svg>
+                                                                              </div>
+                                                                          </div>
+                                                                      </div>
+
+                                                                  </div>
+                                                              </div>
+                                                              <div class="LoginForm-buttons">
+                                                                  <button class="Button" button--disabled="" disabled=""
+                                                                      type="submit">Sign in
+                                                                  </button>
+
+                                                              </div>
+                                                              <div class="LoginForm-links">
+                                                                  <div class="LoginForm-forgotPassword">
+                                                                      <a class="Link"
+                                                                          href="https://customerzone.vodafone.co.nz/selfservice-customerzone/resetPasswordLoginId.jsf">Forgot
+                                                                          password?</a>
+                                                                  </div>
+                                                              </div>
+                                                          </form>
+                                                      </ps-form>
+                                                  </div>
+                                              </div>
+                                          </div>
+
+                                      </div>
+
+                                      <div class="LoginTabs-forgotPasswordForm">
+                                          <ps-form class="ForgotPasswordForm" xmlns="http://www.w3.org/1999/html">
+
+                                              <div class="ForgotPasswordForm-header">
+                                                  <div class="ForgotPasswordForm-title">
+                                                      Let's get you sorted
+                                                  </div>
+                                                  <div class="ForgotPasswordForm-subtitle">
+                                                      Just give us the email address you use to sign in to One NZ.
+                                                  </div>
+                                              </div>
+
+                                              <form class="ForgotPasswordForm-form" method="post" autocomplete="off"
+                                                  novalidate="novalidate">
+                                                  <div class="ForgotPasswordForm-items">
+                                                      <div class="ForgotPasswordForm-items-item">
+                                                          <div class="ForgotPasswordForm-errorMessage alert alert--warning">
+                                                              <div class="ForgotPasswordForm-errorMessage-caption">
+                                                                  <div class="ForgotPasswordForm-errorMessage-iconWrapper">
+                                                                      <svg class="ForgotPasswordForm-errorMessage-icon">
+                                                                          <use xlink:href="#icon-block"></use>
+                                                                      </svg>
+                                                                  </div>
+                                                                  <div class="ForgotPasswordForm-errorMessage-content">
+                                                                      <p><strong
+                                                                              class="ForgotPasswordForm-errorMessageTitleBinder ">Oops!!</strong>
+                                                                      </p>
+                                                                      <p class="ForgotPasswordForm-errorMessageDescriptionBinder"
+                                                                          data-vft="error-popup-text">Error!</p>
+                                                                  </div>
+                                                              </div>
+                                                          </div>
+                                                          <div class="EmailInput"><label class="EmailInput-label"><span
+                                                                      data-required="">Email address</span>
+                                                                  <input class="EmailInput-input form-input username" type="email"
+                                                                      name="email" autocomplete="off" maxlength="64" data-lpignore="true"
+                                                                      placeholder="E.g. name@example.com" required=""
+                                                                      aria-required="true">
+                                                              </label>
+                                                          </div>
+
+
+                                                      </div>
+                                                  </div>
+                                                  <div class="ForgotPasswordForm-captcha -item">
+                                                      <div class="RegistrationForm-errorMessage alert alert--warning">
+                                                          <div class="RegistrationForm-errorMessage-caption">
+                                                              <div class="RegistrationForm-errorMessage-iconWrapper">
+                                                                  <svg class="RegistrationForm-errorMessage-icon">
+                                                                      <use xlink:href="#icon-block"></use>
+                                                                  </svg>
+                                                              </div>
+                                                              <div class="RegistrationForm-errorMessage-content">
+                                                                  <p><strong
+                                                                          class="RegistrationForm-errorMessageTitleBinder ">Oops!!</strong>
+                                                                  </p>
+                                                                  <p class="RegistrationForm-errorMessageDescriptionBinder"
+                                                                      data-vft="error-popup-text">That email address hasn't been
+                                                                      registered for One NZ. Check what you've entered and try again. If
+                                                                      that doesn't work, please call us on 0800 800 021.</p>
+                                                              </div>
+                                                          </div>
+                                                      </div>
+                                                      <label class="ForgotPasswordForm-captchaLabel"><span>Let's check it's you</span>
+                                                          <div class="RegistrationForm-captcha">
+                                                              <label class="RegistrationForm-captchaLabel"><span></span>
+                                                                  <img class="RegistrationForm-captchaImg"
+                                                                      src="/myvodafone/CaptchaProxy/api/v1/captcha?1">
+                                                                  <div class="RegistrationForm-captchaIcon">
+                                                                      <svg class="RegistrationForm-captcha-icon-refresh">
+                                                                          <use xlink:href="#icon-refresh"></use>
+                                                                      </svg>
+                                                                  </div>
+                                                              </label>
+                                                          </div>
+                                                      </label>
+                                                      <div>
+                                                          <div class="TextInput"><label class="TextInput-label">
+
+                                                                  <span data-required=""></span>
+
+
+                                                                  <input class="TextInput-input form-input" type="text" name="captcha"
+                                                                      placeholder="Enter the text you see above" data-lpignore="true"
+                                                                      required=""></label>
+
+                                                          </div>
+
+                                                      </div>
+                                                  </div>
+                                                  <div class="ForgotPasswordForm-nextButton">
+                                                      <button class="Button" disabled="" type="submit">Next
+                                                      </button>
+
+                                                  </div>
+
+                                                  <div class="ForgotPasswordForm-footerMsg">
+                                                      Are you a One NZ Business Administrator? We've made it easier.
+                                                      <a class="ForgotPasswordForm-learnMoreLink" href="/myvf-business-administrators/"
+                                                          target="_blank">Learn more</a>
+                                                  </div>
+                                              </form>
+
+                                              <!-- Form Success -->
+                                              <div class="ForgotPasswordForm-formSuccess">
+                                                  <div class="ForgotPasswordForm-formSuccess">
+                                                      <div class="ForgotPasswordForm-success-icon-wrapper">
+                                                          <svg class="ForgotPasswordForm-success-icon">
+                                                              <use xlink:href="#icon-tick"></use>
+                                                          </svg>
+                                                      </div>
+                                                      <div class="formSuccess-title">
+                                                          <span class="title">Email sent to: </span>
+                                                          <span class="email"></span>
+                                                      </div>
+                                                      <p>
+                                                          Click the button in the email we've sent to complete your password reset.
+                                                          If you can't find our email, please check your spam/junk folder.
+                                                      </p>
+                                                  </div>
+                                              </div>
+
+                                          </ps-form>
+                                      </div>
+
+                                      <div class="LoginTabs-registrationForm">
+                                          <ps-form class="RegistrationForm" xmlns="http://www.w3.org/1999/html">
+                                              <div class="RegistrationForm-header">
+                                                  <div class="RegistrationForm-title">
+                                                      Let's get started
+                                                  </div>
+                                              </div>
+                                              <form class="RegistrationForm-form" method="post">
+                                                  <div class="RegistrationForm-errorMessage alert alert--warning">
+                                                      <div class="RegistrationForm-errorMessage-caption">
+                                                          <div class="RegistrationForm-errorMessage-iconWrapper">
+                                                              <svg class="RegistrationForm-errorMessage-icon">
+                                                                  <use xlink:href="#icon-block"></use>
+                                                              </svg>
+                                                          </div>
+                                                          <div class="RegistrationForm-errorMessage-content">
+                                                              <p><strong class="RegistrationForm-errorMessageTitleBinder ">Oops!!</strong>
+                                                              </p>
+                                                              <p class="RegistrationForm-errorMessageDescriptionBinder"
+                                                                  data-vft="error-popup-text">Error!</p>
+                                                          </div>
+                                                      </div>
+                                                  </div>
+                                                  <div class="RegistrationForm-items">
+                                                      <div class="RegistrationForm-items-item">
+                                                          <div class="RegistrationForm-errorMessage alert alert--warning">
+                                                              <div class="RegistrationForm-errorMessage-caption">
+                                                                  <div class="RegistrationForm-errorMessage-iconWrapper">
+                                                                      <svg class="RegistrationForm-errorMessage-icon">
+                                                                          <use xlink:href="#icon-block"></use>
+                                                                      </svg>
+                                                                  </div>
+                                                                  <div class="RegistrationForm-errorMessage-content">
+                                                                      <p><strong
+                                                                              class="RegistrationForm-errorMessageTitleBinder ">Oops!!</strong>
+                                                                      </p>
+                                                                      <p class="RegistrationForm-errorMessageDescriptionBinder"
+                                                                          data-vft="error-popup-text">Error!</p>
+                                                                  </div>
+                                                              </div>
+                                                          </div>
+                                                          <div class="EmailInput"><label class="EmailInput-label"><span
+                                                                      data-required="">Email</span>
+                                                                  <input class="EmailInput-input form-input" type="email" name="email"
+                                                                      autocomplete="off" data-lpignore="true"
+                                                                      placeholder="E.g. name@example.com" required=""
+                                                                      aria-required="true">
+                                                              </label>
+                                                          </div>
+
+                                                      </div>
+                                                      <div class="RegistrationForm-items-item">
+                                                          <div class="RegistrationForm-errorMessage alert alert--warning">
+                                                              <div class="RegistrationForm-errorMessage-caption">
+                                                                  <div class="RegistrationForm-errorMessage-iconWrapper">
+                                                                      <svg class="RegistrationForm-errorMessage-icon">
+                                                                          <use xlink:href="#icon-block"></use>
+                                                                      </svg>
+                                                                  </div>
+                                                                  <div class="RegistrationForm-errorMessage-content">
+                                                                      <p><strong
+                                                                              class="RegistrationForm-errorMessageTitleBinder ">Oops!!</strong>
+                                                                      </p>
+                                                                      <p class="RegistrationForm-errorMessageDescriptionBinder"
+                                                                          data-vft="error-popup-text">Error!</p>
+                                                                  </div>
+                                                              </div>
+                                                          </div>
+                                                          <div class="PasswordInput password-hidden"><label
+                                                                  class="PasswordInput-label"><span data-required="">Password</span>
+
+                                                                  <input class="PasswordInput-input form-input password" type="password"
+                                                                      autocomplete="new-password" name="password" placeholder="Password"
+                                                                      data-lpignore="true" required="">
+                                                                  <div class="PasswordInput-passwordVisibility">
+                                                                      <svg class="PasswordInput-eye">
+                                                                          <use xlink:href="#icon-viewed-show"></use>
+                                                                      </svg>
+                                                                      <svg class="PasswordInput-closedEye">
+                                                                          <use xlink:href="#icon-viewed-hide"></use>
+                                                                      </svg>
+                                                                  </div>
+                                                              </label>
+
+                                                              <div class="PasswordInput-passwordVisibility">
+                                                                  <div class="PasswordInput-eyeOpen">
+                                                                      <svg class="PasswordInput-eye">
+                                                                          <use xlink:href="#icon-viewed-show"></use>
+                                                                      </svg>
+                                                                  </div>
+                                                                  <div class="PasswordInput-eyeClosed">
+                                                                      <svg class="PasswordInput-closedEye">
+                                                                          <use xlink:href="#icon-viewed-hide"></use>
+                                                                      </svg>
+                                                                  </div>
+                                                              </div>
+                                                          </div>
+
+                                                      </div>
+                                                      <div class="RegistrationForm-items-item" data-inline-row="">
+                                                          <div class="RegistrationForm-errorMessage alert alert--warning">
+                                                              <div class="RegistrationForm-errorMessage-caption">
+                                                                  <div class="RegistrationForm-errorMessage-iconWrapper">
+                                                                      <svg class="RegistrationForm-errorMessage-icon">
+                                                                          <use xlink:href="#icon-block"></use>
+                                                                      </svg>
+                                                                  </div>
+                                                                  <div class="RegistrationForm-errorMessage-content">
+                                                                      <p><strong
+                                                                              class="RegistrationForm-errorMessageTitleBinder ">Oops!!</strong>
+                                                                      </p>
+                                                                      <p class="RegistrationForm-errorMessageDescriptionBinder"
+                                                                          data-vft="error-popup-text">Error!</p>
+                                                                  </div>
+                                                              </div>
+                                                          </div>
+                                                          <div class="TextInput"><label class="TextInput-label">
+
+                                                                  <span data-required="">Name</span>
+
+
+                                                                  <input class="TextInput-input form-input" type="text" name="first-name"
+                                                                      maxlength="35" placeholder="First Name" data-lpignore="true"
+                                                                      required=""></label>
+
+                                                          </div>
+
+                                                          <div class="TextInput"><label class="TextInput-label">
+
+                                                                  <span data-required=""></span>
+
+
+                                                                  <input class="TextInput-input form-input" type="text" name="last-name"
+                                                                      maxlength="35" placeholder="Last Name" data-lpignore="true"
+                                                                      required=""></label>
+
+                                                          </div>
+
+                                                      </div>
+
+                                                  </div>
+                                                  <div class="RegistrationForm-captcha -item">
+                                                      <div class="RegistrationForm-errorMessage alert alert--warning">
+                                                          <div class="RegistrationForm-errorMessage-caption">
+                                                              <div class="RegistrationForm-errorMessage-iconWrapper">
+                                                                  <svg class="RegistrationForm-errorMessage-icon">
+                                                                      <use xlink:href="#icon-block"></use>
+                                                                  </svg>
+                                                              </div>
+                                                              <div class="RegistrationForm-errorMessage-content">
+                                                                  <p><strong
+                                                                          class="RegistrationForm-errorMessageTitleBinder ">Oops!!</strong>
+                                                                  </p>
+                                                                  <p class="RegistrationForm-errorMessageDescriptionBinder"
+                                                                      data-vft="error-popup-text">Error!</p>
+                                                              </div>
+                                                          </div>
+                                                      </div>
+                                                      <label class="RegistrationForm-captchaLabel"><span>Let's check it's you</span>
+                                                          <img class="RegistrationForm-captchaImg"
+                                                              src="/myvodafone/CaptchaProxy/api/v1/captcha?1">
+                                                          <div class="RegistrationForm-captchaIcon">
+                                                              <svg class="RegistrationForm-captcha-icon-refresh">
+                                                                  <use xlink:href="#icon-refresh"></use>
+                                                              </svg>
+                                                          </div>
+                                                      </label>
+                                                      <div>
+                                                          <div class="TextInput"><label class="TextInput-label">
+
+                                                                  <span data-required=""></span>
+
+
+                                                                  <input class="TextInput-input form-input" type="text" name="captcha"
+                                                                      placeholder="Enter the text you see above" data-lpignore="true"
+                                                                      required=""></label>
+
+                                                          </div>
+
+                                                      </div>
+                                                  </div>
+                                                  <div class="RegistrationForm-footerMsg">
+                                                      <div class="CustomCheckboxInput">
+                                                          <label class="CustomCheckboxInput-label">
+                                                              <input class="form-checkbox" type="checkbox" name="privacy" required="true">
+                                                              By using this form, I agree to the storage and handling of my data in
+                                                              accordance with One NZ's
+                                                              <a class="Link" href="/legal/policy/privacy/">Privacy Policy</a>
+                                                          </label>
+                                                      </div>
+                                                  </div>
+                                                  <div class="RegistrationForm-nextButton">
+                                                      <button class="Button" disabled="" type="submit">Register
+                                                      </button>
+
+                                                  </div>
+
+                                              </form>
+
+                                              <!-- Error Alert Only -->
+                                              <div class="RegistrationForm-errorPopUp">
+                                                  <div class="RegistrationForm-errorMessage alert alert--warning">
+                                                      <div class="RegistrationForm-errorMessage-caption">
+                                                          <div class="RegistrationForm-errorMessage-iconWrapper">
+                                                              <svg class="RegistrationForm-errorMessage-icon">
+                                                                  <use xlink:href="#icon-block"></use>
+                                                              </svg>
+                                                          </div>
+                                                          <div class="RegistrationForm-errorMessage-content">
+                                                              <p><strong class="RegistrationForm-errorMessageTitleBinder ">Sorry</strong>
+                                                              </p>
+                                                              <p class="RegistrationForm-errorMessageDescriptionBinder"
+                                                                  data-vft="error-popup-text">We've had a technical hiccup. Try again
+                                                                  soon. If that doesn't work, please call us on 0800 800 021.</p>
+                                                          </div>
+                                                      </div>
+                                                  </div>
+                                              </div>
+
+                                              <!-- Email Expired -->
+                                              <div class="RegistrationForm-emailExpired">
+                                                  <div class="RegistrationForm-errorMessage alert alert--warning">
+                                                      <div class="RegistrationForm-errorMessage-caption">
+                                                          <div class="RegistrationForm-errorMessage-iconWrapper">
+                                                              <svg class="RegistrationForm-errorMessage-icon">
+                                                                  <use xlink:href="#icon-block"></use>
+                                                              </svg>
+                                                          </div>
+                                                          <div class="RegistrationForm-errorMessage-content">
+                                                              <p><strong class="RegistrationForm-errorMessageTitleBinder ">Sorry</strong>
+                                                              </p>
+                                                              <p class="RegistrationForm-errorMessageDescriptionBinder"
+                                                                  data-vft="error-popup-text">You've used an expired email.</p>
+                                                          </div>
+                                                      </div>
+                                                  </div>
+
+                                              </div>
+
+                                              <!-- Email Verified -->
+                                              <div class="RegistrationForm-emailVerified">
+                                                  <div class="RegistrationForm-errorMessage alert alert--warning">
+                                                      <div class="RegistrationForm-errorMessage-caption">
+                                                          <div class="RegistrationForm-errorMessage-iconWrapper">
+                                                              <svg class="RegistrationForm-errorMessage-icon">
+                                                                  <use xlink:href="#icon-block"></use>
+                                                              </svg>
+                                                          </div>
+                                                          <div class="RegistrationForm-errorMessage-content">
+                                                              <p><strong class="RegistrationForm-errorMessageTitleBinder ">Sorry</strong>
+                                                              </p>
+                                                              <p class="RegistrationForm-errorMessageDescriptionBinder"
+                                                                  data-vft="error-popup-text">We've had a technical hiccup. Please close
+                                                                  this message and try signing in.</p>
+                                                          </div>
+                                                      </div>
+                                                  </div>
+                                              </div>
+
+                                              <!-- Form Success -->
+                                              <div class="RegistrationForm-formSuccess">
+                                                  <div class="RegistrationForm-formSuccess">
+                                                      <div class="RegistrationForm-success-icon-wrapper">
+                                                          <svg class="RegistrationForm-success-icon">
+                                                              <use xlink:href="#icon-tick"></use>
+                                                          </svg>
+                                                      </div>
+                                                      <div class="formSuccess-title">
+                                                          <span class="title">Email sent to: </span>
+                                                          <span class="email"></span>
+                                                      </div>
+                                                      <p>
+                                                          Click the button in the email we've sent to complete your registration. If you
+                                                          can't
+                                                          find our email, please check your spam/junk folder.
+                                                      </p>
+                                                      <p>No email? <a class="resendEmail" href="">Send it again</a></p>
+                                                  </div>
+                                              </div>
+                                          </ps-form>
+                                      </div>
+
+                                      <div class="LoginTabs-setPasswordForm">
+                                          <ps-form class="SetPasswordForm" xmlns="http://www.w3.org/1999/html">
+                                              <div class="SetPasswordForm-header">
+                                                  <div class="SetPasswordForm-title">
+                                                      Set password
+                                                  </div>
+                                                  <div class="SetPasswordForm-subtitle">
+                                                      Choose a new password.
+                                                  </div>
+                                              </div>
+
+                                              <form class="SetPasswordForm-form" method="post" autocomplete="off" novalidate="novalidate">
+                                                  <div class="SetPasswordForm-items">
+                                                      <div class="SetPasswordForm-items-item">
+                                                          <div class="RegistrationForm-errorMessage alert alert--warning">
+                                                              <div class="RegistrationForm-errorMessage-caption">
+                                                                  <div class="RegistrationForm-errorMessage-iconWrapper">
+                                                                      <svg class="RegistrationForm-errorMessage-icon">
+                                                                          <use xlink:href="#icon-block"></use>
+                                                                      </svg>
+                                                                  </div>
+                                                                  <div class="RegistrationForm-errorMessage-content">
+                                                                      <p><strong
+                                                                              class="RegistrationForm-errorMessageTitleBinder ">Oops!!</strong>
+                                                                      </p>
+                                                                      <p class="RegistrationForm-errorMessageDescriptionBinder"
+                                                                          data-vft="error-popup-text">Error!</p>
+                                                                  </div>
+                                                              </div>
+                                                          </div>
+                                                          <div class="PasswordInput password-hidden"><label
+                                                                  class="PasswordInput-label"><span data-required="">Password</span>
+
+                                                                  <input class="PasswordInput-input form-input password" type="password"
+                                                                      autocomplete="new-password" name="password" placeholder="Password"
+                                                                      data-lpignore="true" required="">
+                                                                  <div class="PasswordInput-passwordVisibility">
+                                                                      <svg class="PasswordInput-eye">
+                                                                          <use xlink:href="#icon-viewed-show"></use>
+                                                                      </svg>
+                                                                      <svg class="PasswordInput-closedEye">
+                                                                          <use xlink:href="#icon-viewed-hide"></use>
+                                                                      </svg>
+                                                                  </div>
+                                                              </label>
+
+                                                              <div class="PasswordInput-passwordVisibility">
+                                                                  <div class="PasswordInput-eyeOpen">
+                                                                      <svg class="PasswordInput-eye">
+                                                                          <use xlink:href="#icon-viewed-show"></use>
+                                                                      </svg>
+                                                                  </div>
+                                                                  <div class="PasswordInput-eyeClosed">
+                                                                      <svg class="PasswordInput-closedEye">
+                                                                          <use xlink:href="#icon-viewed-hide"></use>
+                                                                      </svg>
+                                                                  </div>
+                                                              </div>
+                                                          </div>
+
+                                                          <p>Minimum 6 characters incl. one number</p>
+                                                      </div>
+                                                  </div>
+                                                  <div class="SetPasswordForm-buttons">
+                                                      <button class="Button" button--disabled="" disabled="" type="submit">Confirm
+                                                      </button>
+
+                                                  </div>
+                                              </form>
+
+                                              <!-- Form Success -->
+                                              <div class="SetPasswordForm-formSuccess">
+                                                  <div class="SetPasswordForm-formSuccess">
+                                                      <div class="SetPasswordForm-success-icon-wrapper">
+                                                          <svg class="SetPasswordForm-success-icon">
+                                                              <use xlink:href="#icon-tick"></use>
+                                                          </svg>
+                                                      </div>
+                                                      <div class="formSuccess-title">Password Reset<span class="email"></span></div>
+                                                      Successful
+                                                  </div>
+                                              </div>
+
+                                          </ps-form>
+                                      </div>
+
+                                  </ps-tabs>
+                              </div>
+                          </div>
+                      </div>
+                    </div>
                 </div>
               </div>`
 return html;
